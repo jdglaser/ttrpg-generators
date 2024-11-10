@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useMatch } from "react-router-dom";
 
 interface ExpandableNavElement {
   path: string;
@@ -9,13 +9,16 @@ interface ExpandableNavElement {
 interface ExpandableNavItemProps {
   rootLabel: string;
   items: ExpandableNavElement[];
+  matchPath: string;
 }
 
 export function ExpandableNavItem({
   items,
   rootLabel,
+  matchPath,
 }: ExpandableNavItemProps) {
-  const [expanded, setExpanded] = useState<boolean>(false);
+  const match = useMatch(matchPath);
+  const [expanded, setExpanded] = useState<boolean>(match ? true : false);
 
   const root = (
     <a
@@ -24,15 +27,23 @@ export function ExpandableNavItem({
         event.preventDefault();
         setExpanded((prev) => !prev);
       }}
+      style={{ color: match ? "purple" : "blue" }}
     >
       {rootLabel}
     </a>
   );
 
   const subLinks = items.map(({ path, label }) => (
-    <Link key={path} to={path}>
+    <NavLink
+      key={path}
+      to={path}
+      end
+      style={({ isActive }) => ({
+        color: isActive ? "purple" : "blue",
+      })}
+    >
       {label}
-    </Link>
+    </NavLink>
   ));
 
   return (

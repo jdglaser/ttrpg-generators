@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import closeMenu from "./assets/close.png";
 import menuHamburger from "./assets/menu.png";
 import { useAppState } from "./common/hooks";
@@ -9,15 +9,20 @@ export default function Nav() {
   const [showNav, setShowNav] = useState<boolean>(true);
   const { tables } = useAppState();
 
-  console.log(tables);
-
   const tableRoutes = Object.entries(tables.categories)
     .map(([key, entry]) => {
       const link =
         entry.type === "single" ? (
-          <Link key={`/tables/${key}`} to={`/tables/${key}`}>
+          <NavLink
+            key={`/tables/${key}`}
+            to={`/tables/${key}`}
+            style={({ isActive }) => ({
+              color: isActive ? "purple" : "blue",
+            })}
+            end
+          >
             {entry.title}
-          </Link>
+          </NavLink>
         ) : (
           <ExpandableNavItem
             items={Object.entries(entry.groups).map(
@@ -27,6 +32,7 @@ export default function Nav() {
               })
             )}
             rootLabel={entry.title}
+            matchPath={`/tables/${key}/:group`}
           />
         );
 
@@ -39,6 +45,7 @@ export default function Nav() {
       style={{
         borderRight: showNav ? "1px solid lightgrey" : "",
         minHeight: "100vh",
+        minWidth: showNav ? "150px" : "0px",
       }}
     >
       <div
@@ -64,7 +71,15 @@ export default function Nav() {
           padding: "1rem",
         }}
       >
-        <Link to="/">Home</Link>
+        <NavLink
+          to="/"
+          style={({ isActive }) => ({
+            color: isActive ? "purple" : "blue",
+          })}
+          end
+        >
+          Home
+        </NavLink>
         {tableRoutes}
       </div>
     </div>

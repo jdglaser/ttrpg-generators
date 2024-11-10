@@ -31,6 +31,7 @@ export default function Root() {
           display: "flex",
           flexDirection: "row",
           gap: "0.75rem",
+          height: "100vh",
         }}
       >
         <div>
@@ -39,6 +40,7 @@ export default function Root() {
         <div
           style={{
             padding: "1rem 2rem",
+            overflow: "auto",
           }}
         >
           <Outlet />

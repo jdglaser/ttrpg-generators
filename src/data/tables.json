@@ -117,39 +117,68 @@
                         },
                         {
                             "type": "tag",
-                            "title": "Community Tags",
                             "select": 2,
+                            "title": "Community Tags",
                             "tagRef": "communities"
                         }
                     ]
                 },
                 "major-cities": {
                     "title": "Major Cities",
-                    "tables": {
-                        "title": "Rationale for the City’s Existence",
-                        "type": "standard",
-                        "items": [
-                            "It's the former seat of a vanished nation",
-                            "It's a trade nexus that has greatly prospered",
-                            "It's an industrial or productive center",
-                            "There is heavy resource extraction nearby",
-                            "It controls a vital defensive point",
-                            "It's built around an ancient Working",
-                            "It's a stronghold of a local subculture",
-                            "It's a sacred city to an important faith",
-                            "It's a shared market for many villages",
-                            "It's a place of great beauty or healthfulness",
-                            "It's a shelter from dangerous environs",
-                            "The natives are somehow bound here"
-                        ]
-                    }
+                    "tables": [
+                        {
+                            "title": "Rationale for the City's Existence",
+                            "type": "standard",
+                            "items": [
+                                "It's the former seat of a vanished nation",
+                                "It's a trade nexus that has greatly prospered",
+                                "It's an industrial or productive center",
+                                "There is heavy resource extraction nearby",
+                                "It controls a vital defensive point",
+                                "It's built around an ancient Working",
+                                "It's a stronghold of a local subculture",
+                                "It's a sacred city to an important faith",
+                                "It's a shared market for many villages",
+                                "It's a place of great beauty or healthfulness",
+                                "It's a shelter from dangerous environs",
+                                "The natives are somehow bound here"
+                            ]
+                        }
+                    ]
                 }
             }
         },
         "nations": {
             "title": "Nations",
             "type": "single",
-            "tables": []
+            "tables": [
+                {
+                    "title": "Disputes With a Neighboring State",
+                    "type": "standard",
+                    "items": [
+                        "Raiders are taking refuge in their lands",
+                        "Ownership of a resource site is disputed",
+                        "A usurper or criminal is being sheltered there",
+                        "A troublemaking religion is based there",
+                        "Their rulers have a political claim on the throne",
+                        "A diplomatic marriage is going sour",
+                        "A past war's savagery has left deep scars",
+                        "Their culture is supplanting local beliefs",
+                        "Their immigrants are gaining great influence",
+                        "They broke off an alliance or important pact",
+                        "They lured away an academy or great temple",
+                        "Border tariffs and taxes are blocking trade",
+                        "They drove a terrible beast into this land",
+                        "A Working of theirs caused problems here",
+                        "They woke up a great peril from the past",
+                        "They're cooperating with an enemy group",
+                        "They're suspected of backing assassinations",
+                        "A spy ring is suspected or has been found",
+                        "They refused to give aid for some current need",
+                        "They've been hostile to an allied group"
+                    ]
+                }
+            ]
         }
     }
 }

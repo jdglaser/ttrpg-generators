@@ -35,7 +35,7 @@ export interface TableCategoryMulti {
 export interface TableCategorySingle {
     type: "single"
     title: string
-    tables: TableGroup
+    tables: Table[]
 }
 
 export type TableCategory = TableCategoryMulti | TableCategorySingle
