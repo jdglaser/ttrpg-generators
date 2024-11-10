@@ -12,11 +12,18 @@ export interface TagTable {
     tagRef: string
 }
 
+export interface ComplexTableOption {
+    type: "complex",
+    title: string,
+    tag: string,
+    description: string
+}
+
 export interface StandardTable {
     type: "standard"
     title: string
     select: Optional<number>
-    items: string[]
+    items: (string | ComplexTableOption)[]
 }
 
 export type Table = TagTable | StandardTable

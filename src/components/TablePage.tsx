@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useAppState } from "../common/hooks";
-import { Table, Tag } from "../common/types";
+import { ComplexTableOption, Table, Tag } from "../common/types";
 import { copyToClipboard, sample } from "../common/utils";
 import { StandardTableView } from "./StandardTableView";
 import { TagTableView } from "./TagTableView";
@@ -9,7 +9,9 @@ import { TagTableView } from "./TagTableView";
 export default function TablePage() {
   const { category, group } = useParams();
   const { tables, tags } = useAppState();
-  const [results, setResults] = useState<Record<string, string[] | Tag[]>>({});
+  const [results, setResults] = useState<
+    Record<string, (string | ComplexTableOption)[] | Tag[]>
+  >({});
 
   function setTableResultsFactory<T extends Table>(table: T) {
     const tableId = table.title;
@@ -56,7 +58,7 @@ export default function TablePage() {
         <StandardTableView
           key={tableId}
           table={table}
-          results={(results[tableId] as string[]) ?? []}
+          results={(results[tableId] as (string | ComplexTableOption)[]) ?? []}
           setResults={setResultsFunction}
         />
       );
