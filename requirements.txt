@@ -1,0 +1,4 @@
+click
+pydantic
+PyYaml
+pyperclip

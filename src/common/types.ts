@@ -19,11 +19,22 @@ export interface ComplexTableOption {
     description: string
 }
 
+export interface RollAgainTableOption {
+    type: "rollAgain"
+    text: string
+}
+
+export interface RollAgainAndBlendOption {
+    type: "rollAgainAndBlend"
+    text: string
+    amount: number
+}
+
 export interface StandardTable {
     type: "standard"
     title: string
     select: Optional<number>
-    items: (string | ComplexTableOption)[]
+    items: (string | ComplexTableOption | RollAgainTableOption | RollAgainAndBlendOption)[]
 }
 
 export type Table = TagTable | StandardTable

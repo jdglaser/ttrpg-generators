@@ -208,7 +208,6 @@
                     "title": "Current National Problems",
                     "type": "standard",
                     "items": [
-                        "d20 Current National Problems",
                         "Farmland is becoming worn-out and depleted",
                         "Verminous monsters are swarming",
                         "A rebel front is stirring up trouble",
@@ -235,7 +234,6 @@
                     "title": "Good Things Happening Right Now",
                     "type": "standard",
                     "items": [
-                        "d20 Good Things Happening Right Now",
                         "A splendid mine or resource has been found",
                         "A pious saint is strengthening a major faith",
                         "A noble heir shows signs of heroic greatness",
@@ -371,6 +369,124 @@
                     ]
                 }
             ]
+        },
+        "society": {
+            "title": "Society",
+            "type": "multi",
+            "groups": {
+                "physical-appearance": {
+                    "title": "Physical Appearance",
+                    "tables": [
+                        {
+                            "title": "Typical Skin Colors in the Populace",
+                            "type": "standard",
+                            "items": [
+                                "Extremely dark hues",
+                                "Dark browns and mocha shades",
+                                "Golden, sallow, or ivory",
+                                "Olives or light browns",
+                                "Ruddy or tanned complexions",
+                                "Pale white or pinkish hues",
+                                "An unusual color or pattern of colors",
+                                "Scales, fur, or unusual hide type"
+                            ]
+                        },
+                        {
+                            "title": "Hair Color",
+                            "type": "standard",
+                            "items": [
+                                "Night-black",
+                                "Dark browns",
+                                "Lighter browns",
+                                "Red shades",
+                                "Blonds",
+                                "White or white-blond",
+                                "An unusual palette",
+                                "They lack hair"
+                            ]
+                        },
+                        {
+                            "title": "Hair Texture",
+                            "type": "standard",
+                            "items": [
+                                "Very tightly-curled",
+                                "Dense and curled",
+                                "Slightly wavy",
+                                "Stiff and straight",
+                                "Thick and wavy",
+                                "Thin and fine",
+                                "Thick and flowing",
+                                "Scant and delicate"
+                            ]
+                        },
+                        {
+                            "title": "Eye Coloration",
+                            "type": "standard",
+                            "items": [
+                                "Black or extremely dark brown",
+                                "Hazel or olive",
+                                "Blues in varying shades",
+                                "Grays, whether flat or metallic",
+                                "Ambers and yellows",
+                                "Greens in different shades",
+                                "An unusual or luminous color",
+                                {
+                                    "type": "rollAgain",
+                                    "text": "Slit or unusual pupils; "
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Optional Common Forms of Adornment",
+                            "type": "standard",
+                            "items": [
+                                "Intricate hair styles or braiding",
+                                "Painted skin markings that sometimes change",
+                                "Tattoos of some cultural significance",
+                                "Piercings, whether minor or elaborate",
+                                "Role or class-specific clothing items",
+                                "Patterned hair shaving or depilation",
+                                "Culturally-significant jewelry or accessories",
+                                "Color choices with social meaning to them",
+                                "Socially-meaningful animal motif items",
+                                "Worn weapons, tools or trade implements",
+                                "Significant scent or perfume uses",
+                                "Impractical or elaborate role-based clothes"
+                            ]
+                        },
+                        {
+                            "title": "Optional Physical Quirks or Traits",
+                            "type": "standard",
+                            "items": [
+                              "They possess an extra eye somewhere",
+                              "An additional set of limbs or extremities",
+                              "Extremely pronounced sexual dimorphism",
+                              "Patches of feathers, scales, fur, or the like",
+                              "They have a tail of some sort",
+                              "They possess wings, whether useful or not",
+                              "Their skin is an unusual texture",
+                              "Sigil-marked by their creator in some way",
+                              "The sexes look very similar to outsiders",
+                              "They have a particular scent to them",
+                              "Their voices are peculiar in some way",
+                              "Additional or too few fingers or toes",
+                              "They have animalistic features in some way",
+                              "Have one or more manipulatory tentacles",
+                              "They have light-emitting organs or skin",
+                              "Their mouths are fanged or tusked",
+                              "They have alien Outsider features somehow",
+                              "Their proportions are distinctly strange",
+                              "They don't show age the way others do",
+                              {
+                                "type": "rollAgainAndBlend",
+                                "text": "Roll twice and blend the results",
+                                "amount": 2
+                              }
+                            ]
+                          }
+                    ]
+                }
+            }
         }
     }
 }

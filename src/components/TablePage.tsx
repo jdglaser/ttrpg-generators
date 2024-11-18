@@ -18,6 +18,34 @@ export default function TablePage() {
     let results;
     if (table.type === "standard") {
       results = sample(table.items, table.select ?? 1);
+      results = results
+        .map((r) => {
+          if (typeof r === "string") {
+            return r;
+          }
+
+          if (r.type === "rollAgain") {
+            let newResult = sample(table.items, 1);
+            while (newResult[0] === r) {
+              newResult = sample(table.items, 1);
+            }
+            return `${r.text}${newResult}`;
+          }
+
+          if (r.type === "rollAgainAndBlend") {
+            const newOptions = table.items.filter((i) => i !== r);
+            console.log("NEW OPTIONS:", newOptions);
+            const newResult = sample(newOptions, r.amount) as (
+              | string
+              | ComplexTableOption
+            )[];
+            console.log("NEW RESULTS:", newResult);
+            return newResult;
+          }
+
+          return r;
+        })
+        .flat();
     } else {
       results = sample(tags.tags[table.tagRef], table.select ?? 1);
     }
@@ -26,6 +54,8 @@ export default function TablePage() {
       setResults((prev) => ({ ...prev, [tableId]: results }));
     };
   }
+
+  console.log("RESULTS:", results);
 
   const selectedCategory = tables.categories[category!];
   const selectedGroup =

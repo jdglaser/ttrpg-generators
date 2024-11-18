@@ -1,0 +1,5 @@
+-r requirements.txt
+flake8==7.0.0
+Flake8-pyproject==1.2.3
+black==24.3.0
+pyright==1.1.355
