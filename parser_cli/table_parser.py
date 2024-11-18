@@ -83,9 +83,12 @@ def parse_simple(table: str, mapping: Optional[str] = None, has_titles: bool = F
         result_title = match_dict.get("result_title")
 
         description = None
-        if mapping and result_title:
+        if mapping:
+            mapping = _replace_chars(mapping)
+            lookup_key = result_title if result_title else result
+            print(lookup_key)
             parsed_mapping = _handle_mapping(mapping)
-            description = parsed_mapping[result_title]
+            description = parsed_mapping[lookup_key]
 
         result = (
             json.loads(result)

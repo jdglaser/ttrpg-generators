@@ -24,7 +24,7 @@ def cli(): ...
         readable=True,
         path_type=Path,
     ),
-    default=Path("input"),
+    default=Path("parser_cli/input"),
 )
 @click.option(
     "--output-path",
@@ -35,7 +35,7 @@ def cli(): ...
         writable=True,
         path_type=Path,
     ),
-    default=Path("output"),
+    default=Path("parser_cli/output"),
 )
 @click.option("--mapping", "-m", is_flag=True, default=False)
 @click.option("--has-titles", "-h", is_flag=True, default=False)
@@ -57,3 +57,7 @@ def generate_table(
             json_str = json.dumps(all_tables, indent=2)
             print(json_str[1:-2])
             pyperclip.copy(json_str[1:-2])
+
+
+if __name__ == "__main__":
+    cli()

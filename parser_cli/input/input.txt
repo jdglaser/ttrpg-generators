@@ -1,51 +1,24 @@
-d100 Values They Esteem
-1–2 Individual rights and freedom of action
-51–52 Personal sacrifice for one’s causes or purposes
-3–4 Courage and valiance in danger
-53–54 Building things in service of their posterity
-5–6 Honesty and truthfulness in speech
-55–56 Faithfulness towards one’s chosen friends
-7–8 Eloquence and social expertise
-57–58 Dominating and possessing other people
-9–10 Raw strength and personal prowess
-59–60 Exploring the unknown and discovering secrets
-11–12 Discipline and obedience to the law
-61–62 Seeking fortune in new places or new roles
-13–14 Filial devotion to family and parents
-63–64 Social progress toward some eventual utopia
-15–16 Education and knowledge-seeking
-65–66 Excellence in one’s profession or trade
-17–18 Piety and devotion to the gods
-67–68 Loyalty to one’s friends, family, and own
-19–20 Beauty and seductive charm
-69–70 Vengeance and execution of just vendettas
-21–22 Conquest and domination of others
-71–72 Restoring some real or imagined glorious past
-23–24 Ascetic unworldliness and pious poverty
-73–74 Unity and elimination of group differences
-25–26 Harmony with nature and existing life
-75–76 Magical prowess and occult ability
-27–28 Ethnic purity of blood and culture
-77–78 Sharing wealth and goods with others
-29–30 Cunning and the ability to trick others
-79–80 Membership in an elite bloodline or caste
-31–32 Subtlety and indirectness of action
-81–82 Personal indulgence and luxuriant pleasure
-33–34 Prosperity and accruing material wealth
-83–84 Scheming subtly against enemies or rivals
-35–36 Submission to the collective will or culture
-85–86 Remembrance of the past and memorializing history
-37–38 Hardiness and endurance before woes
-87–88 Aesthetic beauty in material goods and architecture
-39–40 Honor and maintaining one’s integrity
-89–90 Zealous guardianship of their own land or holy sites
-41–42 Sexual license and wantonness
-91–92 Humanistic reason and “rational” religion
-43–44 Submission to lawful authority
-93–94 Industry and the ability to work tirelessly
-45–46 Personal development and limit-pushing
-95–96 Leadership and charisma in the group
-47–48 Justice and fairness between people
-97–98 Pacifism and peaceful resolution of problems
-49–50 Purging evil and expelling the wicked
-99–00 Societal or ethnic superiority over all outsiders
+d8 Church Structures
+1 Each holy man or woman is the autonomous
+leader of their own branch of the sect, with
+however many followers they can gather.
+2 There are multiple pontiffs, friendly or otherwise,
+with subordinate clergy obedient to their own
+pontiff and perhaps cooperative with others.
+3 There is a single pontiff with a layer of upper
+clergy and temple heads beneath them, who
+have a layer of minor clergy serving them.
+4 Individual congregations are independent, with
+their clergy subject to the consensus will of their
+parishioners.
+5 Powerful lay believers fund temples that are
+subject to their family’s wishes, staffed by clergy
+supported by their funding.
+6 There is no official clergy; some believers may
+take up special roles or provide teaching, but
+they are not qualitatively different from others.
+7 The church is entirely part of the secular structure
+of the land, its clergy no more than officials
+appointed by the government to their roles.
+8 Roll twice; the faith has different structures in
+different places or contexts.

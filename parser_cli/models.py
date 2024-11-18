@@ -32,6 +32,7 @@ class TableTextResult(BaseModel):
 class TableRollAgainResult(BaseModel):
     type: Literal["roll_again"]
     value: str
+    long_description: Optional[str] = None
     amount: int
     concat: bool = False
 
