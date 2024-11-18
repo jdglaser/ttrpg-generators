@@ -1,17 +1,15 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useAppState } from "../common/hooks";
-import { ComplexTableOption, Table, Tag } from "../common/types";
+import { TableResult } from "../common/types";
 import { copyToClipboard, sample } from "../common/utils";
 import { StandardTableView } from "./StandardTableView";
 import { TagTableView } from "./TagTableView";
 
 export default function TablePage() {
   const { category, group } = useParams();
-  const { tables, tags } = useAppState();
-  const [results, setResults] = useState<
-    Record<string, (string | ComplexTableOption)[] | Tag[]>
-  >({});
+  const { tables } = useAppState();
+  const [results, setResults] = useState<Record<string, TableResult>>({});
 
   function setTableResultsFactory<T extends Table>(table: T) {
     const tableId = table.title;

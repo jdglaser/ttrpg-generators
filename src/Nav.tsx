@@ -3,38 +3,19 @@ import { NavLink } from "react-router-dom";
 import closeMenu from "./assets/close.png";
 import menuHamburger from "./assets/menu.png";
 import { useAppState } from "./common/hooks";
-import { ExpandableNavItem } from "./components/ExpandableNavItem";
+import { dashToTitleCase } from "./common/utils";
 
 export default function Nav() {
   const [showNav, setShowNav] = useState<boolean>(true);
   const { tables } = useAppState();
 
-  const tableRoutes = Object.entries(tables.categories)
-    .map(([key, entry]) => {
-      const link =
-        entry.type === "single" ? (
-          <NavLink
-            key={`/tables/${key}`}
-            to={`/tables/${key}`}
-            style={({ isActive }) => ({
-              color: isActive ? "purple" : "blue",
-            })}
-            end
-          >
-            {entry.title}
-          </NavLink>
-        ) : (
-          <ExpandableNavItem
-            items={Object.entries(entry.groups).map(
-              ([innerKey, innerEntry]) => ({
-                label: innerEntry.title,
-                path: `/tables/${key}/${innerKey}`,
-              })
-            )}
-            rootLabel={entry.title}
-            matchPath={`/tables/${key}/:group`}
-          />
-        );
+  const tableRoutes = Object.keys(tables)
+    .map((key) => {
+      const link = (
+        <NavLink key={`/tables/${key}/`} to={`/tables/${key}/`}>
+          {dashToTitleCase(key)}
+        </NavLink>
+      );
 
       return <div key={`navGroup-${key}`}>{link}</div>;
     })

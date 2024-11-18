@@ -2,29 +2,24 @@ import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Nav from "./Nav";
 import { AppStateContext } from "./common/context";
-import { Optional, Tables, Tags } from "./common/types";
+import { Optional, Tables } from "./common/types";
 import { getData } from "./common/utils";
 
 export default function Root() {
   const [tables, setTables] = useState<Optional<Tables>>(null);
-  const [tags, setTags] = useState<Optional<Tags>>(null);
 
   useEffect(() => {
-    getData("tables").then((res) => {
+    getData("table_ref").then((res) => {
       setTables(res);
-    });
-
-    getData("tags").then((res) => {
-      setTags(res);
     });
   }, []);
 
-  if (!tables || !tags) {
+  if (!tables) {
     return <div>Loading</div>;
   }
 
   return (
-    <AppStateContext.Provider value={{ tables, tags }}>
+    <AppStateContext.Provider value={{ tables }}>
       <div
         className="root"
         style={{

@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import EncounterPage from "./components/EncounterPage.tsx";
 import Home from "./components/Home.tsx";
 import TablePage from "./components/TablePage.tsx";
 import ErrorPage from "./ErrorPage.tsx";
@@ -17,16 +16,6 @@ const router = createBrowserRouter([
       {
         path: "tables/:category",
         element: <TablePage />,
-        children: [
-          {
-            path: ":group",
-            element: <TablePage />,
-          },
-        ],
-      },
-      {
-        path: "encounters",
-        element: <EncounterPage />,
       },
       {
         path: "/",

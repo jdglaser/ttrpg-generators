@@ -1,7 +1,4 @@
 import { createContext } from "react";
-import { AppState, Tables, Tags } from "./types";
+import { AppState, Optional } from "./types";
 
-export const AppStateContext = createContext<AppState>({
-  tables: {} as Tables,
-  tags: {} as Tags,
-});
+export const AppStateContext = createContext<Optional<AppState>>(null);

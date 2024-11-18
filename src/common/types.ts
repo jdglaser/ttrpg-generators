@@ -2,76 +2,50 @@ export type Optional<T> = T | null
 
 export interface AppState {
     tables: Tables;
-    tags: Tags;
 }
 
-export interface TagTable {
-    type: "tag"
+export type Tables = Record<string, Record<string, Table>>
+
+interface Dice {
+    numDice: number
+    diceSides: number
+}
+
+export interface Table {
+    dice: Dice
+    amount?: number
     title: string
-    select: Optional<number>
-    tagRef: string
+    table: TableRow[]
 }
 
-export interface ComplexTableOption {
-    type: "complex",
-    title: string,
-    tag: string,
-    description: string
-}
+export type TableRow = TableRowSingle | TableRowRange
 
-export interface RollAgainTableOption {
-    type: "rollAgain"
-    text: string
-}
-
-export interface RollAgainAndBlendOption {
-    type: "rollAgainAndBlend"
-    text: string
-    amount: number
-}
-
-export interface StandardTable {
-    type: "standard"
-    title: string
-    select: Optional<number>
-    items: (string | ComplexTableOption | RollAgainTableOption | RollAgainAndBlendOption)[]
-}
-
-export type Table = TagTable | StandardTable
-
-export interface TableGroup {
-    title: string
-    tables: Table[]
-}
-
-export interface TableCategoryMulti {
-    type: "multi"
-    title: string
-    groups: Record<string, TableGroup>
-}
-
-export interface TableCategorySingle {
+interface TableRowSingle {
     type: "single"
-    title: string
-    tables: Table[]
+    value: number
+    result: TableResult
 }
 
-export type TableCategory = TableCategoryMulti | TableCategorySingle
-
-export interface Tables {
-    categories: Record<string, TableCategory>
+interface TableRowRange {
+    type: "range"
+    minValue: number
+    maxValue: number
+    result: TableResult
 }
 
-export interface Tag {
-    title: string
-    description: string
-    enemies: string
-    friends: string
-    complications: string
-    things: string
-    places: string
+export type TableResult = TableTextResult | TableRollAgainResult
+
+interface TableTextResult {
+    type: "text"
+    title?: Optional<string>
+    value: string
+    longDescription?: Optional<string>
 }
 
-export interface Tags {
-    tags: Record<string, Tag[]>
+interface TableRollAgainResult {
+    type: "rollAgain"
+    title?: Optional<string>
+    longDescription?: Optional<string>
+    amount: number
+    concat?: boolean
 }
