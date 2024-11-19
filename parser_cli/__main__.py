@@ -1,11 +1,13 @@
 import json
+from collections import OrderedDict
 from pathlib import Path
 from typing import Literal
 
 import click
 import pyperclip
 
-from parser_cli.table_parser import parse_simple
+from parser_cli.models import Table
+from parser_cli.table_parser import parse_column, parse_simple, replace_chars
 from parser_cli.utils import to_id
 
 
@@ -51,12 +53,48 @@ def generate_table(
         case "simple":
             all_tables = {}
             for table in [r.strip() for r in table_str.split("---") if r not in ["", "---"]]:
-                parsed_table = parse_simple(table, mapping=mapping_str, has_titles=has_titles)
-                key = to_id(parsed_table.title)
-                all_tables[key] = parsed_table.model_dump(by_alias=True)
+                table = replace_chars(table)
+                if table.split("\n")[0].startswith("["):
+                    parsed_tables = parse_column(table)
+                    for parsed_table in parsed_tables:
+                        key = to_id(parsed_table.title)
+                        all_tables[key] = parsed_table.model_dump(by_alias=True, exclude_none=True)
+                else:
+                    parsed_table = parse_simple(table, mapping=mapping_str, has_titles=has_titles)
+                    key = to_id(parsed_table.title)
+                    all_tables[key] = parsed_table.model_dump(by_alias=True, exclude_none=True)
             json_str = json.dumps(all_tables, indent=2)
             print(json_str[1:-2])
             pyperclip.copy(json_str[1:-2])
+
+
+@cli.command()
+def clean_json():
+    data = json.loads(Path("src/data/table_ref.json").read_text(), object_pairs_hook=OrderedDict)
+
+    new_final = {}
+    for key, tables in data.items():
+        print(key)
+        new_tables = {}
+        for inner_key, table in tables.items():
+            print(inner_key)
+            new_table = {"dice": table["dice"], "title": table["title"]}
+            new_rows = []
+            for row in table["table"]:
+                new_row = {}
+                if row["type"] == "range":
+                    new_row["number"] = {"type": "range", "minValue": row["minValue"], "maxValue": row["maxValue"]}
+                else:
+                    new_row["number"] = {"type": "single", "value": row["value"]}
+                new_row["result"] = row["result"]
+                new_rows.append(new_row)
+            new_table["rows"] = new_rows
+
+            table_model = Table.model_validate(new_table)
+            new_tables[inner_key] = table_model.model_dump(by_alias=True, exclude_none=True)
+        new_final[key] = new_tables
+    with open(Path("src/data/table_ref_new.json"), "w") as fp:
+        json.dump(new_final, fp, indent=2)
 
 
 if __name__ == "__main__":

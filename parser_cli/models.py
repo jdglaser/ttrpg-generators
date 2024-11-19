@@ -22,15 +22,15 @@ class BaseModel(pydantic.BaseModel):
     model_config = pydantic.ConfigDict(extra="forbid", frozen=True, alias_generator=to_camel)
 
 
-class TableTextResult(BaseModel):
+class TableTextRowResult(BaseModel):
     type: Literal["text"]
-    title: Optional[str] = None
     value: str
+    title: Optional[str] = None
     long_description: Optional[str] = None
 
 
 class TableRollAgainResult(BaseModel):
-    type: Literal["roll_again"]
+    type: Literal["rollAgain"]
     value: str
     long_description: Optional[str] = None
     amount: int
@@ -38,28 +38,31 @@ class TableRollAgainResult(BaseModel):
 
 
 TableResult = Annotated[
-    Annotated[TableTextResult, Tag("text")] | Annotated[TableRollAgainResult, Tag("roll_again")],
+    Annotated[TableTextRowResult, Tag("text")] | Annotated[TableRollAgainResult, Tag("rollAgain")],
     pydantic.Discriminator(discriminator_factory("type")),
 ]
 
 
-class TableSingleValueOption(BaseModel):
+class TableRowSingleNumber(BaseModel):
     type: Literal["single"]
     value: int
-    result: TableResult
 
 
-class TableRangeValueOption(BaseModel):
+class TableRowRangeNumber(BaseModel):
     type: Literal["range"]
     min_value: int
     max_value: int
-    result: TableResult
 
 
-TableOption = Annotated[
-    Annotated[TableSingleValueOption, Tag("single")] | Annotated[TableRangeValueOption, Tag("range")],
+TableRowNumber = Annotated[
+    Annotated[TableRowSingleNumber, Tag("single")] | Annotated[TableRowRangeNumber, Tag("range")],
     pydantic.Discriminator(discriminator_factory("type")),
 ]
+
+
+class TableRow(BaseModel):
+    number: TableRowNumber
+    result: TableResult
 
 
 class TableValidationException(Exception): ...
@@ -80,25 +83,29 @@ class Dice(BaseModel):
 class Table(BaseModel):
     dice: Dice
     title: str
-    table: list[TableOption]
+    rows: list[TableRow]
 
-    @pydantic.field_validator("table")
-    def enforce_continous_table_options(cls: "Table", table: list[TableOption]):
-        for val, next_val in list(pairwise(table)) + [(table[-1], None)]:
+    @pydantic.field_validator("rows")
+    def enforce_continous_table_options(cls: "Table", rows: list[TableRow]):
+        for val, next_val in list(pairwise(rows)) + [(rows[-1], None)]:
             next_val_int = None
             if next_val:
-                next_val_int = next_val.min_value if isinstance(next_val, TableRangeValueOption) else next_val.value
-            if isinstance(val, TableRangeValueOption):
-                if val.max_value <= val.min_value:
-                    raise TableValidationException("TableRangeValue Option must have a max_value > min_value")
+                next_val_int = (
+                    next_val.number.min_value
+                    if isinstance(next_val.number, TableRowRangeNumber)
+                    else next_val.number.value
+                )
+            if isinstance(val.number, TableRowRangeNumber):
+                if val.number.max_value <= val.number.min_value:
+                    raise TableValidationException("TableRowRangeNumber must have a max_value > min_value")
 
-                if next_val_int and val.max_value >= next_val_int:
-                    raise TableValidationException("TableOption values must be continuous")
+                if next_val_int and val.number.max_value >= next_val_int:
+                    raise TableValidationException("TableRow values must be continuous")
             else:
-                if next_val_int and val.value >= next_val_int:
+                if next_val_int and val.number.value >= next_val_int:
                     raise TableValidationException("TableOption values must be continuous")
 
-        return table
+        return rows
 
 
 class HeadersConfig(BaseModel):

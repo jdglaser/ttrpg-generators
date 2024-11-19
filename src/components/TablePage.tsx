@@ -41,12 +41,18 @@ export default function TablePage() {
     copyToClipboard(tableResultsHtml);
   }
 
+  function handleRefresh() {
+    const results = fetchResults();
+    setResults(results);
+  }
+
   useEffect(() => {
     fetchResults();
   }, []);
 
   useEffect(() => {
-    setResults({});
+    const results = fetchResults();
+    setResults(results);
   }, [category]);
 
   function fetchResults() {
@@ -56,7 +62,6 @@ export default function TablePage() {
         const result = rollOnTable(table);
         console.log(result);
         if (result.type === "rollAgain") {
-          console.log("HERE");
           acc[key] = (
             <li key={key}>
               <b>{table.title}</b>:
@@ -90,16 +95,14 @@ export default function TablePage() {
       },
       {} as Record<string, ReactNode>
     );
-    setResults((prev) => ({ ...prev, ...tableResults }));
+    return tableResults;
   }
-
-  console.log(results);
 
   return (
     <div>
       <h2>{categoryTitle}</h2>
       <div style={{ display: "flex", gap: "0.5rem" }}>
-        <button onClick={fetchResults}>Refresh</button>
+        <button onClick={handleRefresh}>Refresh</button>
         <button onClick={handleCopy}>Copy</button>
       </div>
       <div className="results">

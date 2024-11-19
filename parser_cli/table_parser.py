@@ -1,8 +1,9 @@
 import json
 import re
+from itertools import batched
 from typing import Optional
 
-from parser_cli.models import Dice, Table, TableOption, TableRangeValueOption, TableSingleValueOption
+from parser_cli.models import Dice, Table, TableRow, TableRowSingleNumber
 
 CHAR_REPLACEMENTS = char_replacements = [
     ("\u2018", "'"),
@@ -13,10 +14,73 @@ CHAR_REPLACEMENTS = char_replacements = [
 ]
 
 
-def _replace_chars(string: str):
+def replace_chars(string: str):
     for c, r in char_replacements:
         string = string.replace(c, r)
     return string
+
+
+def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[str] = None):
+    parsed_rows: list[TableRow] = []
+    for row in rows:
+        if row == "":
+            continue
+
+        if has_titles:
+            split_char = next(c for c in row if c in [".", ","])
+            first, second = row.split(split_char, 1)
+            matches = re.match(r"^(?P<result_match>\d+(-\d+)?) ((?P<result_title>.+))", first)
+            if not matches:
+                raise Exception(f"Problem parsing table row {row}")
+            match_dict = matches.groupdict() | {"result": second.strip()}
+        else:
+            matches = re.match(r"^(?P<result_match>\d+(-\d+)?) (?P<result>.+)$", row)
+            if not matches:
+                raise Exception(f"Problem parsing table row {row}")
+            match_dict = matches.groupdict()
+
+        result_match = match_dict["result_match"]
+        result = match_dict["result"]
+        result_title = match_dict.get("result_title")
+
+        description = None
+        if mapping:
+            lookup_key = result_title if result_title else result
+            parsed_mapping = _handle_mapping(mapping)
+            description = parsed_mapping[lookup_key]
+
+        result = (
+            json.loads(result)
+            if result.startswith("{")
+            else {"type": "text", "title": result_title, "longDescription": description, "value": result}
+        )
+        if "-" in result_match:
+            min_val, max_val = result_match.split("-")
+            max_val = 100 if max_val == "00" else max_val
+            min_val = 100 if min_val == "00" else min_val
+            table_row = TableRow.model_validate(
+                {
+                    "number": {
+                        "type": "range",
+                        "minValue": min_val,
+                        "maxValue": max_val,
+                    },
+                    "result": result,
+                }
+            )
+        else:
+            table_row = TableRow.model_validate(
+                {
+                    "number": {
+                        "type": "single",
+                        "value": result_match,
+                    },
+                    "result": result,
+                }
+            )
+
+        parsed_rows.append(table_row)
+    return parsed_rows
 
 
 def _handle_mapping(mapping: str):
@@ -41,7 +105,7 @@ def _handle_mapping(mapping: str):
 
 def parse_simple(table: str, mapping: Optional[str] = None, has_titles: bool = False, tag: bool = False):
     rows = [r for r in table.split("\n") if r != ""]
-    title_row = _replace_chars(rows[0])
+    title_row = rows[0]
     parsed_title = re.match(r"^(?P<num_dice>\d)?d(?P<dice_sides>\d+) (?P<title>.+)$", title_row)
     if not parsed_title:
         raise Exception(f"Problem parsing title row {title_row}")
@@ -62,59 +126,50 @@ def parse_simple(table: str, mapping: Optional[str] = None, has_titles: bool = F
         else:
             cleaned_rows[current_idx - 1] += f" {row}"
 
-    parsed_rows: list[TableOption] = []
-    for row in cleaned_rows:
-        if row == "":
-            continue
-
-        row = _replace_chars(row)
-
-        if has_titles:
-            split_char = next(c for c in row if c in [".", ","])
-            first, second = row.split(split_char, 1)
-            matches = re.match(r"^(?P<result_match>\d+(-\d+)?) ((?P<result_title>.+))", first)
-            if not matches:
-                raise Exception(f"Problem parsing table row {row}")
-            match_dict = matches.groupdict() | {"result": second.strip()}
-        else:
-            matches = re.match(r"^(?P<result_match>\d+(-\d+)?) (?P<result>.+)$", row)
-            if not matches:
-                raise Exception(f"Problem parsing table row {row}")
-            match_dict = matches.groupdict()
-
-        result_match = match_dict["result_match"]
-        result = match_dict["result"]
-        result_title = match_dict.get("result_title")
-
-        description = None
-        if mapping:
-            mapping = _replace_chars(mapping)
-            lookup_key = result_title if result_title else result
-            print(lookup_key)
-            parsed_mapping = _handle_mapping(mapping)
-            description = parsed_mapping[lookup_key]
-
-        result = (
-            json.loads(result)
-            if result.startswith("{")
-            else {"type": "text", "title": result_title, "longDescription": description, "value": result}
-        )
-        if "-" in result_match:
-            min_val, max_val = result_match.split("-")
-            max_val = 100 if max_val == "00" else max_val
-            min_val = 100 if min_val == "00" else min_val
-            option = TableRangeValueOption.model_validate(
-                {
-                    "type": "range",
-                    "minValue": min_val,
-                    "maxValue": max_val,
-                    "result": result,
-                }
-            )
-        else:
-            option = TableSingleValueOption.model_validate({"type": "single", "value": result_match, "result": result})
-
-        parsed_rows.append(option)
-    parsed_rows = sorted(parsed_rows, key=lambda r: r.value if isinstance(r, TableSingleValueOption) else r.min_value)
-    parsed_table = Table(dice=dice, title=title, table=parsed_rows)
+    parsed_rows = parse_rows(cleaned_rows, has_titles, mapping)
+    parsed_rows = sorted(
+        parsed_rows, key=lambda r: r.number.value if isinstance(r.number, TableRowSingleNumber) else r.number.min_value
+    )
+    parsed_table = Table(dice=dice, title=title, rows=parsed_rows)
     return parsed_table
+
+
+def parse_column(table: str):
+    rows = [r for r in table.split("\n") if r != ""]
+    header_row = rows[0]
+    headers = json.loads(header_row)
+    parsed_dice = re.match(r"(?P<num_dice>\d)?d(?P<dice_sides>\d+)", headers[0])
+    if not parsed_dice:
+        raise Exception(f"Problem parsing dice for {headers[0]}")
+    dice_sides = parsed_dice["dice_sides"]
+    dice = Dice.model_validate(
+        {"diceSides": 100 if dice_sides == "00" else dice_sides, "numDice": parsed_dice["num_dice"]}
+    )
+
+    cleaned_rows = []
+    current_idx = 0
+    for row in rows[1:]:
+        if row[0].isdigit():
+            cleaned_rows.append(row)
+            current_idx += 1
+        else:
+            cleaned_rows[current_idx - 1] += f" {row}"
+
+    columns = [[] for _ in headers[1:]]
+    for row in cleaned_rows:
+        cols_split = re.split(r" ([A-Z])", row, len(columns))
+        value = cols_split[0]
+        joined_cols = ["".join([a, b]) for a, b in batched(cols_split[1:], 2)]
+        for idx, v in enumerate(joined_cols):
+            columns[idx].append(f"{value} {v}")
+
+    parsed_tables: list[Table] = []
+    for idx, column in enumerate(columns):
+        parsed_rows = parse_rows(column)
+        parsed_rows = sorted(
+            parsed_rows,
+            key=lambda r: r.number.value if isinstance(r.number, TableRowSingleNumber) else r.number.min_value,
+        )
+        parsed_table = Table(dice=dice, title=headers[1:][idx], rows=parsed_rows)
+        parsed_tables.append(parsed_table)
+    return parsed_tables

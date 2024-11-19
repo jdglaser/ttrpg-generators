@@ -12,7 +12,10 @@ export default function Nav() {
   const tableRoutes = Object.keys(tables)
     .map((key) => {
       const link = (
-        <NavLink key={`/tables/${key}/`} to={`/tables/${key}/`}>
+        <NavLink
+          key={`/tables/${key}/`}
+          to={`/tables/${key}/`}
+          style={({ isActive }) => ({ color: isActive ? "purple" : "blue" })}>
           {dashToTitleCase(key)}
         </NavLink>
       );
@@ -27,8 +30,8 @@ export default function Nav() {
         borderRight: showNav ? "1px solid lightgrey" : "",
         minHeight: "100vh",
         minWidth: showNav ? "150px" : "0px",
-      }}
-    >
+        width: "max-content",
+      }}>
       <div
         style={{
           cursor: "pointer",
@@ -36,8 +39,7 @@ export default function Nav() {
           padding: "1rem",
         }}
         onClick={() => setShowNav((prev) => !prev)}
-        role="button"
-      >
+        role="button">
         {showNav ? (
           <img src={closeMenu} width="20px" height="20px" />
         ) : (
@@ -50,15 +52,13 @@ export default function Nav() {
           flexDirection: "column",
           gap: "0.5rem",
           padding: "1rem",
-        }}
-      >
+        }}>
         <NavLink
           to="/"
           style={({ isActive }) => ({
             color: isActive ? "purple" : "blue",
           })}
-          end
-        >
+          end>
           Home
         </NavLink>
         {tableRoutes}
