@@ -5,3 +5,4 @@ This is a simple CLI I created to make it easier to parse copy and pasted text f
 ## Local Setup
 
 TODO
+
