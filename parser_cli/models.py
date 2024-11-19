@@ -22,19 +22,31 @@ class BaseModel(pydantic.BaseModel):
     model_config = pydantic.ConfigDict(extra="forbid", frozen=True, alias_generator=to_camel)
 
 
+class Dice(BaseModel):
+    num_dice: int = 1
+    dice_sides: int
+
+    @field_validator("num_dice", mode="before")
+    def resolve_type_abbreviation(data: Any) -> Any:
+        if data is None:
+            return 1
+
+        return data
+
+
 class TableTextRowResult(BaseModel):
     type: Literal["text"]
     value: str
-    title: Optional[str] = None
     long_description: Optional[str] = None
 
 
 class TableRollAgainResult(BaseModel):
     type: Literal["rollAgain"]
+    amount: int
     value: str
     long_description: Optional[str] = None
-    amount: int
     concat: bool = False
+    new_dice: Optional[Dice] = None
 
 
 TableResult = Annotated[
@@ -66,18 +78,6 @@ class TableRow(BaseModel):
 
 
 class TableValidationException(Exception): ...
-
-
-class Dice(BaseModel):
-    num_dice: int = 1
-    dice_sides: int
-
-    @field_validator("num_dice", mode="before")
-    def resolve_type_abbreviation(data: Any) -> Any:
-        if data is None:
-            return 1
-
-        return data
 
 
 class Table(BaseModel):

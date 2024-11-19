@@ -9,7 +9,7 @@ export default function Root() {
   const [tables, setTables] = useState<Optional<Tables>>(null);
 
   useEffect(() => {
-    getData("table_ref").then((res) => {
+    getData("table_ref_v2").then((res) => {
       setTables(res);
     });
   }, []);
@@ -27,8 +27,7 @@ export default function Root() {
           flexDirection: "row",
           gap: "0.75rem",
           height: "100vh",
-        }}
-      >
+        }}>
         <div>
           <Nav />
         </div>
@@ -36,8 +35,7 @@ export default function Root() {
           style={{
             padding: "1rem 2rem",
             overflow: "auto",
-          }}
-        >
+          }}>
           <Outlet />
         </div>
       </div>

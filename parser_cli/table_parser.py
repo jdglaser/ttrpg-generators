@@ -40,8 +40,8 @@ def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[str]
             match_dict = matches.groupdict()
 
         result_match = match_dict["result_match"]
-        result = match_dict["result"]
         result_title = match_dict.get("result_title")
+        result = (f"{result_title}. " if result_title else "") + match_dict["result"]
 
         description = None
         if mapping:
@@ -52,7 +52,7 @@ def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[str]
         result = (
             json.loads(result)
             if result.startswith("{")
-            else {"type": "text", "title": result_title, "longDescription": description, "value": result}
+            else {"type": "text", "longDescription": description, "value": result}
         )
         if "-" in result_match:
             min_val, max_val = result_match.split("-")

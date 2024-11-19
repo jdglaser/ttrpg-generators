@@ -86,6 +86,8 @@ def clean_json():
                     new_row["number"] = {"type": "range", "minValue": row["minValue"], "maxValue": row["maxValue"]}
                 else:
                     new_row["number"] = {"type": "single", "value": row["value"]}
+                if "title" in row["result"]:
+                    row["result"].pop("title")
                 new_row["result"] = row["result"]
                 new_rows.append(new_row)
             new_table["rows"] = new_rows

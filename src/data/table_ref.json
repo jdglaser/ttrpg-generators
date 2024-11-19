@@ -4664,5 +4664,1549 @@
         }
       ]
     }
+  },
+  "history-construction": {
+    "how-did-they-originate": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 8
+      },
+      "title": "How Did They Originate?",
+      "table": [
+        {
+          "type": "single",
+          "value": 1,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Aboriginal peoples united in the area",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 2,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were refugees from a fallen land",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 3,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were exiles or losers of some civil strife",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 4,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were colonists who became independent",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 5,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were magically created or shaped here",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 6,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They all followed a faith or ideology here",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 7,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were a conquering army gone native",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 8,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They migrated here for profit or plunder",
+            "longDescription": null
+          }
+        }
+      ]
+    },
+    "what-became-of-the-original-inhabitants": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 10
+      },
+      "title": "What Became of the Original Inhabitants?",
+      "table": [
+        {
+          "type": "single",
+          "value": 1,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "There were no other humans living here",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 2,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were wiped out in warfare",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 3,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were utterly assimilated",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 4,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were driven into exile",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 5,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They became the ruling class",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 6,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They became an oppressed underclass",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 7,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were partially assimilated",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 8,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They retained small areas of self-rule",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 9,
+          "result": {
+            "type": "rollAgain",
+            "value": "Roll 1d8 twice; both happened",
+            "amount": 2,
+            "newDice": {
+              "numDice": 1,
+              "diceSides": 8
+            },
+            "concat": false
+          }
+        },
+        {
+          "type": "single",
+          "value": 10,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "No one can agree on what happened",
+            "longDescription": null
+          }
+        }
+      ]
+    },
+    "historical-crises": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 100
+      },
+      "title": "Historical Crises",
+      "table": [
+        {
+          "type": "range",
+          "minValue": 1,
+          "maxValue": 4,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Barbarian invasion",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 5,
+          "maxValue": 8,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Colonial incursion from a greater power",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 9,
+          "maxValue": 12,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Decadent society or a great social evil",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 13,
+          "maxValue": 16,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Divine wrath upon them",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 17,
+          "maxValue": 20,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Domineering neighbor",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 21,
+          "maxValue": 24,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Economic collapse",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 25,
+          "maxValue": 28,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Failed external war",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 29,
+          "maxValue": 32,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Ideological divide",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 33,
+          "maxValue": 36,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Incompetent governance",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 37,
+          "maxValue": 40,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Internal refugees from disaster",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 41,
+          "maxValue": 44,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Loss of cultural confidence",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 45,
+          "maxValue": 48,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Magical calamity",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 49,
+          "maxValue": 52,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Malevolent religion",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 53,
+          "maxValue": 56,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Miserable poverty",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 57,
+          "maxValue": 60,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Natural disasters",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 61,
+          "maxValue": 64,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Noble infighting",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 65,
+          "maxValue": 68,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Religious or ideological excess",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 69,
+          "maxValue": 72,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Resource exhaustion",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 73,
+          "maxValue": 76,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Scheming wizards",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 77,
+          "maxValue": 80,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Some titanic monster",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 81,
+          "maxValue": 84,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Tyrannical rule",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 85,
+          "maxValue": 88,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Unsuccessful expansion",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 89,
+          "maxValue": 92,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Usurpers seizing control",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 93,
+          "maxValue": 96,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Vicious civil warfare",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 97,
+          "maxValue": 100,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "War with a stronger power",
+            "longDescription": null
+          }
+        }
+      ]
+    },
+    "how-did-they-overcome-the-crisis": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 10
+      },
+      "title": "How Did They Overcome the Crisis?",
+      "table": [
+        {
+          "type": "single",
+          "value": 1,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "A brilliant and inspirational leader arose",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 2,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Organization and unity overcame the trouble",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 3,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Grim determination and enduring the evil",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 4,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Faith strengthened them against the woe",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 5,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Skillful use of magic resolved the problem",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 6,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Martial prowess and military cunning",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 7,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Diplomatic ties and outside help",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 8,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Industrious labor and tireless exertion",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 9,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Economic brilliance and trading acumen",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 10,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Ruthless but effective sacrifices were made",
+            "longDescription": null
+          }
+        }
+      ]
+    },
+    "what-was-great-about-its-peak": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 12
+      },
+      "title": "What Was Great About Its Peak?",
+      "table": [
+        {
+          "type": "single",
+          "value": 1,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "A terrible regional evil was driven back",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 2,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Academies were built that are still honored",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 3,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Ancient foes were united together",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 4,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Grand Workings were sorcerously raised",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 5,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "It controlled the trade of the entire region",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 6,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "It was hegemon over its weaker neighbors",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 7,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Its armies were fearsomely mighty",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 8,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Its culture was compelling to its neighbors",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 9,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Magnificent works of art were created",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 10,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Numerous legendary heroes arose",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 11,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "The populace was tremendously prosperous",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 12,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Wonderful works of architecture were built",
+            "longDescription": null
+          }
+        }
+      ]
+    },
+    "why-did-it-fail-at-the-final-crisis": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 12
+      },
+      "title": "Why Did It Fail At the Final Crisis?",
+      "table": [
+        {
+          "type": "single",
+          "value": 1,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Its people were too deeply divided",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 2,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Its leadership was hopelessly inept",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 3,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "The gods cursed it to ruin",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 4,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Decadence and self-absorption doomed it",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 5,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "It was vastly overconfident in its plans",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 6,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Its neighbors conspired to help ruin it",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 7,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "It was actually two crises, and it was too much",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 8,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "It was culturally exhausted and apathetic",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 9,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Some tried to take advantage of the crisis",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 10,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Its strengths were useless against the problem",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 11,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "The crisis was far too vast and overwhelming",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 12,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Some leaders were allied with the crisis",
+            "longDescription": null
+          }
+        }
+      ]
+    },
+    "what-became-of-the-unabsorbed-survivors": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 12
+      },
+      "title": "What Became of the Unabsorbed Survivors?",
+      "table": [
+        {
+          "type": "single",
+          "value": 1,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They fled for refuge to a neighboring nation",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 2,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They sought to hide in a dangerous wilderness",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 3,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were exterminated by bitter rivals",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 4,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They degenerated into savage remnants",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 5,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were enslaved by their enemies",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 6,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were magically transformed or twisted",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 7,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They were shattered into pockets of survivors",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 8,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They became a remnant shadow of themselves",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 9,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They forcibly migrated into a weaker land",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 10,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They formed the nucleus of a new culture",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 11,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "They split into several new, smaller groups",
+            "longDescription": null
+          }
+        },
+        {
+          "type": "single",
+          "value": 12,
+          "result": {
+            "type": "rollAgain",
+            "value": "Roll twice; the resultant groups hate each other",
+            "amount": 2,
+            "concat": false
+          }
+        }
+      ]
+    },
+    "historical-event": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 100
+      },
+      "title": "Historical Event",
+      "table": [
+        {
+          "type": "range",
+          "minValue": 1,
+          "maxValue": 2,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Battleground",
+            "longDescription": "The group's territory ended up as a battleground between two stronger rival powers, and they suffered bitterly for it."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 3,
+          "maxValue": 4,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Betrayal",
+            "longDescription": "Either they betrayed some trusting neighbor to a foe, or were betrayed in turn by such a false friend."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 5,
+          "maxValue": 6,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Brutal Oppression",
+            "longDescription": "Some portion of the group was reduced to a state of wretched subservience by the rest."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 7,
+          "maxValue": 8,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Class Struggle",
+            "longDescription": "Different classes were in conflict, either subtle or overt, all seeking their own gain."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 9,
+          "maxValue": 10,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Consequences",
+            "longDescription": "Pick an event of a prior age; it had longterm consequences that were good, for a bad event, or bad, for a good event."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 11,
+          "maxValue": 12,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Decadence",
+            "longDescription": "Old strengths and glories crumbled away into decadent remnants, the group becoming indolent and indulgent."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 13,
+          "maxValue": 14,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Depravity",
+            "longDescription": "Vile debauches, unclean habits, and base hungers became commonplace among the group."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 15,
+          "maxValue": 16,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Desolation",
+            "longDescription": "Some portion of the group's territory was rendered uninhabitable by something, either permanently or for a long time."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 17,
+          "maxValue": 18,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Diplomatic Coup",
+            "longDescription": "The group achieved an extremely successful alliance or affiliation with a neighboring group that may yet persist."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 19,
+          "maxValue": 20,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Economic Boom",
+            "longDescription": "Circumstances produced a burst of tremendous prosperity for them."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 21,
+          "maxValue": 22,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Enemies Within",
+            "longDescription": "A hostile sub-group inside the group worked to do it evil, perhaps on behalf of a neighbor or due to some old grudge."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 23,
+          "maxValue": 24,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Evil Wizard",
+            "longDescription": "A malevolent sorcerer, arcane cult, or other powerful magical entity caused a great deal of trouble for the group."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 25,
+          "maxValue": 26,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Exodus",
+            "longDescription": "A significant chunk of the group packed up and left for some supposedly-superior land."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 27,
+          "maxValue": 28,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Exquisite Art",
+            "longDescription": "The group produced art that is revered to this day, either in general or in a specific medium or form of literature."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 29,
+          "maxValue": 30,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "External War",
+            "longDescription": "The group faced a war with some external enemy or rival nation, with grave consequences."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 31,
+          "maxValue": 32,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Freakish Magic",
+            "longDescription": "A particular type of magic was developed here that is unknown elsewhere, and its practitioners keep its secrets well."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 33,
+          "maxValue": 34,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Golden Age",
+            "longDescription": "Everything went remarkably well for the group for an extended period of time, allowing prosperity and success."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 35,
+          "maxValue": 36,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Good Wizard",
+            "longDescription": "Some magic-using entity of great power protected the group, taught them magic, or otherwise assisted them."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 37,
+          "maxValue": 38,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Great Awakening",
+            "longDescription": "A tremendous wave of reform, purification, and re-commitment to venerable values swept through the group."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 39,
+          "maxValue": 40,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Great Builders",
+            "longDescription": "The group constructed a great many vast palaces, monuments, estates, or other structures of wide fame."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 41,
+          "maxValue": 42,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Great Infrastructure",
+            "longDescription": "Some tremendous work of infrastructure"
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 43,
+          "maxValue": 44,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Hero King",
+            "longDescription": "Some king or other ruler achieved legendary glory in war, diplomacy, or governance. Their name is honored even today."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 45,
+          "maxValue": 46,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Immigrants",
+            "longDescription": "A large group of foreigners entered the land more-or-less peacefully and may or may not have been welcomed."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 47,
+          "maxValue": 48,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Inefficient Rule",
+            "longDescription": "The group's governance was impractical, inefficient, or corrupt, holding to values that turned out to be unhelpful."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 49,
+          "maxValue": 50,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Internal War",
+            "longDescription": "A straight-up civil war was sparked in the group, one that involved all or many of its members."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 51,
+          "maxValue": 52,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Loss of Confidence",
+            "longDescription": "Some encounter with a new group or some shocking event made the group lose faith in its own customs and values."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 53,
+          "maxValue": 54,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Magical Disaster",
+            "longDescription": "Some large-scale magical disaster scarred the group, either natural in nature or the result of someone's sorcerous doings."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 55,
+          "maxValue": 56,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Magical Tech",
+            "longDescription": "The group developed a useful and widespread magical tech or infrastructure that may have survived into the present."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 57,
+          "maxValue": 58,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Natural Calamity",
+            "longDescription": "Earthquakes, multi-year droughts, tsunamis, meteor strikes, or some other ruins smote the group."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 59,
+          "maxValue": 60,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "New Horizons",
+            "longDescription": "The group discovered new territory, whether trans-dimensional, a far terrestrial region, underground realms, or the like."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 61,
+          "maxValue": 62,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "New Rulers",
+            "longDescription": "The group's former ruling dynasty was replaced, either peacefully, through intrigue, or perhaps through outright conquest."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 63,
+          "maxValue": 64,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Noble Function",
+            "longDescription": "Aside from the usual roles of nobles, their ruling class was all expected to fill some specific"
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 65,
+          "maxValue": 66,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Noble Strife",
+            "longDescription": "The group's nobility found itself embroiled in assassinations, petty wars, and mutual struggle."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 67,
+          "maxValue": 68,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Plague",
+            "longDescription": "A sickness of vast scope culled many of the group, and may yet linger in some form."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 69,
+          "maxValue": 70,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Poverty",
+            "longDescription": "Circumstances conspired to reduce the group to a state of great poverty and harsh simplicity for a time."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 71,
+          "maxValue": 72,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Power Brokers",
+            "longDescription": "The group was a critical regional power broker for a time, their aid or influence critical in determining who would be the hegemon."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 73,
+          "maxValue": 74,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Praetorian Coups",
+            "longDescription": "Soldiers or guardsmen in service to the ruler ended up becoming the ruler's electors or deposers."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 75,
+          "maxValue": 76,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Priest King",
+            "longDescription": "One or more religions became deeply intertwined with the legitimacy of the ruling class, priests becoming nobles and vice-versa."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 77,
+          "maxValue": 78,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Rare Resource",
+            "longDescription": "A uniquely valuable resource was found or manufactured by the group, which used or traded it to full effect."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 79,
+          "maxValue": 80,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Religious Fall",
+            "longDescription": "A once-honored religion collapsed, perhaps through divine displeasure, human corruption, or harsh suppression."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 81,
+          "maxValue": 82,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Religious Rise",
+            "longDescription": "A powerful new religion arose among the group."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 83,
+          "maxValue": 84,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Resource Collapse",
+            "longDescription": "Some critical resource ran short; water, arable land, timber, magical power, or the like."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 85,
+          "maxValue": 86,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Secession",
+            "longDescription": "A substantial portion of the group's territory tried to secede from the rest, successfully or otherwise."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 87,
+          "maxValue": 88,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Terrain Change",
+            "longDescription": "Some portion of the group's land slowly changed its basic ecosystem; plains to forest, desert to savanna, or the like."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 89,
+          "maxValue": 90,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Total Collapse",
+            "longDescription": "Whether due to war, civil strife, magical curses, or sheer decadence, the group's society collapsed into anarchistic chaos for a time."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 91,
+          "maxValue": 92,
+          "result": {
+            "type": "rollAgain",
+            "amount": 1,
+            "value": "Twist of Fate",
+            "longDescription": "Roll again; if the event was positive twist it to ultimately be a negative to the group, and vice-versa.",
+            "concat": false
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 93,
+          "maxValue": 94,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Urbanization",
+            "longDescription": "One or more urban sites became unusually heavily populated, growing vastly and having a wide net of supporting towns."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 95,
+          "maxValue": 96,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Weak Throne",
+            "longDescription": "The central government of the group became weak, and feudal lords or subsidiaries gained much effective independence."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 97,
+          "maxValue": 98,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Xenophilia",
+            "longDescription": "The group adopted many customs from their neighbors and many foreigners joined the group."
+          }
+        },
+        {
+          "type": "range",
+          "minValue": 99,
+          "maxValue": 100,
+          "result": {
+            "type": "text",
+            "title": null,
+            "value": "Xenophobia",
+            "longDescription": "The group conceived a strong distaste for foreign people and their customs, curtailing outside contact."
+          }
+        }
+      ]
+    }
   }
 }

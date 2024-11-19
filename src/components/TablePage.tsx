@@ -5,22 +5,19 @@ import { TableResult } from "../common/types";
 import { copyToClipboard, dashToTitleCase, rollOnTable } from "../common/utils";
 
 function ResultItem({ result }: { result: TableResult }) {
-  const title = result.title ? <b>{result.title}: </b> : null;
   const longDescription = result.longDescription ? (
     <span>{result.longDescription}</span>
   ) : null;
   let value = null;
   if (result.type === "text") {
-    value =
-      title && longDescription ? (
-        <span>, {result.value}. </span>
-      ) : (
-        <span>{result.value}</span>
-      );
+    value = longDescription ? (
+      <span>{result.value}. </span>
+    ) : (
+      <span>{result.value}</span>
+    );
   }
   return (
     <>
-      {title}
       {value}
       {longDescription}
     </>
