@@ -25,15 +25,28 @@ function DisplayValue({ result }: { result: TableResult }) {
 function StandardResultItem({
   rollOnTableResult,
   tableTitle = null,
+  refreshFunc = null,
 }: {
   rollOnTableResult: RollOnTableStandardResult;
   tableTitle?: Optional<string>;
+  refreshFunc?: Optional<() => void>;
 }) {
   const { result } = rollOnTableResult;
-
+  let tableTitleComponent = null;
+  if (tableTitle) {
+    if (refreshFunc) {
+      tableTitleComponent = (
+        <b style={{ cursor: "pointer" }} onClick={refreshFunc}>
+          {tableTitle}:{" "}
+        </b>
+      );
+    } else {
+      tableTitleComponent = <b>{tableTitle}: </b>;
+    }
+  }
   return (
     <li>
-      {tableTitle ? <b>{tableTitle}: </b> : null}
+      {tableTitleComponent}
       <DisplayValue result={result} />
     </li>
   );
@@ -42,16 +55,31 @@ function StandardResultItem({
 function RollAgainResultItem({
   rollOnTableResult,
   tableTitle = null,
+  refreshFunc = null,
 }: {
   rollOnTableResult: RollOnTableRollAgainResult;
   tableTitle?: Optional<string>;
+  refreshFunc?: Optional<() => void>;
 }) {
   const { result, rollAgainResults } = rollOnTableResult;
+
+  let tableTitleComponent = null;
+  if (tableTitle) {
+    if (refreshFunc) {
+      tableTitleComponent = (
+        <b style={{ cursor: "pointer" }} onClick={refreshFunc}>
+          {tableTitle}:{" "}
+        </b>
+      );
+    } else {
+      tableTitleComponent = <b>{tableTitle}: </b>;
+    }
+  }
 
   if (result.concat) {
     return (
       <li>
-        {tableTitle ? <b>{tableTitle}: </b> : null}
+        {tableTitleComponent}
         <DisplayValue result={result} />
         {rollAgainResults.map((r) => (
           <DisplayValue key={`${result.value}-${r.value}`} result={r} />
@@ -62,7 +90,7 @@ function RollAgainResultItem({
 
   return (
     <li>
-      {tableTitle ? <b>{tableTitle}: </b> : null}
+      {tableTitleComponent}
       <DisplayValue result={result} />
       <ul>
         {rollAgainResults.map((r) => (
@@ -89,9 +117,13 @@ export default function TablePage() {
     copyToClipboard(tableResultsHtml);
   }
 
-  function handleRefresh() {
-    const results = fetchResults();
-    setResults(results);
+  function handleRefresh(keys?: string[]) {
+    const results = fetchResults(keys);
+    if (!keys) {
+      setResults(results);
+    } else {
+      setResults((prev) => ({ ...prev, ...results }));
+    }
   }
 
   useEffect(() => {
@@ -117,6 +149,7 @@ export default function TablePage() {
           }
         }
         acc[key] = {
+          tableKey: key,
           table,
           results,
         };
@@ -124,8 +157,6 @@ export default function TablePage() {
       }, {} as Record<string, RollOnTableResult>);
     return tableResults;
   }
-
-  console.log(results);
 
   const resultComponents = Object.entries(results).map(
     ([key, rollOnTableResults]) => {
@@ -137,6 +168,7 @@ export default function TablePage() {
               key={key}
               rollOnTableResult={rollOnTableResult}
               tableTitle={rollOnTableResults.table.title}
+              refreshFunc={() => handleRefresh([rollOnTableResults.tableKey])}
             />
           );
         }
@@ -146,6 +178,7 @@ export default function TablePage() {
             key={key}
             rollOnTableResult={rollOnTableResult}
             tableTitle={rollOnTableResults.table.title}
+            refreshFunc={() => handleRefresh([rollOnTableResults.tableKey])}
           />
         );
       }
@@ -172,7 +205,11 @@ export default function TablePage() {
 
       return (
         <li key={rollOnTableResults.table.title}>
-          <b>{rollOnTableResults.table.title}</b>
+          <b
+            style={{ cursor: "pointer" }}
+            onClick={() => handleRefresh([rollOnTableResults.tableKey])}>
+            {rollOnTableResults.table.title}
+          </b>
           <ul>{rollOnTableResultComponents}</ul>
         </li>
       );
@@ -183,7 +220,7 @@ export default function TablePage() {
     <div>
       <h2>{categoryTitle}</h2>
       <div style={{ display: "flex", gap: "0.5rem" }}>
-        <button onClick={handleRefresh}>Refresh</button>
+        <button onClick={() => handleRefresh()}>Refresh</button>
         <button onClick={handleCopy}>Copy</button>
       </div>
       <div className="results">

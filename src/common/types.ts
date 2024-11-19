@@ -73,6 +73,7 @@ export type RollOnTableResultResult =
   | RollOnTableStandardResult;
 
 export interface RollOnTableResult {
+  tableKey: string;
   table: Table;
   results: RollOnTableResultResult[];
 }
