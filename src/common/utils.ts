@@ -1,6 +1,6 @@
 import {
   Dice,
-  RollOnTableResult,
+  RollOnTableResultResult,
   RollOnTableRollAgainResult,
   RollOnTableStandardResult,
   Table,
@@ -47,7 +47,7 @@ function getResultOnTable(table: Table, rollResult: number) {
   );
 }
 
-export function rollOnTable(table: Table): RollOnTableResult {
+export function rollOnTable(table: Table): RollOnTableResultResult {
   const rollResult = rollDice(table.dice);
   const tableRow = getResultOnTable(table, rollResult);
   const tableRowResult = tableRow.result;

@@ -68,6 +68,11 @@ export interface RollOnTableStandardResult {
   result: TableTextResult;
 }
 
-export type RollOnTableResult =
+export type RollOnTableResultResult =
   | RollOnTableRollAgainResult
   | RollOnTableStandardResult;
+
+export interface RollOnTableResult {
+  table: Table;
+  results: RollOnTableResultResult[];
+}
