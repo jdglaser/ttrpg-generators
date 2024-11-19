@@ -70,14 +70,18 @@ def parse_simple(table: str, mapping: Optional[str] = None, has_titles: bool = F
         row = _replace_chars(row)
 
         if has_titles:
-            matches = re.match(r"^(?P<result_match>\d+(-\d+)?) ((?P<result_title>.+)[.,] )?(?P<result>.+)$", row)
+            split_char = next(c for c in row if c in [".", ","])
+            first, second = row.split(split_char, 1)
+            matches = re.match(r"^(?P<result_match>\d+(-\d+)?) ((?P<result_title>.+))", first)
+            if not matches:
+                raise Exception(f"Problem parsing table row {row}")
+            match_dict = matches.groupdict() | {"result": second.strip()}
         else:
             matches = re.match(r"^(?P<result_match>\d+(-\d+)?) (?P<result>.+)$", row)
+            if not matches:
+                raise Exception(f"Problem parsing table row {row}")
+            match_dict = matches.groupdict()
 
-        if not matches:
-            raise Exception(f"Problem parsing table row {row}")
-
-        match_dict = matches.groupdict()
         result_match = match_dict["result_match"]
         result = match_dict["result"]
         result_title = match_dict.get("result_title")

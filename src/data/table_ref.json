@@ -13,7 +13,8 @@
           "result": {
             "type": "text",
             "title": "Ancient farmland",
-            "result": "A huge stretch of land was re-engineered for optimal farming."
+            "value": "A huge stretch of land was re-engineered for optimal farming.",
+            "longDescription": null
           }
         },
         {
@@ -22,7 +23,8 @@
           "result": {
             "type": "text",
             "title": "Arratu wasteland",
-            "result": "An area here was once xenoformed by the Outsiders into an environment hostile to humanity or one inhabited by dangerous alien lifeforms."
+            "value": "An area here was once xenoformed by the Outsiders into an environment hostile to humanity or one inhabited by dangerous alien lifeforms.",
+            "longDescription": null
           }
         },
         {
@@ -30,8 +32,9 @@
           "value": 3,
           "result": {
             "type": "text",
-            "title": "Blasted lands. Radioactive or scorched over by ancient war",
-            "result": "Many ruins are likely."
+            "title": "Blasted lands",
+            "value": "Radioactive or scorched over by ancient war. Many ruins are likely.",
+            "longDescription": null
           }
         },
         {
@@ -39,8 +42,9 @@
           "value": 4,
           "result": {
             "type": "text",
-            "title": "Canyons. A region with extensive canyons cut by rivers present or long-vanished",
-            "result": "Make sure the rivers don't climb after leaving them."
+            "title": "Canyons",
+            "value": "A region with extensive canyons cut by rivers present or long-vanished. Make sure the rivers don't climb after leaving them.",
+            "longDescription": null
           }
         },
         {
@@ -49,7 +53,8 @@
           "result": {
             "type": "text",
             "title": "Dense forest",
-            "result": "Trackless, dark, and an effective natural barrier."
+            "value": "Trackless, dark, and an effective natural barrier.",
+            "longDescription": null
           }
         },
         {
@@ -58,7 +63,8 @@
           "result": {
             "type": "text",
             "title": "Grasslands",
-            "result": "A broad sweep of savanna or grassy plains is a coherent whole here."
+            "value": "A broad sweep of savanna or grassy plains is a coherent whole here.",
+            "longDescription": null
           }
         },
         {
@@ -67,7 +73,8 @@
           "result": {
             "type": "text",
             "title": "Islands",
-            "result": "There's a single significant island off the coast or an archipelago of some note."
+            "value": "There's a single significant island off the coast or an archipelago of some note.",
+            "longDescription": null
           }
         },
         {
@@ -75,8 +82,9 @@
           "value": 8,
           "result": {
             "type": "text",
-            "title": "Jagged mountains. A new or resharpened mountain range forms a barrier in the region",
-            "result": "The mountains are young, tall, and likely cast a substantial rain shadow."
+            "title": "Jagged mountains",
+            "value": "A new or resharpened mountain range forms a barrier in the region. The mountains are young, tall, and likely cast a substantial rain shadow.",
+            "longDescription": null
           }
         },
         {
@@ -85,7 +93,8 @@
           "result": {
             "type": "text",
             "title": "Jungle",
-            "result": "A classic adventure-worthy jungle of wild, semi-alien flora and fauna."
+            "value": "A classic adventure-worthy jungle of wild, semi-alien flora and fauna.",
+            "longDescription": null
           }
         },
         {
@@ -94,7 +103,8 @@
           "result": {
             "type": "text",
             "title": "Light forest",
-            "result": "Interspersed with other terrain."
+            "value": "Interspersed with other terrain.",
+            "longDescription": null
           }
         },
         {
@@ -103,7 +113,8 @@
           "result": {
             "type": "text",
             "title": "Megaplex",
-            "result": "The ruins of a single huge ancient structure stretch for endless miles."
+            "value": "The ruins of a single huge ancient structure stretch for endless miles.",
+            "longDescription": null
           }
         },
         {
@@ -112,7 +123,8 @@
           "result": {
             "type": "text",
             "title": "Pit",
-            "result": "A Deep or some other underground megastructure collapsed and left a hole with a diameter measured in tens of miles."
+            "value": "A Deep or some other underground megastructure collapsed and left a hole with a diameter measured in tens of miles.",
+            "longDescription": null
           }
         },
         {
@@ -121,7 +133,8 @@
           "result": {
             "type": "text",
             "title": "Rain forest",
-            "result": "Vast, damp, and green."
+            "value": "Vast, damp, and green.",
+            "longDescription": null
           }
         },
         {
@@ -129,8 +142,9 @@
           "value": 14,
           "result": {
             "type": "text",
-            "title": "Rocky hills. Rough and stony, with little arable land",
-            "result": "Herding and raiding are the most profitable employments here."
+            "title": "Rocky hills",
+            "value": "Rough and stony, with little arable land. Herding and raiding are the most profitable employments here.",
+            "longDescription": null
           }
         },
         {
@@ -139,7 +153,8 @@
           "result": {
             "type": "text",
             "title": "Rolling hills",
-            "result": "A stretch of gently rolling hills makes for good agricultural land."
+            "value": "A stretch of gently rolling hills makes for good agricultural land.",
+            "longDescription": null
           }
         },
         {
@@ -147,8 +162,9 @@
           "value": 16,
           "result": {
             "type": "text",
-            "title": "Sand desert. This desert is a waste of sand and dunes",
-            "result": "It may be from a rain shadow, or it might be a legacy of ancient war."
+            "title": "Sand desert",
+            "value": "This desert is a waste of sand and dunes. It may be from a rain shadow, or it might be a legacy of ancient war.",
+            "longDescription": null
           }
         },
         {
@@ -156,8 +172,9 @@
           "value": 17,
           "result": {
             "type": "text",
-            "title": "Scrub desert. These often appear on the leeward side of mountain ranges",
-            "result": "Borders will often be grasslands or savanna."
+            "title": "Scrub desert",
+            "value": "These often appear on the leeward side of mountain ranges. Borders will often be grasslands or savanna.",
+            "longDescription": null
           }
         },
         {
@@ -166,7 +183,8 @@
           "result": {
             "type": "text",
             "title": "Swamp",
-            "result": "A sinking river, lake margin, or wet coastal delta forms a vast bog in this flat land."
+            "value": "A sinking river, lake margin, or wet coastal delta forms a vast bog in this flat land.",
+            "longDescription": null
           }
         },
         {
@@ -174,8 +192,9 @@
           "value": 19,
           "result": {
             "type": "text",
-            "title": "Volcano. One or more mountains in a nearby range are volcanically active",
-            "result": "This may be natural or it may be a consequence of Legacy flux or ancient manipulation."
+            "title": "Volcano",
+            "value": "One or more mountains in a nearby range are volcanically active. This may be natural or it may be a consequence of Legacy flux or ancient manipulation.",
+            "longDescription": null
           }
         },
         {
@@ -183,8 +202,9 @@
           "value": 20,
           "result": {
             "type": "text",
-            "title": "Weathered mountains. A significant skirt of hills is common",
-            "result": "The rain shadow is likely limited due to the rounded, low mountains."
+            "title": "Weathered mountains",
+            "value": "A significant skirt of hills is common. The rain shadow is likely limited due to the rounded, low mountains.",
+            "longDescription": null
           }
         }
       ]
@@ -201,7 +221,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "A rare and precious resource is found there"
+            "value": "A rare and precious resource is found there"
           }
         },
         {
@@ -209,7 +229,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "Ancient sites and relics are common there"
+            "value": "Ancient sites and relics are common there"
           }
         },
         {
@@ -217,7 +237,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "It's sacred land to a group or religion"
+            "value": "It's sacred land to a group or religion"
           }
         },
         {
@@ -225,7 +245,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "Controlling it has military significance"
+            "value": "Controlling it has military significance"
           }
         },
         {
@@ -233,7 +253,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "It has substantial productive infrastructure"
+            "value": "It has substantial productive infrastructure"
           }
         },
         {
@@ -241,7 +261,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "A major trade route goes through it"
+            "value": "A major trade route goes through it"
           }
         },
         {
@@ -249,7 +269,7 @@
           "value": 7,
           "result": {
             "type": "text",
-            "result": "Uncontrolled, it's a nest of raiders and worse"
+            "value": "Uncontrolled, it's a nest of raiders and worse"
           }
         },
         {
@@ -257,7 +277,7 @@
           "value": 8,
           "result": {
             "type": "text",
-            "result": "A mighty Working is still functioning there"
+            "value": "A mighty Working is still functioning there"
           }
         }
       ]
@@ -274,7 +294,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "Safer than usual for someplace like it"
+            "value": "Safer than usual for someplace like it"
           }
         },
         {
@@ -282,7 +302,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "There's one notable kind of danger there"
+            "value": "There's one notable kind of danger there"
           }
         },
         {
@@ -290,7 +310,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "It's got some site-specific flavors of peril"
+            "value": "It's got some site-specific flavors of peril"
           }
         },
         {
@@ -298,7 +318,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "It's unusually dangerous in several ways"
+            "value": "It's unusually dangerous in several ways"
           }
         },
         {
@@ -306,7 +326,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "It will quickly kill the unprepared or unwary"
+            "value": "It will quickly kill the unprepared or unwary"
           }
         },
         {
@@ -314,7 +334,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "It's a death zone for all but the strongest"
+            "value": "It's a death zone for all but the strongest"
           }
         }
       ]
@@ -331,7 +351,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "Almost unpopulated for something like it"
+            "value": "Almost unpopulated for something like it"
           }
         },
         {
@@ -339,7 +359,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "Very few settlers or workers there"
+            "value": "Very few settlers or workers there"
           }
         },
         {
@@ -347,7 +367,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "Average or more population density"
+            "value": "Average or more population density"
           }
         },
         {
@@ -355,7 +375,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "A rush of people have gone there"
+            "value": "A rush of people have gone there"
           }
         }
       ]
@@ -372,7 +392,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "A significant battle was fought there"
+            "value": "A significant battle was fought there"
           }
         },
         {
@@ -380,7 +400,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "A mad prophet tried to start a faith there"
+            "value": "A mad prophet tried to start a faith there"
           }
         },
         {
@@ -388,7 +408,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "A usurper and supporters fled into it"
+            "value": "A usurper and supporters fled into it"
           }
         },
         {
@@ -396,7 +416,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "A resource strike drew numerous people"
+            "value": "A resource strike drew numerous people"
           }
         },
         {
@@ -404,7 +424,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "A major nest of bandits or raiders formed"
+            "value": "A major nest of bandits or raiders formed"
           }
         },
         {
@@ -412,7 +432,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "A rich ancient ruin was discovered there"
+            "value": "A rich ancient ruin was discovered there"
           }
         },
         {
@@ -420,7 +440,7 @@
           "value": 7,
           "result": {
             "type": "text",
-            "result": "An uncanny plague erupted in the area"
+            "value": "An uncanny plague erupted in the area"
           }
         },
         {
@@ -428,7 +448,7 @@
           "value": 8,
           "result": {
             "type": "text",
-            "result": "Some grim and terrible thing was awoken"
+            "value": "Some grim and terrible thing was awoken"
           }
         },
         {
@@ -436,7 +456,7 @@
           "value": 9,
           "result": {
             "type": "text",
-            "result": "A community of outcasts or marginals formed"
+            "value": "A community of outcasts or marginals formed"
           }
         },
         {
@@ -444,7 +464,7 @@
           "value": 10,
           "result": {
             "type": "text",
-            "result": "A natural or uncanny disaster struck there"
+            "value": "A natural or uncanny disaster struck there"
           }
         }
       ]
@@ -461,7 +481,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "Violent secessionist rebels"
+            "value": "Violent secessionist rebels"
           }
         },
         {
@@ -469,7 +489,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "Angry cultists of a local faith"
+            "value": "Angry cultists of a local faith"
           }
         },
         {
@@ -477,7 +497,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "Locals who resent interloping outsiders"
+            "value": "Locals who resent interloping outsiders"
           }
         },
         {
@@ -485,7 +505,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "A type of cunning, dangerous beast"
+            "value": "A type of cunning, dangerous beast"
           }
         },
         {
@@ -493,7 +513,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "Relic-creatures of ancient settlements"
+            "value": "Relic-creatures of ancient settlements"
           }
         },
         {
@@ -501,7 +521,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "Elemental emanations of the disordered land"
+            "value": "Elemental emanations of the disordered land"
           }
         },
         {
@@ -509,7 +529,7 @@
           "value": 7,
           "result": {
             "type": "text",
-            "result": "A hostile sentient monster civilization"
+            "value": "A hostile sentient monster civilization"
           }
         },
         {
@@ -517,7 +537,7 @@
           "value": 8,
           "result": {
             "type": "text",
-            "result": "Brutal envoys of the central government"
+            "value": "Brutal envoys of the central government"
           }
         },
         {
@@ -525,7 +545,7 @@
           "value": 9,
           "result": {
             "type": "text",
-            "result": "Raiders and bandits driven into the area"
+            "value": "Raiders and bandits driven into the area"
           }
         },
         {
@@ -533,7 +553,7 @@
           "value": 10,
           "result": {
             "type": "text",
-            "result": "Rapacious local lords and gang bosses"
+            "value": "Rapacious local lords and gang bosses"
           }
         },
         {
@@ -541,7 +561,7 @@
           "value": 11,
           "result": {
             "type": "text",
-            "result": "Remnants of a furious native population"
+            "value": "Remnants of a furious native population"
           }
         },
         {
@@ -549,7 +569,7 @@
           "value": 12,
           "result": {
             "type": "text",
-            "result": "Outsider remnants with a bitter grudge"
+            "value": "Outsider remnants with a bitter grudge"
           }
         }
       ]
@@ -566,7 +586,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "It has significant magical structures in it"
+            "value": "It has significant magical structures in it"
           }
         },
         {
@@ -574,7 +594,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "It has a place in the national origin legend"
+            "value": "It has a place in the national origin legend"
           }
         },
         {
@@ -582,7 +602,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "It is entirely man-made by ancient arts"
+            "value": "It is entirely man-made by ancient arts"
           }
         },
         {
@@ -590,7 +610,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "Time and space sometimes slip there"
+            "value": "Time and space sometimes slip there"
           }
         },
         {
@@ -598,7 +618,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "The magical power there attracts wizards"
+            "value": "The magical power there attracts wizards"
           }
         },
         {
@@ -606,7 +626,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "It subtly changes those who live there"
+            "value": "It subtly changes those who live there"
           }
         },
         {
@@ -614,7 +634,7 @@
           "value": 7,
           "result": {
             "type": "text",
-            "result": "It's holy land to a particular faith"
+            "value": "It's holy land to a particular faith"
           }
         },
         {
@@ -622,7 +642,7 @@
           "value": 8,
           "result": {
             "type": "text",
-            "result": "It was formerly a different kind of terrain"
+            "value": "It was formerly a different kind of terrain"
           }
         },
         {
@@ -630,7 +650,7 @@
           "value": 9,
           "result": {
             "type": "text",
-            "result": "It has human-worked vistas of beauty"
+            "value": "It has human-worked vistas of beauty"
           }
         },
         {
@@ -638,7 +658,7 @@
           "value": 10,
           "result": {
             "type": "text",
-            "result": "It was formerly an Outsider stronghold"
+            "value": "It was formerly an Outsider stronghold"
           }
         },
         {
@@ -646,7 +666,7 @@
           "value": 11,
           "result": {
             "type": "text",
-            "result": "A significant part of it is subterranean"
+            "value": "A significant part of it is subterranean"
           }
         },
         {
@@ -654,7 +674,7 @@
           "value": 12,
           "result": {
             "type": "text",
-            "result": "It'd expand were it not for ancient wards"
+            "value": "It'd expand were it not for ancient wards"
           }
         },
         {
@@ -662,7 +682,7 @@
           "value": 13,
           "result": {
             "type": "text",
-            "result": "It was a nature preserve of a megastructure"
+            "value": "It was a nature preserve of a megastructure"
           }
         },
         {
@@ -670,7 +690,7 @@
           "value": 14,
           "result": {
             "type": "text",
-            "result": "It's maintained by an ancient artificial mind"
+            "value": "It's maintained by an ancient artificial mind"
           }
         },
         {
@@ -678,7 +698,7 @@
           "value": 15,
           "result": {
             "type": "text",
-            "result": "Magic is somehow warped in its area"
+            "value": "Magic is somehow warped in its area"
           }
         },
         {
@@ -686,7 +706,7 @@
           "value": 16,
           "result": {
             "type": "text",
-            "result": "The flora and fauna are queasily \"off\""
+            "value": "The flora and fauna are queasily \"off\""
           }
         },
         {
@@ -694,7 +714,7 @@
           "value": 17,
           "result": {
             "type": "text",
-            "result": "The locals once populated it more heavily"
+            "value": "The locals once populated it more heavily"
           }
         },
         {
@@ -702,7 +722,7 @@
           "value": 18,
           "result": {
             "type": "text",
-            "result": "Rulership of the feature is widely disputed"
+            "value": "Rulership of the feature is widely disputed"
           }
         },
         {
@@ -710,7 +730,7 @@
           "value": 19,
           "result": {
             "type": "text",
-            "result": "It's riddled with caves and delvings"
+            "value": "It's riddled with caves and delvings"
           }
         },
         {
@@ -718,7 +738,7 @@
           "value": 20,
           "result": {
             "type": "text",
-            "result": "A unique type of sentient lives there"
+            "value": "A unique type of sentient lives there"
           }
         }
       ]
@@ -737,7 +757,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "Raiders are taking refuge in their lands"
+            "value": "Raiders are taking refuge in their lands"
           }
         },
         {
@@ -745,7 +765,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "Ownership of a resource site is disputed"
+            "value": "Ownership of a resource site is disputed"
           }
         },
         {
@@ -753,7 +773,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "A usurper or criminal is being sheltered there"
+            "value": "A usurper or criminal is being sheltered there"
           }
         },
         {
@@ -761,7 +781,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "A troublemaking religion is based there"
+            "value": "A troublemaking religion is based there"
           }
         },
         {
@@ -769,7 +789,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "Their rulers have a political claim on the throne"
+            "value": "Their rulers have a political claim on the throne"
           }
         },
         {
@@ -777,7 +797,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "A diplomatic marriage is going sour"
+            "value": "A diplomatic marriage is going sour"
           }
         },
         {
@@ -785,7 +805,7 @@
           "value": 7,
           "result": {
             "type": "text",
-            "result": "A past war's savagery has left deep scars"
+            "value": "A past war's savagery has left deep scars"
           }
         },
         {
@@ -793,7 +813,7 @@
           "value": 8,
           "result": {
             "type": "text",
-            "result": "Their culture is supplanting local beliefs"
+            "value": "Their culture is supplanting local beliefs"
           }
         },
         {
@@ -801,7 +821,7 @@
           "value": 9,
           "result": {
             "type": "text",
-            "result": "Their immigrants are gaining great influence"
+            "value": "Their immigrants are gaining great influence"
           }
         },
         {
@@ -809,7 +829,7 @@
           "value": 10,
           "result": {
             "type": "text",
-            "result": "They broke off an alliance or important pact"
+            "value": "They broke off an alliance or important pact"
           }
         },
         {
@@ -817,7 +837,7 @@
           "value": 11,
           "result": {
             "type": "text",
-            "result": "They lured away an academy or great temple"
+            "value": "They lured away an academy or great temple"
           }
         },
         {
@@ -825,7 +845,7 @@
           "value": 12,
           "result": {
             "type": "text",
-            "result": "Border tariffs and taxes are blocking trade"
+            "value": "Border tariffs and taxes are blocking trade"
           }
         },
         {
@@ -833,7 +853,7 @@
           "value": 13,
           "result": {
             "type": "text",
-            "result": "They drove a terrible beast into this land"
+            "value": "They drove a terrible beast into this land"
           }
         },
         {
@@ -841,7 +861,7 @@
           "value": 14,
           "result": {
             "type": "text",
-            "result": "A Working of theirs caused problems here"
+            "value": "A Working of theirs caused problems here"
           }
         },
         {
@@ -849,7 +869,7 @@
           "value": 15,
           "result": {
             "type": "text",
-            "result": "They woke up a great peril from the past"
+            "value": "They woke up a great peril from the past"
           }
         },
         {
@@ -857,7 +877,7 @@
           "value": 16,
           "result": {
             "type": "text",
-            "result": "They're cooperating with an enemy group"
+            "value": "They're cooperating with an enemy group"
           }
         },
         {
@@ -865,7 +885,7 @@
           "value": 17,
           "result": {
             "type": "text",
-            "result": "They're suspected of backing assassinations"
+            "value": "They're suspected of backing assassinations"
           }
         },
         {
@@ -873,7 +893,7 @@
           "value": 18,
           "result": {
             "type": "text",
-            "result": "A spy ring is suspected or has been found"
+            "value": "A spy ring is suspected or has been found"
           }
         },
         {
@@ -881,7 +901,7 @@
           "value": 19,
           "result": {
             "type": "text",
-            "result": "They refused to give aid for some current need"
+            "value": "They refused to give aid for some current need"
           }
         },
         {
@@ -889,7 +909,7 @@
           "value": 20,
           "result": {
             "type": "text",
-            "result": "They've been hostile to an allied group"
+            "value": "They've been hostile to an allied group"
           }
         }
       ]
@@ -906,7 +926,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "The ruling classes are related in some way"
+            "value": "The ruling classes are related in some way"
           }
         },
         {
@@ -914,7 +934,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "An important faith crosses the border"
+            "value": "An important faith crosses the border"
           }
         },
         {
@@ -922,7 +942,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "They fought by our side sometime in the past"
+            "value": "They fought by our side sometime in the past"
           }
         },
         {
@@ -930,7 +950,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "Their culture is widely admired here"
+            "value": "Their culture is widely admired here"
           }
         },
         {
@@ -938,7 +958,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "They helped to overcome an eldritch peril"
+            "value": "They helped to overcome an eldritch peril"
           }
         },
         {
@@ -946,7 +966,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "They held back an enemy from our border"
+            "value": "They held back an enemy from our border"
           }
         },
         {
@@ -954,7 +974,7 @@
           "value": 7,
           "result": {
             "type": "text",
-            "result": "They are co-ethnics of the same origins"
+            "value": "They are co-ethnics of the same origins"
           }
         },
         {
@@ -962,7 +982,7 @@
           "value": 8,
           "result": {
             "type": "text",
-            "result": "They provide critical trade relations"
+            "value": "They provide critical trade relations"
           }
         },
         {
@@ -970,7 +990,7 @@
           "value": 9,
           "result": {
             "type": "text",
-            "result": "Sages and scholars came from there"
+            "value": "Sages and scholars came from there"
           }
         },
         {
@@ -978,7 +998,7 @@
           "value": 10,
           "result": {
             "type": "text",
-            "result": "They gave critical aid during a disaster"
+            "value": "They gave critical aid during a disaster"
           }
         },
         {
@@ -986,7 +1006,7 @@
           "value": 11,
           "result": {
             "type": "text",
-            "result": "A hero of this land came originally from there"
+            "value": "A hero of this land came originally from there"
           }
         },
         {
@@ -994,7 +1014,7 @@
           "value": 12,
           "result": {
             "type": "text",
-            "result": "A past hero-king once ruled both lands"
+            "value": "A past hero-king once ruled both lands"
           }
         },
         {
@@ -1002,7 +1022,7 @@
           "value": 13,
           "result": {
             "type": "text",
-            "result": "They produce some vital commodity"
+            "value": "They produce some vital commodity"
           }
         },
         {
@@ -1010,7 +1030,7 @@
           "value": 14,
           "result": {
             "type": "text",
-            "result": "They have a shared enemy"
+            "value": "They have a shared enemy"
           }
         },
         {
@@ -1018,7 +1038,7 @@
           "value": 15,
           "result": {
             "type": "text",
-            "result": "A Working they have is helpful here, too"
+            "value": "A Working they have is helpful here, too"
           }
         },
         {
@@ -1026,7 +1046,7 @@
           "value": 16,
           "result": {
             "type": "text",
-            "result": "A long-standing alliance or trade pact exists"
+            "value": "A long-standing alliance or trade pact exists"
           }
         },
         {
@@ -1034,7 +1054,7 @@
           "value": 17,
           "result": {
             "type": "text",
-            "result": "They recently conceded some disputed land"
+            "value": "They recently conceded some disputed land"
           }
         },
         {
@@ -1042,7 +1062,7 @@
           "value": 18,
           "result": {
             "type": "text",
-            "result": "They greatly admire elements of this culture"
+            "value": "They greatly admire elements of this culture"
           }
         },
         {
@@ -1050,7 +1070,7 @@
           "value": 19,
           "result": {
             "type": "text",
-            "result": "They're considered unusually attractive here"
+            "value": "They're considered unusually attractive here"
           }
         },
         {
@@ -1058,7 +1078,7 @@
           "value": 20,
           "result": {
             "type": "text",
-            "result": "They took in refugees from here at one point"
+            "value": "They took in refugees from here at one point"
           }
         }
       ]
@@ -1075,7 +1095,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "Farmland is becoming worn-out and depleted"
+            "value": "Farmland is becoming worn-out and depleted"
           }
         },
         {
@@ -1083,7 +1103,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "Verminous monsters are swarming"
+            "value": "Verminous monsters are swarming"
           }
         },
         {
@@ -1091,7 +1111,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "A rebel front is stirring up trouble"
+            "value": "A rebel front is stirring up trouble"
           }
         },
         {
@@ -1099,7 +1119,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "An outside power is backing internal strife"
+            "value": "An outside power is backing internal strife"
           }
         },
         {
@@ -1107,7 +1127,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "The leadership is inept and distracted"
+            "value": "The leadership is inept and distracted"
           }
         },
         {
@@ -1115,7 +1135,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "A religious reformer is breaking old compacts"
+            "value": "A religious reformer is breaking old compacts"
           }
         },
         {
@@ -1123,7 +1143,7 @@
           "value": 7,
           "result": {
             "type": "text",
-            "result": "An evil is provoking outraged rioting"
+            "value": "An evil is provoking outraged rioting"
           }
         },
         {
@@ -1131,7 +1151,7 @@
           "value": 8,
           "result": {
             "type": "text",
-            "result": "Dark cults are attracting the ambitious"
+            "value": "Dark cults are attracting the ambitious"
           }
         },
         {
@@ -1139,7 +1159,7 @@
           "value": 9,
           "result": {
             "type": "text",
-            "result": "A Blighted horde is threatening the borders"
+            "value": "A Blighted horde is threatening the borders"
           }
         },
         {
@@ -1147,7 +1167,7 @@
           "value": 10,
           "result": {
             "type": "text",
-            "result": "An ancient ruin has disgorged some peril"
+            "value": "An ancient ruin has disgorged some peril"
           }
         },
         {
@@ -1155,7 +1175,7 @@
           "value": 11,
           "result": {
             "type": "text",
-            "result": "Malcontents have obtained a potent artifact"
+            "value": "Malcontents have obtained a potent artifact"
           }
         },
         {
@@ -1163,7 +1183,7 @@
           "value": 12,
           "result": {
             "type": "text",
-            "result": "Luxuriance has left the nation's coffers bare"
+            "value": "Luxuriance has left the nation's coffers bare"
           }
         },
         {
@@ -1171,7 +1191,7 @@
           "value": 13,
           "result": {
             "type": "text",
-            "result": "Local aristocrats are pushing for independence"
+            "value": "Local aristocrats are pushing for independence"
           }
         },
         {
@@ -1179,7 +1199,7 @@
           "value": 14,
           "result": {
             "type": "text",
-            "result": "An important mine has run out or been harmed"
+            "value": "An important mine has run out or been harmed"
           }
         },
         {
@@ -1187,7 +1207,7 @@
           "value": 15,
           "result": {
             "type": "text",
-            "result": "A sinister favorite has infatuated the leader"
+            "value": "A sinister favorite has infatuated the leader"
           }
         },
         {
@@ -1195,7 +1215,7 @@
           "value": 16,
           "result": {
             "type": "text",
-            "result": "A recurring plant plague is causing hunger"
+            "value": "A recurring plant plague is causing hunger"
           }
         },
         {
@@ -1203,7 +1223,7 @@
           "value": 17,
           "result": {
             "type": "text",
-            "result": "Fearsome monsters are migrating into the land"
+            "value": "Fearsome monsters are migrating into the land"
           }
         },
         {
@@ -1211,7 +1231,7 @@
           "value": 18,
           "result": {
             "type": "text",
-            "result": "A rival is preparing for war or raiding"
+            "value": "A rival is preparing for war or raiding"
           }
         },
         {
@@ -1219,7 +1239,7 @@
           "value": 19,
           "result": {
             "type": "text",
-            "result": "A grand national plan is exhausting the people"
+            "value": "A grand national plan is exhausting the people"
           }
         },
         {
@@ -1227,7 +1247,7 @@
           "value": 20,
           "result": {
             "type": "text",
-            "result": "A savage grudge has erupted between lords"
+            "value": "A savage grudge has erupted between lords"
           }
         }
       ]
@@ -1244,7 +1264,7 @@
           "value": 1,
           "result": {
             "type": "text",
-            "result": "A splendid mine or resource has been found"
+            "value": "A splendid mine or resource has been found"
           }
         },
         {
@@ -1252,7 +1272,7 @@
           "value": 2,
           "result": {
             "type": "text",
-            "result": "A pious saint is strengthening a major faith"
+            "value": "A pious saint is strengthening a major faith"
           }
         },
         {
@@ -1260,7 +1280,7 @@
           "value": 3,
           "result": {
             "type": "text",
-            "result": "A noble heir shows signs of heroic greatness"
+            "value": "A noble heir shows signs of heroic greatness"
           }
         },
         {
@@ -1268,7 +1288,7 @@
           "value": 4,
           "result": {
             "type": "text",
-            "result": "A major rival has recently suffered a calamity"
+            "value": "A major rival has recently suffered a calamity"
           }
         },
         {
@@ -1276,7 +1296,7 @@
           "value": 5,
           "result": {
             "type": "text",
-            "result": "New farmland has been opened up recently"
+            "value": "New farmland has been opened up recently"
           }
         },
         {
@@ -1284,7 +1304,7 @@
           "value": 6,
           "result": {
             "type": "text",
-            "result": "A new trade route has been forged"
+            "value": "A new trade route has been forged"
           }
         },
         {
@@ -1292,7 +1312,7 @@
           "value": 7,
           "result": {
             "type": "text",
-            "result": "A horrible monster was slain or driven off"
+            "value": "A horrible monster was slain or driven off"
           }
         },
         {
@@ -1300,7 +1320,7 @@
           "value": 8,
           "result": {
             "type": "text",
-            "result": "Good harvests have enriched the people"
+            "value": "Good harvests have enriched the people"
           }
         },
         {
@@ -1308,7 +1328,7 @@
           "value": 9,
           "result": {
             "type": "text",
-            "result": "A wicked minister has been deposed"
+            "value": "A wicked minister has been deposed"
           }
         },
         {
@@ -1316,7 +1336,7 @@
           "value": 10,
           "result": {
             "type": "text",
-            "result": "A new academy has recently opened"
+            "value": "A new academy has recently opened"
           }
         },
         {
@@ -1324,7 +1344,7 @@
           "value": 11,
           "result": {
             "type": "text",
-            "result": "A bandit or rebel uprising has been crushed"
+            "value": "A bandit or rebel uprising has been crushed"
           }
         },
         {
@@ -1332,7 +1352,7 @@
           "value": 12,
           "result": {
             "type": "text",
-            "result": "Two rival lords have started to make peace"
+            "value": "Two rival lords have started to make peace"
           }
         },
         {
@@ -1340,7 +1360,7 @@
           "value": 13,
           "result": {
             "type": "text",
-            "result": "An old enemy has agreed to a peace pact"
+            "value": "An old enemy has agreed to a peace pact"
           }
         },
         {
@@ -1348,7 +1368,7 @@
           "value": 14,
           "result": {
             "type": "text",
-            "result": "The military won a recent smashing victory"
+            "value": "The military won a recent smashing victory"
           }
         },
         {
@@ -1356,7 +1376,7 @@
           "value": 15,
           "result": {
             "type": "text",
-            "result": "A helpful Working has been activated"
+            "value": "A helpful Working has been activated"
           }
         },
         {
@@ -1364,7 +1384,7 @@
           "value": 16,
           "result": {
             "type": "text",
-            "result": "A powerful artifact is helping the ruler"
+            "value": "A powerful artifact is helping the ruler"
           }
         },
         {
@@ -1372,7 +1392,7 @@
           "value": 17,
           "result": {
             "type": "text",
-            "result": "An old source of unrest has been calmed"
+            "value": "An old source of unrest has been calmed"
           }
         },
         {
@@ -1380,7 +1400,7 @@
           "value": 18,
           "result": {
             "type": "text",
-            "result": "A dark cult has been revealed and purged"
+            "value": "A dark cult has been revealed and purged"
           }
         },
         {
@@ -1388,7 +1408,7 @@
           "value": 19,
           "result": {
             "type": "text",
-            "result": "New diplomatic ties have been made"
+            "value": "New diplomatic ties have been made"
           }
         },
         {
@@ -1396,7 +1416,7 @@
           "value": 20,
           "result": {
             "type": "text",
-            "result": "A new lord has risen, loved by his people"
+            "value": "A new lord has risen, loved by his people"
           }
         }
       ]
@@ -4836,7 +4856,10 @@
             "type": "rollAgain",
             "value": "Roll 1d8 twice; both happened",
             "amount": 2,
-            "exclude": 10,
+            "newDice": {
+              "numDice": 1,
+              "diceSides": 8
+            },
             "concat": false
           }
         },

@@ -6,7 +6,7 @@ export interface AppState {
 
 export type Tables = Record<string, Record<string, Table>>
 
-interface Dice {
+export interface Dice {
     numDice: number
     diceSides: number
 }
@@ -35,7 +35,7 @@ interface TableRowRange {
 
 export type TableResult = TableTextResult | TableRollAgainResult
 
-interface TableTextResult {
+export interface TableTextResult {
     type: "text"
     title?: Optional<string>
     value: string
@@ -48,4 +48,21 @@ interface TableRollAgainResult {
     longDescription?: Optional<string>
     amount: number
     concat?: boolean
+    newDice?: Dice
 }
+
+export interface RollOnTableRollAgainResult {
+    type: "rollAgain"
+    roll: number
+    result: TableRollAgainResult
+    rollAgainRolls: number[]
+    rollAgainResults: TableTextResult[]
+}
+
+export interface RollOnTableStandardResult {
+    type: "standard"
+    roll: number
+    result: TableTextResult
+}
+
+export type RollOnTableResult = RollOnTableRollAgainResult | RollOnTableStandardResult

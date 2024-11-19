@@ -1,24 +1,51 @@
-d8 Church Structures
-1 Each holy man or woman is the autonomous
-leader of their own branch of the sect, with
-however many followers they can gather.
-2 There are multiple pontiffs, friendly or otherwise,
-with subordinate clergy obedient to their own
-pontiff and perhaps cooperative with others.
-3 There is a single pontiff with a layer of upper
-clergy and temple heads beneath them, who
-have a layer of minor clergy serving them.
-4 Individual congregations are independent, with
-their clergy subject to the consensus will of their
-parishioners.
-5 Powerful lay believers fund temples that are
-subject to their family’s wishes, staffed by clergy
-supported by their funding.
-6 There is no official clergy; some believers may
-take up special roles or provide teaching, but
-they are not qualitatively different from others.
-7 The church is entirely part of the secular structure
-of the land, its clergy no more than officials
-appointed by the government to their roles.
-8 Roll twice; the faith has different structures in
-different places or contexts.
+d20 Significant Terrain Features
+1 Ancient farmland. A huge stretch of land
+was re-engineered for optimal farming.
+2 Arratu wasteland. An area here was
+once xenoformed by the Outsiders into
+an environment hostile to humanity or one
+inhabited by dangerous alien lifeforms.
+3 Blasted lands. Radioactive or scorched
+over by ancient war. Many ruins are likely.
+4 Canyons. A region with extensive canyons
+cut by rivers present or long-vanished. Make
+sure the rivers don’t climb after leaving them.
+5 Dense forest. Trackless, dark, and an
+effective natural barrier.
+6 Grasslands. A broad sweep of savanna or
+grassy plains is a coherent whole here.
+7 Islands. There’s a single significant island
+off the coast or an archipelago of some note.
+8 Jagged mountains. A new or resharpened
+mountain range forms a barrier
+in the region. The mountains are young, tall,
+and likely cast a substantial rain shadow.
+9 Jungle. A classic adventure-worthy jungle
+of wild, semi-alien flora and fauna.
+10 Light forest. Interspersed with other terrain.
+11 Megaplex. The ruins of a single huge
+ancient structure stretch for endless miles.
+12 Pit. A Deep or some other underground
+megastructure collapsed and left a hole with
+a diameter measured in tens of miles.
+13 Rain forest. Vast, damp, and green.
+14 Rocky hills. Rough and stony, with little
+arable land. Herding and raiding are the
+most profitable employments here.
+15 Rolling hills. A stretch of gently rolling hills
+makes for good agricultural land.
+16 Sand desert. This desert is a waste of sand
+and dunes. It may be from a rain shadow, or
+it might be a legacy of ancient war.
+17 Scrub desert. These often appear on the
+leeward side of mountain ranges. Borders
+will often be grasslands or savanna.
+18 Swamp. A sinking river, lake margin, or wet
+coastal delta forms a vast bog in this flat land.
+19 Volcano. One or more mountains in a
+nearby range are volcanically active. This
+may be natural or it may be a consequence
+of Legacy flux or ancient manipulation.
+20 Weathered mountains. A significant skirt
+of hills is common. The rain shadow is likely
+limited due to the rounded, low mountains.
