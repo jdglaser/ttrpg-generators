@@ -1,0 +1,25 @@
+tables:
+  - group: nation
+    dice: d20
+    title: Disputes With a Neighboring State
+    table: |
+      1 Raiders are taking refuge in their lands
+      2 Ownership of a resource site is disputed
+      3 A usurper or criminal is being sheltered there
+      4 A troublemaking religion is based there
+      5 Their rulers have a political claim on the throne
+      6 A diplomatic marriage is going sour
+      7 A past war's savagery has left deep scars
+      8 Their culture is supplanting local beliefs
+      9 Their immigrants are gaining great influence
+      10 They broke off an alliance or important pact
+      11 They lured away an academy or great temple
+      12 Border tariffs and taxes are blocking trade
+      13 They drove a terrible beast into this land
+      14 A Working of theirs caused problems here
+      15 They woke up a great peril from the past
+      16 They're cooperating with an enemy group
+      17 They're suspected of backing assassinations
+      18 A spy ring is suspected or has been found
+      19 They refused to give aid for some current need
+      20 They've been hostile to an allied group
