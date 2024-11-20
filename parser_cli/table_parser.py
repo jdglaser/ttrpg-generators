@@ -20,7 +20,7 @@ def replace_chars(string: str):
     return string
 
 
-def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[str] = None):
+def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[dict] = None):
     parsed_rows: list[TableRow] = []
     for row in rows:
         if row == "":
@@ -48,8 +48,7 @@ def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[str]
         description = None
         if mapping:
             lookup_key = result_title if result_title else result
-            parsed_mapping = _handle_mapping(mapping)
-            description = parsed_mapping[lookup_key]
+            description = mapping[lookup_key]
 
         result = (
             json.loads(result)
@@ -128,7 +127,10 @@ def parse_simple(table: str, mapping: Optional[str] = None, has_titles: bool = F
         else:
             cleaned_rows[current_idx - 1] += f" {row}"
 
-    parsed_rows = parse_rows(cleaned_rows, has_titles, mapping)
+    mapping_dict = None
+    if mapping:
+        mapping_dict = _handle_mapping(mapping)
+    parsed_rows = parse_rows(cleaned_rows, has_titles, mapping_dict)
     parsed_rows = sorted(
         parsed_rows, key=lambda r: r.number.value if isinstance(r.number, TableRowSingleNumber) else r.number.min_value
     )
@@ -178,3 +180,52 @@ def parse_column(table: str):
         parsed_table = Table(dice=dice, title=headers[1:][idx], rows=parsed_rows)
         parsed_tables.append(parsed_table)
     return parsed_tables
+
+
+def parse_tags(name: str, tags: str, tag_headers: list[str]):
+    items = []
+
+    key = "description"
+    for line in tags.split("\n"):
+        if "\u2022" in line:
+            continue
+
+        if line.strip() in tag_headers:
+            items.append(
+                {
+                    "header": line,
+                    "description": [],
+                    "enemies": [],
+                    "friends": [],
+                    "complications": [],
+                    "things": [],
+                    "places": [],
+                }
+            )
+            key = "description"
+        else:
+            current_item = items[-1]
+            if line.strip().startswith("E "):
+                key = "enemies"
+                line = line.replace("E ", "")
+            if line.strip().startswith("F "):
+                key = "friends"
+                line = line.replace("F ", "")
+            if line.strip().startswith("C "):
+                key = "complications"
+                line = line.replace("C ", "")
+            if line.strip().startswith("T "):
+                key = "things"
+                line = line.replace("T ", "")
+            if line.strip().startswith("P "):
+                key = "places"
+                line = line.replace("P ", "")
+
+            current_item[key].append(line.replace("\n", " "))
+
+    for i in items:
+        for k in i:
+            if k != "header":
+                i[k] = " ".join(i[k])
+
+    return items

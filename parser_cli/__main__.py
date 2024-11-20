@@ -7,7 +7,7 @@ import click
 import pyperclip
 
 from parser_cli.models import Table
-from parser_cli.table_parser import parse_column, parse_simple, replace_chars
+from parser_cli.table_parser import parse_column, parse_simple, parse_tags, replace_chars
 from parser_cli.utils import to_id
 
 
@@ -67,6 +67,40 @@ def generate_table(
             json_str = json.dumps(all_tables, indent=2)
             print(json_str[1:-2])
             pyperclip.copy(json_str[1:-2])
+
+
+@cli.command()
+@click.option(
+    "--input-path",
+    "-i",
+    type=click.Path(
+        exists=True,
+        file_okay=False,
+        dir_okay=True,
+        readable=True,
+        path_type=Path,
+    ),
+    default=Path("parser_cli/input"),
+)
+@click.option(
+    "--output-path",
+    "-o",
+    type=click.Path(
+        file_okay=False,
+        dir_okay=True,
+        writable=True,
+        path_type=Path,
+    ),
+    default=Path("parser_cli/output"),
+)
+@click.option("--tag-name", "-n", type=click.STRING, required=True)
+def generate_tags(input_path: Path, output_path: Path, tag_name: str):
+    tags = replace_chars((input_path / "tags.txt").read_text().strip())
+    tag_headers = replace_chars((input_path / "tag_headers.txt").read_text().strip()).split("\n")
+    tag_name = tag_headers[0]
+    tag_result = parse_tags(tag_name, tags, tag_headers[1:])
+    with open(output_path / f"{tag_name}_tags.json", "w") as fp:
+        json.dump(tag_result, fp, indent=2)
 
 
 @cli.command()
