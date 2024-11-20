@@ -6,7 +6,7 @@ import { useAppState } from "./common/hooks";
 import { dashToTitleCase } from "./common/utils";
 
 export default function Nav() {
-  const [showNav, setShowNav] = useState<boolean>(true);
+  const [showNav, setShowNav] = useState<boolean>(false);
   const { tables } = useAppState();
 
   const tableRoutes = Object.keys(tables)
