@@ -42,7 +42,7 @@ export default function Root() {
           display: "flex",
           flexDirection: "row",
           gap: "0.75rem",
-          height: "100vh",
+          height: "100dvh",
         }}>
         <div>
           <Nav />
