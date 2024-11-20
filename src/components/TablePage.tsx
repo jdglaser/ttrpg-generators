@@ -333,13 +333,13 @@ export default function TablePage() {
 
   return (
     <div>
-      <h2>{categoryTitle}</h2>
+      <h1>{categoryTitle}</h1>
       <div style={{ display: "flex", gap: "0.5rem" }}>
         <button onClick={() => handleRefresh()}>Refresh</button>
         <button onClick={handleCopy}>Copy</button>
       </div>
       <div className="results">
-        <ul style={{ marginLeft: 0, padding: "1rem" }}>{resultComponents}</ul>
+        <ul style={{ marginLeft: 0, padding: "0.5rem" }}>{resultComponents}</ul>
       </div>
     </div>
   );

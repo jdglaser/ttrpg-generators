@@ -50,7 +50,7 @@ export default function Root() {
         </div>
         <div
           style={{
-            padding: "1rem 2rem",
+            padding: "1rem 4rem",
             overflow: "auto",
           }}>
           <Outlet />

@@ -15,7 +15,8 @@ export default function Nav() {
         <NavLink
           key={`/tables/${key}/`}
           to={`/tables/${key}/`}
-          style={({ isActive }) => ({ color: isActive ? "purple" : "blue" })}>
+          style={({ isActive }) => ({ color: isActive ? "purple" : "blue" })}
+          onClick={() => setShowNav(false)}>
           {dashToTitleCase(key)}
         </NavLink>
       );
@@ -25,44 +26,64 @@ export default function Nav() {
     .flat();
 
   return (
-    <div
-      style={{
-        borderRight: showNav ? "1px solid lightgrey" : "",
-        minHeight: "100vh",
-        minWidth: showNav ? "150px" : "0px",
-        width: "max-content",
-      }}>
+    <>
       <div
         style={{
-          cursor: "pointer",
-          display: "flex",
-          padding: "1rem",
-        }}
-        onClick={() => setShowNav((prev) => !prev)}
-        role="button">
-        {showNav ? (
-          <img src={closeMenu} width="20px" height="20px" />
-        ) : (
-          <img src={menuHamburger} width="25px" height="25px" />
-        )}
-      </div>
+          top: 0,
+          left: 0,
+          position: "absolute",
+          width: showNav ? "100vw" : 0,
+          height: showNav ? "100vh" : 0,
+          backgroundColor: "black",
+          opacity: "25%",
+          zIndex: 999,
+        }}></div>
       <div
         style={{
-          display: showNav ? "flex" : "none",
-          flexDirection: "column",
-          gap: "0.5rem",
-          padding: "1rem",
+          ...{
+            borderRight: showNav ? "1px solid lightgrey" : "",
+            padding: showNav ? "0 2rem" : 0,
+            width: "max-content",
+            height: "100vh",
+            maxHeight: "100vh",
+            overflow: "auto",
+            position: "absolute",
+          },
+          ...(showNav ? { zIndex: 1000, backgroundColor: "white" } : {}),
         }}>
-        <NavLink
-          to="/"
-          style={({ isActive }) => ({
-            color: isActive ? "purple" : "blue",
-          })}
-          end>
-          Home
-        </NavLink>
-        {tableRoutes}
+        <div
+          style={{
+            cursor: "pointer",
+            display: "flex",
+            padding: "1rem",
+          }}
+          onClick={() => setShowNav((prev) => !prev)}
+          role="button">
+          {showNav ? (
+            <img src={closeMenu} width="20px" height="20px" />
+          ) : (
+            <img src={menuHamburger} width="25px" height="25px" />
+          )}
+        </div>
+        <div
+          style={{
+            display: showNav ? "flex" : "none",
+            flexDirection: "column",
+            gap: "0.5rem",
+            padding: "1rem",
+          }}>
+          <NavLink
+            to="/"
+            style={({ isActive }) => ({
+              color: isActive ? "purple" : "blue",
+            })}
+            end
+            onClick={() => setShowNav(false)}>
+            Home
+          </NavLink>
+          {tableRoutes}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
