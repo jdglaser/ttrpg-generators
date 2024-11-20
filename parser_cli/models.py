@@ -49,8 +49,21 @@ class TableRollAgainResult(BaseModel):
     new_dice: Optional[Dice] = None
 
 
+class TableRollTagResult(BaseModel):
+    type: Literal["tag"]
+    name: str
+    long_description: str
+    enemies: str
+    friends: str
+    complications: str
+    things: str
+    places: str
+
+
 TableResult = Annotated[
-    Annotated[TableTextRowResult, Tag("text")] | Annotated[TableRollAgainResult, Tag("rollAgain")],
+    Annotated[TableTextRowResult, Tag("text")]
+    | Annotated[TableRollAgainResult, Tag("rollAgain")]
+    | Annotated[TableRollTagResult, Tag("tag")],
     pydantic.Discriminator(discriminator_factory("type")),
 ]
 

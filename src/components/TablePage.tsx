@@ -7,15 +7,57 @@ import {
   RollOnTableResultResult,
   RollOnTableRollAgainResult,
   RollOnTableStandardResult,
+  RollOnTableTagResult,
   TableResult,
+  TableTagResult,
+  TableTextResult,
 } from "../common/types";
 import { copyToClipboard, dashToTitleCase, rollOnTable } from "../common/utils";
 
+function getKey(prefix: string, tableResult: TableTextResult | TableTagResult) {
+  return `${prefix}-${
+    tableResult.type === "tag" ? tableResult.name : tableResult.value
+  }`;
+}
 function DisplayValue({ result }: { result: TableResult }) {
+  if (result.type === "tag") {
+    const {
+      name,
+      longDescription,
+      friends,
+      enemies,
+      complications,
+      things,
+      places,
+    } = result;
+    return (
+      <>
+        <b>{name}.</b> {longDescription}
+        <ul>
+          <li>
+            <b>Friends:</b> {friends}
+          </li>
+          <li>
+            <b>Enemies:</b> {enemies}
+          </li>
+          <li>
+            <b>Complications:</b> {complications}
+          </li>
+          <li>
+            <b>Things:</b> {things}
+          </li>
+          <li>
+            <b>Places:</b> {places}
+          </li>
+        </ul>
+      </>
+    );
+  }
+
   const { value, longDescription } = result;
   return longDescription ? (
     <span>
-      {value}. {longDescription}
+      <b>{value}.</b> {longDescription}
     </span>
   ) : (
     <span>{value}</span>
@@ -51,6 +93,45 @@ function StandardResultItem({
       );
     }
   }
+  return (
+    <li>
+      {tableTitleComponent}
+      <DisplayValue result={result} />
+    </li>
+  );
+}
+
+function TagResultItem({
+  rollOnTableResult,
+  tableTitle = null,
+  refreshFunc = null,
+}: {
+  rollOnTableResult: RollOnTableTagResult;
+  tableTitle?: Optional<string>;
+  refreshFunc?: Optional<() => void>;
+}) {
+  const { result } = rollOnTableResult;
+
+  let tableTitleComponent = null;
+  if (tableTitle) {
+    const tableTitleSep = tableTitle.endsWith("?") ? "" : ":";
+    if (refreshFunc) {
+      tableTitleComponent = (
+        <b style={{ cursor: "pointer" }} onClick={refreshFunc}>
+          {tableTitle}
+          {tableTitleSep}{" "}
+        </b>
+      );
+    } else {
+      tableTitleComponent = (
+        <b>
+          {tableTitle}
+          {tableTitleSep}{" "}
+        </b>
+      );
+    }
+  }
+
   return (
     <li>
       {tableTitleComponent}
@@ -96,7 +177,7 @@ function RollAgainResultItem({
         {tableTitleComponent}
         <DisplayValue result={result} />
         {rollAgainResults.map((r) => (
-          <DisplayValue key={`${result.value}-${r.value}`} result={r} />
+          <DisplayValue key={getKey(result.value, r)} result={r} />
         ))}
       </li>
     );
@@ -108,7 +189,7 @@ function RollAgainResultItem({
       <DisplayValue result={result} />
       <ul>
         {rollAgainResults.map((r) => (
-          <li key={r.value}>
+          <li key={getKey(result.value, r)}>
             <DisplayValue result={r} />
           </li>
         ))}
@@ -187,6 +268,17 @@ export default function TablePage() {
           );
         }
 
+        if (rollOnTableResult.type === "tag") {
+          return (
+            <TagResultItem
+              key={key}
+              rollOnTableResult={rollOnTableResult}
+              tableTitle={rollOnTableResults.table.title}
+              refreshFunc={() => handleRefresh([rollOnTableResults.tableKey])}
+            />
+          );
+        }
+
         return (
           <StandardResultItem
             key={key}
@@ -208,6 +300,15 @@ export default function TablePage() {
             );
           }
 
+          if (rollOnTableResult.type === "tag") {
+            return (
+              <TagResultItem
+                key={`${key}-${idx}`}
+                rollOnTableResult={rollOnTableResult}
+              />
+            );
+          }
+
           return (
             <StandardResultItem
               key={`${key}-${idx}`}
@@ -221,8 +322,7 @@ export default function TablePage() {
         <li key={rollOnTableResults.table.title}>
           <b
             style={{ cursor: "pointer" }}
-            onClick={() => handleRefresh([rollOnTableResults.tableKey])}
-          >
+            onClick={() => handleRefresh([rollOnTableResults.tableKey])}>
             {rollOnTableResults.table.title}
           </b>
           <ul>{rollOnTableResultComponents}</ul>
@@ -239,7 +339,7 @@ export default function TablePage() {
         <button onClick={handleCopy}>Copy</button>
       </div>
       <div className="results">
-        <ul>{resultComponents}</ul>
+        <ul style={{ marginLeft: 0, padding: "1rem" }}>{resultComponents}</ul>
       </div>
     </div>
   );

@@ -31,7 +31,10 @@ export interface TableRowRangeNumber {
 
 export type TableRowNumber = TableRowSingleNumber | TableRowRangeNumber;
 
-export type TableResult = TableTextResult | TableRollAgainResult;
+export type TableResult =
+  | TableTextResult
+  | TableRollAgainResult
+  | TableTagResult;
 
 export interface TableTextResult {
   type: "text";
@@ -49,6 +52,17 @@ export interface TableRollAgainResult {
   newDice?: Dice;
 }
 
+export interface TableTagResult {
+  type: "tag";
+  name: string;
+  longDescription: string;
+  enemies: string;
+  friends: string;
+  complications: string;
+  things: string;
+  places: string;
+}
+
 export interface TableRow {
   number: TableRowNumber;
   result: TableResult;
@@ -59,7 +73,7 @@ export interface RollOnTableRollAgainResult {
   roll: number;
   result: TableRollAgainResult;
   rollAgainRolls: number[];
-  rollAgainResults: TableTextResult[];
+  rollAgainResults: (TableTextResult | TableTagResult)[];
 }
 
 export interface RollOnTableStandardResult {
@@ -68,9 +82,16 @@ export interface RollOnTableStandardResult {
   result: TableTextResult;
 }
 
+export interface RollOnTableTagResult {
+  type: "tag";
+  roll: number;
+  result: TableTagResult;
+}
+
 export type RollOnTableResultResult =
   | RollOnTableRollAgainResult
-  | RollOnTableStandardResult;
+  | RollOnTableStandardResult
+  | RollOnTableTagResult;
 
 export interface RollOnTableResult {
   tableKey: string;

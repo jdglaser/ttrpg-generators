@@ -1,0 +1,13 @@
+d12 Rationale for the City’s Existence
+1 It’s the former seat of a vanished nation
+2 It’s a trade nexus that has greatly prospered
+3 It’s an industrial or productive center
+4 There is heavy resource extraction nearby
+5 It controls a vital defensive point
+6 It’s built around an ancient Working
+7 It’s a stronghold of a local subculture
+8 It’s a sacred city to an important faith
+9 It’s a shared market for many villages
+10 It’s a place of great beauty or healthfulness
+11 It’s a shelter from dangerous environs
+12 The natives are somehow bound here

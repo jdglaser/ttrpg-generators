@@ -93,14 +93,16 @@ def generate_table(
     ),
     default=Path("parser_cli/output"),
 )
-@click.option("--tag-name", "-n", type=click.STRING, required=True)
-def generate_tags(input_path: Path, output_path: Path, tag_name: str):
+def generate_tags(input_path: Path, output_path: Path):
     tags = replace_chars((input_path / "tags.txt").read_text().strip())
     tag_headers = replace_chars((input_path / "tag_headers.txt").read_text().strip()).split("\n")
-    tag_name = tag_headers[0]
-    tag_result = parse_tags(tag_name, tags, tag_headers[1:])
-    with open(output_path / f"{tag_name}_tags.json", "w") as fp:
-        json.dump(tag_result, fp, indent=2)
+    tag_table = parse_tags(tags, tag_headers)
+    model_json = tag_table.model_dump(by_alias=True, exclude_none=True)
+    json_str = json.dumps(model_json, indent=2)
+    print(json_str[1:-2])
+    pyperclip.copy(json_str[1:-2])
+    with open(output_path / f"{tag_table.title}.json", "w") as fp:
+        json.dump(model_json, fp, indent=2)
 
 
 @cli.command()
@@ -129,8 +131,8 @@ def clean_json():
             table_model = Table.model_validate(new_table)
             new_tables[inner_key] = table_model.model_dump(by_alias=True, exclude_none=True)
         new_final[key] = new_tables
-    with open(Path("src/data/table_ref_new.json"), "w") as fp:
-        json.dump(new_final, fp, indent=2)
+    # with open(Path("src/data/table_ref_new.json"), "w") as fp:
+    #     json.dump(new_final, fp, indent=2)
 
 
 if __name__ == "__main__":

@@ -1,6 +1,5 @@
 import json
 import re
-from itertools import batched
 from typing import Optional
 
 from parser_cli.models import Dice, Table, TableRow, TableRowSingleNumber
@@ -20,7 +19,12 @@ def replace_chars(string: str):
     return string
 
 
-def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[dict] = None):
+def parse_rows(
+    rows: list[str],
+    has_titles: bool = False,
+    mapping: Optional[dict[str, str]] = None,
+    tags: Optional[dict[str, dict[str, str]]] = None,
+):
     parsed_rows: list[TableRow] = []
     for row in rows:
         if row == "":
@@ -50,11 +54,19 @@ def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[dict
             lookup_key = result_title if result_title else result
             description = mapping[lookup_key]
 
-        result = (
-            json.loads(result)
-            if result.startswith("{")
-            else {"type": "text", "longDescription": description, "value": result}
-        )
+        tag = None
+        if tags:
+            lookup_key = result_title if result_title else result
+            tag = tags[lookup_key]
+
+        if tag:
+            result = tag
+        else:
+            result = (
+                json.loads(result)
+                if result.startswith("{")
+                else {"type": "text", "longDescription": description, "value": result}
+            )
         if "-" in result_match:
             min_val, max_val = result_match.split("-")
             max_val = 100 if max_val == "00" else max_val
@@ -85,7 +97,7 @@ def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[dict
 
 
 def _handle_mapping(mapping: str):
-    items = {}
+    items: dict[str, str] = {}
     current_key = None
     for row in mapping.split("\n"):
         row_str = row.strip()
@@ -182,10 +194,24 @@ def parse_column(table: str):
     return parsed_tables
 
 
-def parse_tags(name: str, tags: str, tag_headers: list[str]):
+def parse_tags(tags: str, tag_rows: list[str]):
     items = []
 
-    key = "description"
+    title_row = tag_rows[0].strip()
+    parsed_title = re.match(r"^(?P<num_dice>\d)?d(?P<dice_sides>\d+) (?P<title>.+)$", title_row)
+    if not parsed_title:
+        raise Exception(f"Problem parsing title row '{title_row}'")
+
+    parsed_title_groups = parsed_title.groupdict()
+    title = parsed_title_groups["title"]
+    dice_sides = parsed_title_groups["dice_sides"]
+    dice = Dice.model_validate(
+        {"diceSides": 100 if dice_sides == "00" else dice_sides, "numDice": parsed_title_groups["num_dice"]}
+    )
+
+    tag_headers = [re.sub(r"(\d+ )|(\d+-\d+ )", "", i) for i in tag_rows[1:]]
+
+    key = "longDescription"
     for line in tags.split("\n"):
         if "\u2022" in line:
             continue
@@ -193,8 +219,9 @@ def parse_tags(name: str, tags: str, tag_headers: list[str]):
         if line.strip() in tag_headers:
             items.append(
                 {
-                    "header": line,
-                    "description": [],
+                    "type": "tag",
+                    "name": line,
+                    "longDescription": [],
                     "enemies": [],
                     "friends": [],
                     "complications": [],
@@ -202,7 +229,7 @@ def parse_tags(name: str, tags: str, tag_headers: list[str]):
                     "places": [],
                 }
             )
-            key = "description"
+            key = "longDescription"
         else:
             current_item = items[-1]
             if line.strip().startswith("E "):
@@ -225,7 +252,12 @@ def parse_tags(name: str, tags: str, tag_headers: list[str]):
 
     for i in items:
         for k in i:
-            if k != "header":
+            if k not in ["name", "type"]:
                 i[k] = " ".join(i[k])
 
-    return items
+    tags_by_name = {i["name"]: i for i in items}
+    rows = sorted(
+        parse_rows(tag_rows[1:], tags=tags_by_name),
+        key=lambda r: r.number.value if isinstance(r.number, TableRowSingleNumber) else r.number.min_value,
+    )
+    return Table(dice=dice, title=title, rows=rows)

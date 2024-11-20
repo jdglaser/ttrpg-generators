@@ -3,7 +3,9 @@ import {
   RollOnTableResultResult,
   RollOnTableRollAgainResult,
   RollOnTableStandardResult,
+  RollOnTableTagResult,
   Table,
+  TableTagResult,
   TableTextResult,
 } from "./types";
 
@@ -52,7 +54,7 @@ export function rollOnTable(table: Table): RollOnTableResultResult {
   const tableRow = getResultOnTable(table, rollResult);
   const tableRowResult = tableRow.result;
   if (tableRowResult.type === "rollAgain") {
-    const results: TableTextResult[] = [];
+    const results: (TableTextResult | TableTagResult)[] = [];
     const rolls: number[] = [];
     while (results.length < tableRowResult.amount) {
       const newRollResult = rollDice(
@@ -70,6 +72,15 @@ export function rollOnTable(table: Table): RollOnTableResultResult {
       result: tableRowResult,
       rollAgainResults: results,
       rollAgainRolls: rolls,
+    };
+    return result;
+  }
+
+  if (tableRowResult.type === "tag") {
+    const result: RollOnTableTagResult = {
+      type: "tag",
+      roll: rollResult,
+      result: tableRowResult,
     };
     return result;
   }
@@ -94,4 +105,16 @@ export function dashToTitleCase(text: string) {
     .split("-")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
+}
+
+export function accessPropertyByPath<T>(obj: T, path: string[]): any {
+  let current: any = obj;
+  for (const key of path) {
+    if (current && typeof current === "object" && key in current) {
+      current = current[key];
+    } else {
+      return undefined; // Property not found
+    }
+  }
+  return current;
 }
