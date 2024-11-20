@@ -9,8 +9,9 @@ import {
   TableTextResult,
 } from "./types";
 
-export async function getData(name: string) {
-  const res = await fetch(`/ttrpg-generators/src/data/${name}.json`);
+export async function getData(dataUrl: string) {
+  console.log(dataUrl);
+  const res = await fetch(dataUrl);
   return await res.json();
 }
 
