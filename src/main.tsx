@@ -7,28 +7,31 @@ import ErrorPage from "./ErrorPage.tsx";
 import "./index.css";
 import Root from "./Root.tsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "ttrpg-generators/",
-        children: [
-          {
-            path: "tables/:category",
-            element: <TablePage />,
-          },
-          {
-            path: "",
-            element: <Home />,
-          },
-        ],
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Root />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/",
+          children: [
+            {
+              path: "tables/:category",
+              element: <TablePage />,
+            },
+            {
+              path: "",
+              element: <Home />,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  { basename: "/ttrpg-generators/" }
+);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
