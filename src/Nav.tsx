@@ -29,6 +29,24 @@ export default function Nav() {
     <>
       <div
         style={{
+          cursor: "pointer",
+          display: "flex",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          padding: "1rem",
+          zIndex: 1001,
+        }}
+        onClick={() => setShowNav((prev) => !prev)}
+        role="button">
+        {showNav ? (
+          <img src={closeMenu} width="20px" height="20px" />
+        ) : (
+          <img src={menuHamburger} width="25px" height="25px" />
+        )}
+      </div>
+      <div
+        style={{
           top: 0,
           left: 0,
           position: "absolute",
@@ -53,24 +71,12 @@ export default function Nav() {
         }}>
         <div
           style={{
-            cursor: "pointer",
-            display: "flex",
-            padding: "1rem",
-          }}
-          onClick={() => setShowNav((prev) => !prev)}
-          role="button">
-          {showNav ? (
-            <img src={closeMenu} width="20px" height="20px" />
-          ) : (
-            <img src={menuHamburger} width="25px" height="25px" />
-          )}
-        </div>
-        <div
-          style={{
             display: showNav ? "flex" : "none",
             flexDirection: "column",
             gap: "0.5rem",
             padding: "1rem",
+            marginTop: "25px",
+            marginLeft: "0.75rem",
           }}>
           <NavLink
             to="/ttrpg-generators/"
