@@ -14,12 +14,17 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "tables/:category",
-        element: <TablePage />,
-      },
-      {
-        path: "/",
-        element: <Home />,
+        path: "ttrpg-generators/",
+        children: [
+          {
+            path: "tables/:category",
+            element: <TablePage />,
+          },
+          {
+            path: "",
+            element: <Home />,
+          },
+        ],
       },
     ],
   },

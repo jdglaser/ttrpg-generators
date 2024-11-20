@@ -14,7 +14,7 @@ export default function Nav() {
       const link = (
         <NavLink
           key={`/tables/${key}/`}
-          to={`/tables/${key}/`}
+          to={`/ttrpg-generators/tables/${key}/`}
           style={({ isActive }) => ({ color: isActive ? "purple" : "blue" })}
           onClick={() => setShowNav(false)}>
           {dashToTitleCase(key)}
@@ -73,7 +73,7 @@ export default function Nav() {
             padding: "1rem",
           }}>
           <NavLink
-            to="/"
+            to="/ttrpg-generators/"
             style={({ isActive }) => ({
               color: isActive ? "purple" : "blue",
             })}

@@ -10,7 +10,7 @@ import {
 } from "./types";
 
 export async function getData(name: string) {
-  const res = await fetch(`/src/data/${name}.json`);
+  const res = await fetch(`/ttrpg-generators/src/data/${name}.json`);
   return await res.json();
 }
 
