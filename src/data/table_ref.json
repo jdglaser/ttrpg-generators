@@ -1427,104 +1427,114 @@
         "diceSides": 10
       },
       "title": "Thematic Element (Negative)",
-      "table": [
+      "rows": [
         {
-          "type": "single",
-          "value": 1,
+          "number": {
+            "type": "single",
+            "value": 1
+          },
           "result": {
             "type": "text",
-            "title": "Barbarism",
-            "value": "with brutal savagery",
+            "value": "Barbarism, with brutal savagery",
             "longDescription": "The nation is brutally assailed by bestial, primitive forces, whether from external enemies or internal divisions. Naked violence, cruelty, ignorance, and hatred are always near the surface of things, either as threats pressing on the familiar or as instincts and habits among the natives."
           }
         },
         {
-          "type": "single",
-          "value": 2,
+          "number": {
+            "type": "single",
+            "value": 2
+          },
           "result": {
             "type": "text",
-            "title": "Decadence",
-            "value": "of sins and fadings",
+            "value": "Decadence, of sins and fadings",
             "longDescription": "The nation is voluptuously cruel, indulgent, and indifferent to the prices it pays for its pleasures. Unspeakable debaucheries and sordid delights are in common circulation, and few ever think to question the appropriateness of inflicting brutal evils in order to obtain some elevated enjoyment or refined pleasure. The PCs are regularly exposed to the consequences of such indulgences and the damage they inflict on others."
           }
         },
         {
-          "type": "single",
-          "value": 3,
+          "number": {
+            "type": "single",
+            "value": 3
+          },
           "result": {
             "type": "text",
-            "title": "Despair",
-            "value": "with good things unlooked-for",
+            "value": "Despair, with good things unlooked-for",
             "longDescription": "The nation is redolent of hopelessness and apathetic submission to fate. It may be because some overwhelming evil seems inevitably due to pass, or because all prior efforts at improvement have brought only worse suffering, or because some bright cultural hope or golden age is now clearly lost and ruined forever. The nation will tend to accept evils and sufferings as inevitable, and the natives will do little to rebel, resist, or defy their unhappy fates."
           }
         },
         {
-          "type": "single",
-          "value": 4,
+          "number": {
+            "type": "single",
+            "value": 4
+          },
           "result": {
             "type": "text",
-            "title": "Exhaustion",
-            "value": "with strength spent and lost",
+            "value": "Exhaustion, with strength spent and lost",
             "longDescription": "The nation is depleted of something critical, whether that is a tangible resource or their spiritual reserves of enthusiasm and hope. Everything is tired in this nation, with spent rivers, barren fields, cut-over forests, and shorn hillsides. If material resources are sufficient, the natives simply don't have the energy or enthusiasm to bring in more than they presently do, perhaps out of a sense that nothing good can come of any putative improvement."
           }
         },
         {
-          "type": "single",
-          "value": 5,
+          "number": {
+            "type": "single",
+            "value": 5
+          },
           "result": {
             "type": "text",
-            "title": "Ignorance",
-            "value": "of terrors and the unknown",
+            "value": "Ignorance, of terrors and the unknown",
             "longDescription": "The nation is an ignorant one, redolent of (incorrect) superstition, false gods, blundering institutions, and erroneous beliefs of all kinds. These beliefs are somehow critical to the setting's culture or society, such that being rid of them would cause some profound, potentially bloody disruption of life. Life in this nation can go on as it does only so long as the ignorance remains unilluminated, and the vast majority of its populace would rather remain in error than exist in chaos."
           }
         },
         {
-          "type": "single",
-          "value": 6,
+          "number": {
+            "type": "single",
+            "value": 6
+          },
           "result": {
             "type": "text",
-            "title": "Oppression",
-            "value": "with rule a crushing weight",
+            "value": "Oppression, with rule a crushing weight",
             "longDescription": "Some substantial portion of the nation is cruelly oppressed by some force. It's rare that this is the same group in all areas of the nation; oppression as a key theme to the setting implies that many groups in many places suffer under this, and it may be accepted as a commonplace that one group or another needs to be harshly repressed if the rest of society is to prosper. Oppressive groups will usually have a clearly-enunciated philosophy of why this state of affairs is necessary, and it usually will have at least some coloring of justification to have persisted as it has."
           }
         },
         {
-          "type": "single",
-          "value": 7,
+          "number": {
+            "type": "single",
+            "value": 7
+          },
           "result": {
             "type": "text",
-            "title": "Poverty",
-            "value": "where even the rich are poor",
+            "value": "Poverty, where even the rich are poor",
             "longDescription": "The nation is poor. Even aristocrats might not be assured of the necessary staples of life, or basic resources might be constantly threatened by monsters, warfare, calamities, or simple dearth. The struggle for resources and the basic necessities for survival are apt to drive numerous conflicts in the setting, and the consequences of failure can be far worse than mere discomfort for the losers."
           }
         },
         {
-          "type": "single",
-          "value": 8,
+          "number": {
+            "type": "single",
+            "value": 8
+          },
           "result": {
             "type": "text",
-            "title": "Precarity",
-            "value": "with all goods made fleeting",
+            "value": "Precarity, with all goods made fleeting",
             "longDescription": "Whatever good the nation has is under immediate siege by circumstances, and it looks very likely that it might crumble. Something is happening in the setting to make old verities and assured societal institutions totter, whether a massive monstrous invasion or a revolt by some displeased underclass. These institutions will tend to strike out violently at threats, fearing that their basic existence is at stake, and the recklessness of their responses might be the very catalyst that provokes their eventual collapse."
           }
         },
         {
-          "type": "single",
-          "value": 9,
+          "number": {
+            "type": "single",
+            "value": 9
+          },
           "result": {
             "type": "text",
-            "title": "Stratification",
-            "value": "where classes do not touch",
+            "value": "Stratification, where classes do not touch",
             "longDescription": "The nation draws harsh lines between social classes, cultural groups, regions, sexes, or some other distinction between people. Castes and aristocracies are a common feature of these settings, ones drawn sharply by blood or birth circumstances. Adventurers are apt to be wild cards in these societies due to their ability to obtain outsized personal power, and they may regularly run into conflicts or complications that they have the strength to deal with, but not the social permission."
           }
         },
         {
-          "type": "single",
-          "value": 10,
+          "number": {
+            "type": "single",
+            "value": 10
+          },
           "result": {
             "type": "text",
-            "title": "Violence",
-            "value": "where life is something cheap",
+            "value": "Violence, where life is something cheap",
             "longDescription": "The nation is a bloody one, with human life held cheap and death a commonplace. This may be the result of incessant warfare, such that most people half-expect to die in battle, or it may be the product of a society that simply doesn't value people's lives. Death may be a penalty for comparatively trivial sins, or the environment might just be so dangerous that a death in bed is a thing unlooked-for by most."
           }
         }
@@ -1536,104 +1546,114 @@
         "diceSides": 10
       },
       "title": "Thematic Element (Positive)",
-      "table": [
+      "rows": [
         {
-          "type": "single",
-          "value": 1,
+          "number": {
+            "type": "single",
+            "value": 1
+          },
           "result": {
             "type": "text",
-            "title": "Enlightenment",
-            "value": "where knowledge is loved",
+            "value": "Enlightenment, where knowledge is loved",
             "longDescription": "A genuine love of knowledge imbues the nation, such that academies and schools have an important role in social and political life and a good education is considered a hallmark of gentility. The populace has a genuine curiosity and zest for investigation, and finding the truth of things is considered more important than secure stability."
           }
         },
         {
-          "type": "single",
-          "value": 2,
+          "number": {
+            "type": "single",
+            "value": 2
+          },
           "result": {
             "type": "text",
-            "title": "Expansion",
-            "value": "where things swell greater",
+            "value": "Expansion, where things swell greater",
             "longDescription": "The nation's borders are expanding, either through successful conquest, peaceful assimilation of bordermarches, or the seductive appeal of their values and culture. The society is vigorous and confident, assured of the justification of their expansion and of the good it will provide to everyone deserving of good. There's usually some truth to this, albeit perhaps less than the expansionists would like to admit."
           }
         },
         {
-          "type": "single",
-          "value": 3,
+          "number": {
+            "type": "single",
+            "value": 3
+          },
           "result": {
             "type": "text",
-            "title": "Hope",
-            "value": "that the future should be better",
-            "longDescription": "The nation is imbued with a sense of hope and potential, the promise of a better day to come and a brighter future for those who win through their present problems. There may have been a recent discovery of some great trove of resources, some magical or technological innovation that promises great results, or the rise of a beloved house of seemingly- blessed rulers."
+            "value": "Hope, that the future should be better",
+            "longDescription": "The nation is imbued with a sense of hope and potential, the promise of a better day to come and a brighter future for those who win through their present problems. There may have been a recent discovery of some great trove of resources, some magical or technological innovation that promises great results, or the rise of a beloved house of seemingly-blessed rulers."
           }
         },
         {
-          "type": "single",
-          "value": 4,
+          "number": {
+            "type": "single",
+            "value": 4
+          },
           "result": {
             "type": "text",
-            "title": "Justice",
-            "value": "where a reckoning is had",
-            "longDescription": "One or more powers or institutions in the nation have a genuine concern for justice and righteousness, such that the society's laws and values are fairly and even-handedly enforced. These laws may not perfectly match modern conceptions of justice, but what exists is meant to be applied evenly. Righteous crusaders for the cause, honest magistrates, and some great struggle to enforce justice on a widely- understood wrong might all be present."
+            "value": "Justice, where a reckoning is had",
+            "longDescription": "One or more powers or institutions in the nation have a genuine concern for justice and righteousness, such that the society's laws and values are fairly and even-handedly enforced. These laws may not perfectly match modern conceptions of justice, but what exists is meant to be applied evenly. Righteous crusaders for the cause, honest magistrates, and some great struggle to enforce justice on a widely-understood wrong might all be present."
           }
         },
         {
-          "type": "single",
-          "value": 5,
+          "number": {
+            "type": "single",
+            "value": 5
+          },
           "result": {
             "type": "text",
-            "title": "Legitimacy",
-            "value": "where rulers are by right",
+            "value": "Legitimacy, where rulers are by right",
             "longDescription": "The nation's rulers or controlling institutions have a profound degree of legitimacy among the populace, such that it's hard to imagine ever overthrowing them as a group. Individuals among them might be criminals or incompetents, but the structures as a whole are accepted as necessary and eternal by most elements of the society. This legitimacy may derive from divine mandates, personal prowess, honored lineages, or a terror of the chaos that would exist without them."
           }
         },
         {
-          "type": "single",
-          "value": 6,
+          "number": {
+            "type": "single",
+            "value": 6
+          },
           "result": {
             "type": "text",
-            "title": "Pageantry",
-            "value": "of splendor and magnificence",
+            "value": "Pageantry, of splendor and magnificence",
             "longDescription": "The nation is marked by dramatic displays, magnificent architecture, sweeping demonstrations of might, and large-scale undertakings for the glory or edification of the rulers and populace. The locals tend to place great store by such ritual displays, finding them inspiring, meaningful, and important in more than strictly material ways. These grandiose efforts actually have real results towards unification, inspiration, and societal harmony."
           }
         },
         {
-          "type": "single",
-          "value": 7,
+          "number": {
+            "type": "single",
+            "value": 7
+          },
           "result": {
             "type": "text",
-            "title": "Prosperity",
-            "value": "with wealth easily had",
+            "value": "Prosperity, with wealth easily had",
             "longDescription": "The nation is relatively rich, such that conventional scourges of famine, privation, and desperation aren't nearly as common as they would be in other cultures. Pockets of genuine want may exist, but the average commoner leads a well-fed, wellclothed life and the grandees have the resources for impressive displays of wealth. This prosperity may be the fruit of unusual natural resources, exceptional societal harmony, magical blessings, or simple good climate."
           }
         },
         {
-          "type": "single",
-          "value": 8,
+          "number": {
+            "type": "single",
+            "value": 8
+          },
           "result": {
             "type": "text",
-            "title": "Renewal",
-            "value": "with things growing brighter",
+            "value": "Renewal, with things growing brighter",
             "longDescription": "A spirit of reformation and renewal breathes through the nation, with old noble houses rising once again, decayed religions being reformed, corrupt institutions being shaken, and the populace generally more insistent on improvement. This renewal could be a harkening back to the old ideals of yore or an appeal to some new innovation, and the subjects could just as easily be a royal house recalled from exile as a new republic's establishment."
           }
         },
         {
-          "type": "single",
-          "value": 9,
+          "number": {
+            "type": "single",
+            "value": 9
+          },
           "result": {
             "type": "text",
-            "title": "Triumph",
-            "value": "with victory a fresh memory",
+            "value": "Triumph, with victory a fresh memory",
             "longDescription": "Something wonderful has recently been accomplished in the nation; a dark lord defeated, an evil king overthrown, a plague ended, a natural disaster overcome, or the like. The setting is touched with a sense of success and victory, despite the costs of that triumph, and filled with a confidence in its own power and potential. There will be many new institutions and groups seeking to exploit the aftermath and earn their rightful share of the rewards."
           }
         },
         {
-          "type": "single",
-          "value": 10,
+          "number": {
+            "type": "single",
+            "value": 10
+          },
           "result": {
             "type": "text",
-            "title": "Unity",
-            "value": "where purposes are shared",
+            "value": "Unity, where purposes are shared",
             "longDescription": "Powers and groups within the nation are highly united in their goals and sense of fellow-feeling. While not necessarily xenophobic, they will tend to value their brethren more than strangers, and paper over internal conflicts and disagreements that might fester into civil disorder or chaos in less harmonious societies. These societies might have been shaped by some all-consuming peril that forced them together or a culture that greatly prizes unity."
           }
         }

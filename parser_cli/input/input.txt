@@ -1,9 +1,71 @@
-["d8", "Hair Color", "Hair Texture"]
-1 Night-black Very tightly-curled
-2 Dark browns Dense and curled
-3 Lighter browns Slightly wavy
-4 Red shades Stiff and straight
-5 Blonds Thick and wavy
-6 White or white-blond Thin and fine
-7 An unusual palette Thick and flowing
-8 They lack hair Scant and delicate
+d6 What Do The Locals Think Of It?
+1 It’s held in contempt for its flaws and failings
+2 Something about it is bothering the locals
+3 The locals accept it as a tolerable shrine
+4 It has a good and trustworthy reputation
+5 It did something recently that gave it glory
+6 It’s held in utmost esteem by the locals
+---
+d8 Who Is In Charge There?
+1 A venal time-server of desultory piety
+2 A harried and inexperienced new leader
+3 A dutiful minion of the local secular power
+4 An incompetent shunted off to the post
+5 A local prodigy of remarkable abilities
+6 A grizzled and pragmatic leader
+7 A charismatic but near-schismatic iconoclast
+8 A practical and reasonably pious cleric
+---
+d10 What Particular Help Can It Provide?
+1 They have considerable magical resources
+2 They’re unusually flush with cash
+3 They own a lot of valuable goods or land
+4 They have the ear of important locals
+5 The local lord relies on them considerably
+6 They have useful secular servants
+7 They know a lot of useful secrets
+8 They can get crimes or offenses forgiven
+9 They are owed favors by other temples
+10 They have a lot of well-armed followers
+---
+d4 How Big is the Temple?
+1 Much smaller than most in a similar place
+2 Shrunken from its former size
+3 Normal for a temple of its importance
+4 Unusually large or grand for its site
+---
+d12 What Problems Does It Have?
+1 A rival faith is doing the temple real harm
+2 The locals expect a miracle it can’t provide
+3 The leader is fighting with their superiors
+4 A priest recently did something awful
+5 The temple got into serious debt lately
+6 Some disaster physically damaged the place
+7 Some armed men have a grudge against it
+8 The elite refuse to patronize it for some reason
+9 It suffers signs of real divine displeasure
+10 A sorcerer-priest is meddling with dark forces
+11 A schismatic is drawing off its believers
+12 Roll twice; one because of the other
+---
+d20 Particular Quirks About the Temple
+1 It’s built into a once-secular building
+2 It’s remarkably well-fortified
+3 It’s connected to a secular business
+4 The clergy are largely related to each other
+5 It’s in an unusually dangerous location
+6 It shares space with a friendly faith
+7 It follows unusual prohibitions or rites
+8 It has access to some ancient artifact
+9 The library is remarkably extensive
+10 It attracts prophets and religious merchants
+11 It provides some illicit or scandalous service
+12 It’s more a merchant enterprise than a shrine
+13 It’s unusually beautifully-built
+14 It’s a shadow of a once-glorious past
+15 It’s unusually recent in its founding
+16 The clergy generally hate each other there
+17 Its leadership is foreign or demihuman
+18 It deals only with the proven faithful
+19 It displaced a former faith, perhaps violently
+20 It actually is another faith, merely concealed

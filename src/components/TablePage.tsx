@@ -34,14 +34,21 @@ function StandardResultItem({
   const { result } = rollOnTableResult;
   let tableTitleComponent = null;
   if (tableTitle) {
+    const tableTitleSep = tableTitle.endsWith("?") ? "" : ":";
     if (refreshFunc) {
       tableTitleComponent = (
         <b style={{ cursor: "pointer" }} onClick={refreshFunc}>
-          {tableTitle}:{" "}
+          {tableTitle}
+          {tableTitleSep}{" "}
         </b>
       );
     } else {
-      tableTitleComponent = <b>{tableTitle}: </b>;
+      tableTitleComponent = (
+        <b>
+          {tableTitle}
+          {tableTitleSep}{" "}
+        </b>
+      );
     }
   }
   return (
@@ -65,14 +72,21 @@ function RollAgainResultItem({
 
   let tableTitleComponent = null;
   if (tableTitle) {
+    const tableTitleSep = tableTitle.endsWith("?") ? "" : ":";
     if (refreshFunc) {
       tableTitleComponent = (
         <b style={{ cursor: "pointer" }} onClick={refreshFunc}>
-          {tableTitle}:{" "}
+          {tableTitle}
+          {tableTitleSep}{" "}
         </b>
       );
     } else {
-      tableTitleComponent = <b>{tableTitle}: </b>;
+      tableTitleComponent = (
+        <b>
+          {tableTitle}
+          {tableTitleSep}{" "}
+        </b>
+      );
     }
   }
 
@@ -207,7 +221,8 @@ export default function TablePage() {
         <li key={rollOnTableResults.table.title}>
           <b
             style={{ cursor: "pointer" }}
-            onClick={() => handleRefresh([rollOnTableResults.tableKey])}>
+            onClick={() => handleRefresh([rollOnTableResults.tableKey])}
+          >
             {rollOnTableResults.table.title}
           </b>
           <ul>{rollOnTableResultComponents}</ul>

@@ -49,6 +49,7 @@ def generate_table(
     mapping_str = None
     if mapping:
         mapping_str = (input_path / "mapping.txt").read_text().strip()
+        mapping_str = replace_chars(mapping_str)
     match type:
         case "simple":
             all_tables = {}
@@ -74,10 +75,8 @@ def clean_json():
 
     new_final = {}
     for key, tables in data.items():
-        print(key)
         new_tables = {}
         for inner_key, table in tables.items():
-            print(inner_key)
             new_table = {"dice": table["dice"], "title": table["title"]}
             new_rows = []
             for row in table["table"]:
@@ -88,6 +87,7 @@ def clean_json():
                     new_row["number"] = {"type": "single", "value": row["value"]}
                 if "title" in row["result"]:
                     row["result"].pop("title")
+
                 new_row["result"] = row["result"]
                 new_rows.append(new_row)
             new_table["rows"] = new_rows

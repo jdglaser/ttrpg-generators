@@ -1715,7 +1715,7 @@
           },
           "result": {
             "type": "text",
-            "value": "with brutal savagery",
+            "value": "Barbarism, with brutal savagery",
             "longDescription": "The nation is brutally assailed by bestial, primitive forces, whether from external enemies or internal divisions. Naked violence, cruelty, ignorance, and hatred are always near the surface of things, either as threats pressing on the familiar or as instincts and habits among the natives."
           }
         },
@@ -1726,7 +1726,7 @@
           },
           "result": {
             "type": "text",
-            "value": "of sins and fadings",
+            "value": "Decadence, of sins and fadings",
             "longDescription": "The nation is voluptuously cruel, indulgent, and indifferent to the prices it pays for its pleasures. Unspeakable debaucheries and sordid delights are in common circulation, and few ever think to question the appropriateness of inflicting brutal evils in order to obtain some elevated enjoyment or refined pleasure. The PCs are regularly exposed to the consequences of such indulgences and the damage they inflict on others."
           }
         },
@@ -1737,7 +1737,7 @@
           },
           "result": {
             "type": "text",
-            "value": "with good things unlooked-for",
+            "value": "Despair, with good things unlooked-for",
             "longDescription": "The nation is redolent of hopelessness and apathetic submission to fate. It may be because some overwhelming evil seems inevitably due to pass, or because all prior efforts at improvement have brought only worse suffering, or because some bright cultural hope or golden age is now clearly lost and ruined forever. The nation will tend to accept evils and sufferings as inevitable, and the natives will do little to rebel, resist, or defy their unhappy fates."
           }
         },
@@ -1748,7 +1748,7 @@
           },
           "result": {
             "type": "text",
-            "value": "with strength spent and lost",
+            "value": "Exhaustion, with strength spent and lost",
             "longDescription": "The nation is depleted of something critical, whether that is a tangible resource or their spiritual reserves of enthusiasm and hope. Everything is tired in this nation, with spent rivers, barren fields, cut-over forests, and shorn hillsides. If material resources are sufficient, the natives simply don't have the energy or enthusiasm to bring in more than they presently do, perhaps out of a sense that nothing good can come of any putative improvement."
           }
         },
@@ -1759,7 +1759,7 @@
           },
           "result": {
             "type": "text",
-            "value": "of terrors and the unknown",
+            "value": "Ignorance, of terrors and the unknown",
             "longDescription": "The nation is an ignorant one, redolent of (incorrect) superstition, false gods, blundering institutions, and erroneous beliefs of all kinds. These beliefs are somehow critical to the setting's culture or society, such that being rid of them would cause some profound, potentially bloody disruption of life. Life in this nation can go on as it does only so long as the ignorance remains unilluminated, and the vast majority of its populace would rather remain in error than exist in chaos."
           }
         },
@@ -1770,7 +1770,7 @@
           },
           "result": {
             "type": "text",
-            "value": "with rule a crushing weight",
+            "value": "Oppression, with rule a crushing weight",
             "longDescription": "Some substantial portion of the nation is cruelly oppressed by some force. It's rare that this is the same group in all areas of the nation; oppression as a key theme to the setting implies that many groups in many places suffer under this, and it may be accepted as a commonplace that one group or another needs to be harshly repressed if the rest of society is to prosper. Oppressive groups will usually have a clearly-enunciated philosophy of why this state of affairs is necessary, and it usually will have at least some coloring of justification to have persisted as it has."
           }
         },
@@ -1781,7 +1781,7 @@
           },
           "result": {
             "type": "text",
-            "value": "where even the rich are poor",
+            "value": "Poverty, where even the rich are poor",
             "longDescription": "The nation is poor. Even aristocrats might not be assured of the necessary staples of life, or basic resources might be constantly threatened by monsters, warfare, calamities, or simple dearth. The struggle for resources and the basic necessities for survival are apt to drive numerous conflicts in the setting, and the consequences of failure can be far worse than mere discomfort for the losers."
           }
         },
@@ -1792,7 +1792,7 @@
           },
           "result": {
             "type": "text",
-            "value": "with all goods made fleeting",
+            "value": "Precarity, with all goods made fleeting",
             "longDescription": "Whatever good the nation has is under immediate siege by circumstances, and it looks very likely that it might crumble. Something is happening in the setting to make old verities and assured societal institutions totter, whether a massive monstrous invasion or a revolt by some displeased underclass. These institutions will tend to strike out violently at threats, fearing that their basic existence is at stake, and the recklessness of their responses might be the very catalyst that provokes their eventual collapse."
           }
         },
@@ -1803,7 +1803,7 @@
           },
           "result": {
             "type": "text",
-            "value": "where classes do not touch",
+            "value": "Stratification, where classes do not touch",
             "longDescription": "The nation draws harsh lines between social classes, cultural groups, regions, sexes, or some other distinction between people. Castes and aristocracies are a common feature of these settings, ones drawn sharply by blood or birth circumstances. Adventurers are apt to be wild cards in these societies due to their ability to obtain outsized personal power, and they may regularly run into conflicts or complications that they have the strength to deal with, but not the social permission."
           }
         },
@@ -1814,7 +1814,7 @@
           },
           "result": {
             "type": "text",
-            "value": "where life is something cheap",
+            "value": "Violence, where life is something cheap",
             "longDescription": "The nation is a bloody one, with human life held cheap and death a commonplace. This may be the result of incessant warfare, such that most people half-expect to die in battle, or it may be the product of a society that simply doesn't value people's lives. Death may be a penalty for comparatively trivial sins, or the environment might just be so dangerous that a death in bed is a thing unlooked-for by most."
           }
         }
@@ -1834,7 +1834,7 @@
           },
           "result": {
             "type": "text",
-            "value": "where knowledge is loved",
+            "value": "Enlightenment, where knowledge is loved",
             "longDescription": "A genuine love of knowledge imbues the nation, such that academies and schools have an important role in social and political life and a good education is considered a hallmark of gentility. The populace has a genuine curiosity and zest for investigation, and finding the truth of things is considered more important than secure stability."
           }
         },
@@ -1845,7 +1845,7 @@
           },
           "result": {
             "type": "text",
-            "value": "where things swell greater",
+            "value": "Expansion, where things swell greater",
             "longDescription": "The nation's borders are expanding, either through successful conquest, peaceful assimilation of bordermarches, or the seductive appeal of their values and culture. The society is vigorous and confident, assured of the justification of their expansion and of the good it will provide to everyone deserving of good. There's usually some truth to this, albeit perhaps less than the expansionists would like to admit."
           }
         },
@@ -1856,8 +1856,8 @@
           },
           "result": {
             "type": "text",
-            "value": "that the future should be better",
-            "longDescription": "The nation is imbued with a sense of hope and potential, the promise of a better day to come and a brighter future for those who win through their present problems. There may have been a recent discovery of some great trove of resources, some magical or technological innovation that promises great results, or the rise of a beloved house of seemingly- blessed rulers."
+            "value": "Hope, that the future should be better",
+            "longDescription": "The nation is imbued with a sense of hope and potential, the promise of a better day to come and a brighter future for those who win through their present problems. There may have been a recent discovery of some great trove of resources, some magical or technological innovation that promises great results, or the rise of a beloved house of seemingly-blessed rulers."
           }
         },
         {
@@ -1867,8 +1867,8 @@
           },
           "result": {
             "type": "text",
-            "value": "where a reckoning is had",
-            "longDescription": "One or more powers or institutions in the nation have a genuine concern for justice and righteousness, such that the society's laws and values are fairly and even-handedly enforced. These laws may not perfectly match modern conceptions of justice, but what exists is meant to be applied evenly. Righteous crusaders for the cause, honest magistrates, and some great struggle to enforce justice on a widely- understood wrong might all be present."
+            "value": "Justice, where a reckoning is had",
+            "longDescription": "One or more powers or institutions in the nation have a genuine concern for justice and righteousness, such that the society's laws and values are fairly and even-handedly enforced. These laws may not perfectly match modern conceptions of justice, but what exists is meant to be applied evenly. Righteous crusaders for the cause, honest magistrates, and some great struggle to enforce justice on a widely-understood wrong might all be present."
           }
         },
         {
@@ -1878,7 +1878,7 @@
           },
           "result": {
             "type": "text",
-            "value": "where rulers are by right",
+            "value": "Legitimacy, where rulers are by right",
             "longDescription": "The nation's rulers or controlling institutions have a profound degree of legitimacy among the populace, such that it's hard to imagine ever overthrowing them as a group. Individuals among them might be criminals or incompetents, but the structures as a whole are accepted as necessary and eternal by most elements of the society. This legitimacy may derive from divine mandates, personal prowess, honored lineages, or a terror of the chaos that would exist without them."
           }
         },
@@ -1889,7 +1889,7 @@
           },
           "result": {
             "type": "text",
-            "value": "of splendor and magnificence",
+            "value": "Pageantry, of splendor and magnificence",
             "longDescription": "The nation is marked by dramatic displays, magnificent architecture, sweeping demonstrations of might, and large-scale undertakings for the glory or edification of the rulers and populace. The locals tend to place great store by such ritual displays, finding them inspiring, meaningful, and important in more than strictly material ways. These grandiose efforts actually have real results towards unification, inspiration, and societal harmony."
           }
         },
@@ -1900,7 +1900,7 @@
           },
           "result": {
             "type": "text",
-            "value": "with wealth easily had",
+            "value": "Prosperity, with wealth easily had",
             "longDescription": "The nation is relatively rich, such that conventional scourges of famine, privation, and desperation aren't nearly as common as they would be in other cultures. Pockets of genuine want may exist, but the average commoner leads a well-fed, wellclothed life and the grandees have the resources for impressive displays of wealth. This prosperity may be the fruit of unusual natural resources, exceptional societal harmony, magical blessings, or simple good climate."
           }
         },
@@ -1911,7 +1911,7 @@
           },
           "result": {
             "type": "text",
-            "value": "with things growing brighter",
+            "value": "Renewal, with things growing brighter",
             "longDescription": "A spirit of reformation and renewal breathes through the nation, with old noble houses rising once again, decayed religions being reformed, corrupt institutions being shaken, and the populace generally more insistent on improvement. This renewal could be a harkening back to the old ideals of yore or an appeal to some new innovation, and the subjects could just as easily be a royal house recalled from exile as a new republic's establishment."
           }
         },
@@ -1922,7 +1922,7 @@
           },
           "result": {
             "type": "text",
-            "value": "with victory a fresh memory",
+            "value": "Triumph, with victory a fresh memory",
             "longDescription": "Something wonderful has recently been accomplished in the nation; a dark lord defeated, an evil king overthrown, a plague ended, a natural disaster overcome, or the like. The setting is touched with a sense of success and victory, despite the costs of that triumph, and filled with a confidence in its own power and potential. There will be many new institutions and groups seeking to exploit the aftermath and earn their rightful share of the rewards."
           }
         },
@@ -1933,7 +1933,7 @@
           },
           "result": {
             "type": "text",
-            "value": "where purposes are shared",
+            "value": "Unity, where purposes are shared",
             "longDescription": "Powers and groups within the nation are highly united in their goals and sense of fellow-feeling. While not necessarily xenophobic, they will tend to value their brethren more than strangers, and paper over internal conflicts and disagreements that might fester into civil disorder or chaos in less harmonious societies. These societies might have been shaped by some all-consuming peril that forced them together or a culture that greatly prizes unity."
           }
         }
@@ -5250,7 +5250,7 @@
           "result": {
             "type": "rollAgain",
             "amount": 2,
-            "value": "Roll 1d8 twice; both happened",
+            "value": "Roll twice; both happened",
             "concat": false,
             "newDice": {
               "numDice": 1,
@@ -6660,6 +6660,2049 @@
             "type": "text",
             "value": "Xenophobia",
             "longDescription": "The group conceived a strong distaste for foreign people and their customs, curtailing outside contact."
+          }
+        }
+      ]
+    }
+  },
+  "religion-construction": {
+    "church-structures": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 8
+      },
+      "title": "Church Structures",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "Each holy man or woman is the autonomous leader of their own branch of the sect, with however many followers they can gather."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "There are multiple pontiffs, friendly or otherwise, with subordinate clergy obedient to their own pontiff and perhaps cooperative with others."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "There is a single pontiff with a layer of upper clergy and temple heads beneath them, who have a layer of minor clergy serving them."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "Individual congregations are independent, with their clergy subject to the consensus will of their parishioners."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "Powerful lay believers fund temples that are subject to their family's wishes, staffed by clergy supported by their funding."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "There is no official clergy; some believers may take up special roles or provide teaching, but they are not qualitatively different from others."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "The church is entirely part of the secular structure of the land, its clergy no more than officials appointed by the government to their roles."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "rollAgain",
+            "value": "Roll twice; the faith has different structures in different places or contexts.",
+            "amount": 2
+          }
+        }
+      ]
+    },
+    "where-did-the-god-come-from": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 12
+      },
+      "title": "Where Did The God Come From?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "It's a deified ancestor-king or progenitor"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "It's a legendary historical hero or teacher"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "It's an abstract principle reified as an entity"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "It simply always existed since creation"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "It was an apotheosized sorcerer"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "It's the genius of a particular land or location"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "It was an Outsider or alien from beyond"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "It was a personified natural phenomenon"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "It was another faith's saint turned into a god"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "It was a tamed or placated supernatural entity"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 11
+          },
+          "result": {
+            "type": "text",
+            "value": "It was an artificial construct built by humans"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 12
+          },
+          "result": {
+            "type": "rollAgain",
+            "value": "Roll twice and blend the two",
+            "amount": 2
+          }
+        }
+      ]
+    },
+    "why-does-the-faith-matter": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 10
+      },
+      "title": "Why Does The Faith Matter?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "It's the main purveyor of healing blessings"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "It provides magical favors to the faithful"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "It's locked in conflict with a major local power"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "It supports something the PCs love or hate"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "It's the state faith or otherwise legally important"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "It regularly hires people to do work for it"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "It's trying to expand and needs help"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "It's a huge economic player in the area"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "It plots secret sinister evils against the land"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "It has influence over important locals"
+          }
+        }
+      ]
+    },
+    "what-does-the-faith-want": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 12
+      },
+      "title": "What Does The Faith Want?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "Crush its religious rivals in the area"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "Destroy a heretical but powerful sub-sect"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "Expand the faith to a foreign land or people"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "Recover holy land or a sacred site"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "Obtain vast material wealth for the faith"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "Depose a hostile royal house or government"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "Smash a specific enemy faith or group"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "Embody their god with a mighty ritual"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "Erect a huge and imposing temple complex"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "Perform a tremendously expensive rite"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 11
+          },
+          "result": {
+            "type": "text",
+            "value": "Strengthen or protect its devout believers"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 12
+          },
+          "result": {
+            "type": "rollAgain",
+            "value": "Roll again; stop a rival from doing that",
+            "amount": 1
+          }
+        }
+      ]
+    },
+    "what-are-the-clerics-like": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 8
+      },
+      "title": "What Are the Clerics Like?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "Just ritual technicians trained in complex rites, with no special moral qualities."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "Chosen from specific bloodlines or groups and trained to serve the faithful."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "Experts in some sphere related to the god's portfolio or nature, though trained in ritual."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "Sorcerers who serve the god as part of their magical studies or efforts."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "Common believers chosen by their peers for their technical skill and good moral qualities."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "Isolated ascetics or ritually-separated persons expected to keep a distance from the world."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "Individuals who step forward and are accepted for their qualities or technical skills as priests."
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "The wealthier believers who can afford to keep up the expensive or demanding ritual practice."
+          }
+        }
+      ]
+    },
+    "what-does-this-god-do-in-society": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 20
+      },
+      "title": "What Does This God Do in Society?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "It's the war god or patron of those who fight"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "It's the favorite god of the ruling class"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "It's the patron of an important profession"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "It's a devil-figure that must be placated"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "It provides healing or protection from danger"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "It's a patron of an illegal but inevitable trade"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "It hallows the law and consecrates oaths"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "It's flatly illegal and hated by most"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "It's the protector of an ethnic minority"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "It provides good harvests or human fertility"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 11
+          },
+          "result": {
+            "type": "text",
+            "value": "It's the patron of the former rulers of the land"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 12
+          },
+          "result": {
+            "type": "text",
+            "value": "It guards particular places within the land"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 13
+          },
+          "result": {
+            "type": "text",
+            "value": "It provides wisdom and insight at need"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 14
+          },
+          "result": {
+            "type": "text",
+            "value": "It gives good luck to its petitioners"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 15
+          },
+          "result": {
+            "type": "text",
+            "value": "It's a protector of the weak and humble"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 16
+          },
+          "result": {
+            "type": "text",
+            "value": "It empowers those seeking revenge for wrongs"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 17
+          },
+          "result": {
+            "type": "text",
+            "value": "It bestows material wealth upon petitioners"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 18
+          },
+          "result": {
+            "type": "text",
+            "value": "It protects the soul in the afterlife"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 19
+          },
+          "result": {
+            "type": "text",
+            "value": "It explains the creation and order of the world"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 20
+          },
+          "result": {
+            "type": "text",
+            "value": "It prevents some type of common disaster"
+          }
+        }
+      ]
+    },
+    "human-concern": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 20
+      },
+      "title": "Human Concern",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "A Human Vice"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "A Kind of Demihuman"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "Agriculture"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "Cities"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "Commerce"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "Crafting"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "Deception"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "Healing"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "Justice"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "Luck"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 11
+          },
+          "result": {
+            "type": "text",
+            "value": "Marriage or Family"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 12
+          },
+          "result": {
+            "type": "text",
+            "value": "Music"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 13
+          },
+          "result": {
+            "type": "text",
+            "value": "Prophecy"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 14
+          },
+          "result": {
+            "type": "text",
+            "value": "Protection"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 15
+          },
+          "result": {
+            "type": "text",
+            "value": "Revenge"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 16
+          },
+          "result": {
+            "type": "text",
+            "value": "Ruling"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 17
+          },
+          "result": {
+            "type": "text",
+            "value": "Theft or Crime"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 18
+          },
+          "result": {
+            "type": "text",
+            "value": "Travel or Roads"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 19
+          },
+          "result": {
+            "type": "text",
+            "value": "War"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 20
+          },
+          "result": {
+            "type": "text",
+            "value": "Wisdom"
+          }
+        }
+      ]
+    },
+    "natural-principle": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 20
+      },
+      "title": "Natural Principle",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "A Local Terrain Type"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "Beasts"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "Beauty or Sex"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "Cosmic Law"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "Creation"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "Death"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "Fertility"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "Forests"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "Magic"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "Mountains"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 11
+          },
+          "result": {
+            "type": "text",
+            "value": "Night"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 12
+          },
+          "result": {
+            "type": "text",
+            "value": "One or More Seasons"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 13
+          },
+          "result": {
+            "type": "text",
+            "value": "Pain"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 14
+          },
+          "result": {
+            "type": "text",
+            "value": "Sea or Rivers"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 15
+          },
+          "result": {
+            "type": "text",
+            "value": "Sky"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 16
+          },
+          "result": {
+            "type": "text",
+            "value": "Storms or Rain"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 17
+          },
+          "result": {
+            "type": "text",
+            "value": "Sun, Moon, or Stars"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 18
+          },
+          "result": {
+            "type": "text",
+            "value": "The Underworld"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 19
+          },
+          "result": {
+            "type": "text",
+            "value": "Time"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 20
+          },
+          "result": {
+            "type": "text",
+            "value": "Untamed Nature"
+          }
+        }
+      ]
+    },
+    "particular-religious-requirements": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 20
+      },
+      "title": "Particular Religious Requirements",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "Never/always associate with certain types"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "Never eat a particular common food type"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "Give a significant tithe regularly"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "Make particular sacrifices at certain times"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "Revere/hate a class or group of people"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "Forbid a certain common profession or role"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "Forbid an activity common to society"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "Give secular obedience to the clergy"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "Pray at certain fixed places or times"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "Never/always trade with certain sorts"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 11
+          },
+          "result": {
+            "type": "text",
+            "value": "Never/always live in certain places"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 12
+          },
+          "result": {
+            "type": "text",
+            "value": "Marry exclusively within the faith"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 13
+          },
+          "result": {
+            "type": "text",
+            "value": "Do something society finds repugnant"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 14
+          },
+          "result": {
+            "type": "text",
+            "value": "Hold certain places to be taboo"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 15
+          },
+          "result": {
+            "type": "text",
+            "value": "Hide the inner faith's teachings from outsiders"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 16
+          },
+          "result": {
+            "type": "text",
+            "value": "Make sacrifices that society finds hateful"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 17
+          },
+          "result": {
+            "type": "text",
+            "value": "Never/always make war on certain types"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 18
+          },
+          "result": {
+            "type": "text",
+            "value": "Honor/degrade a particular profession"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 19
+          },
+          "result": {
+            "type": "text",
+            "value": "Make certain pilgrimages to holy places"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 20
+          },
+          "result": {
+            "type": "text",
+            "value": "Never/always cooperate with a certain faith"
+          }
+        }
+      ]
+    }
+  },
+  "temple-construction": {
+    "what-do-the-locals-think-of-it": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 6
+      },
+      "title": "What Do The Locals Think Of It?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "It's held in contempt for its flaws and failings"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "Something about it is bothering the locals"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "The locals accept it as a tolerable shrine"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "It has a good and trustworthy reputation"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "It did something recently that gave it glory"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "It's held in utmost esteem by the locals"
+          }
+        }
+      ]
+    },
+    "who-is-in-charge-there": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 8
+      },
+      "title": "Who Is In Charge There?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "A venal time-server of desultory piety"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "A harried and inexperienced new leader"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "A dutiful minion of the local secular power"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "An incompetent shunted off to the post"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "A local prodigy of remarkable abilities"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "A grizzled and pragmatic leader"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "A charismatic but near-schismatic iconoclast"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "A practical and reasonably pious cleric"
+          }
+        }
+      ]
+    },
+    "what-particular-help-can-it-provide": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 10
+      },
+      "title": "What Particular Help Can It Provide?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "They have considerable magical resources"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "They're unusually flush with cash"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "They own a lot of valuable goods or land"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "They have the ear of important locals"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "The local lord relies on them considerably"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "They have useful secular servants"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "They know a lot of useful secrets"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "They can get crimes or offenses forgiven"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "They are owed favors by other temples"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "They have a lot of well-armed followers"
+          }
+        }
+      ]
+    },
+    "how-big-is-the-temple": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 4
+      },
+      "title": "How Big is the Temple?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "Much smaller than most in a similar place"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "Shrunken from its former size"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "Normal for a temple of its importance"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "Unusually large or grand for its site"
+          }
+        }
+      ]
+    },
+    "what-problems-does-it-have": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 12
+      },
+      "title": "What Problems Does It Have?",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "A rival faith is doing the temple real harm"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "The locals expect a miracle it can't provide"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "The leader is fighting with their superiors"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "A priest recently did something awful"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "The temple got into serious debt lately"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "Some disaster physically damaged the place"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "Some armed men have a grudge against it"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "The elite refuse to patronize it for some reason"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "It suffers signs of real divine displeasure"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "A sorcerer-priest is meddling with dark forces"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 11
+          },
+          "result": {
+            "type": "text",
+            "value": "A schismatic is drawing off its believers"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 12
+          },
+          "result": {
+            "type": "rollAgain",
+            "value": "Roll twice; one because of the other",
+            "amount": 2
+          }
+        }
+      ]
+    },
+    "particular-quirks-about-the-temple": {
+      "dice": {
+        "numDice": 1,
+        "diceSides": 20
+      },
+      "title": "Particular Quirks About the Temple",
+      "rows": [
+        {
+          "number": {
+            "type": "single",
+            "value": 1
+          },
+          "result": {
+            "type": "text",
+            "value": "It's built into a once-secular building"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 2
+          },
+          "result": {
+            "type": "text",
+            "value": "It's remarkably well-fortified"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 3
+          },
+          "result": {
+            "type": "text",
+            "value": "It's connected to a secular business"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 4
+          },
+          "result": {
+            "type": "text",
+            "value": "The clergy are largely related to each other"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 5
+          },
+          "result": {
+            "type": "text",
+            "value": "It's in an unusually dangerous location"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 6
+          },
+          "result": {
+            "type": "text",
+            "value": "It shares space with a friendly faith"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 7
+          },
+          "result": {
+            "type": "text",
+            "value": "It follows unusual prohibitions or rites"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 8
+          },
+          "result": {
+            "type": "text",
+            "value": "It has access to some ancient artifact"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 9
+          },
+          "result": {
+            "type": "text",
+            "value": "The library is remarkably extensive"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 10
+          },
+          "result": {
+            "type": "text",
+            "value": "It attracts prophets and religious merchants"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 11
+          },
+          "result": {
+            "type": "text",
+            "value": "It provides some illicit or scandalous service"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 12
+          },
+          "result": {
+            "type": "text",
+            "value": "It's more a merchant enterprise than a shrine"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 13
+          },
+          "result": {
+            "type": "text",
+            "value": "It's unusually beautifully-built"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 14
+          },
+          "result": {
+            "type": "text",
+            "value": "It's a shadow of a once-glorious past"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 15
+          },
+          "result": {
+            "type": "text",
+            "value": "It's unusually recent in its founding"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 16
+          },
+          "result": {
+            "type": "text",
+            "value": "The clergy generally hate each other there"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 17
+          },
+          "result": {
+            "type": "text",
+            "value": "Its leadership is foreign or demihuman"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 18
+          },
+          "result": {
+            "type": "text",
+            "value": "It deals only with the proven faithful"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 19
+          },
+          "result": {
+            "type": "text",
+            "value": "It displaced a former faith, perhaps violently"
+          }
+        },
+        {
+          "number": {
+            "type": "single",
+            "value": 20
+          },
+          "result": {
+            "type": "text",
+            "value": "It actually is another faith, merely concealed"
           }
         }
       ]

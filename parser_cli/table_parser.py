@@ -26,6 +26,7 @@ def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[str]
         if row == "":
             continue
 
+        split_char = None
         if has_titles:
             split_char = next(c for c in row if c in [".", ","])
             first, second = row.split(split_char, 1)
@@ -41,7 +42,8 @@ def parse_rows(rows: list[str], has_titles: bool = False, mapping: Optional[str]
 
         result_match = match_dict["result_match"]
         result_title = match_dict.get("result_title")
-        result = (f"{result_title}. " if result_title else "") + match_dict["result"]
+        split_char = split_char if split_char else "."
+        result = (f"{result_title}{split_char} " if result_title else "") + match_dict["result"]
 
         description = None
         if mapping:
@@ -157,10 +159,13 @@ def parse_column(table: str):
 
     columns = [[] for _ in headers[1:]]
     for row in cleaned_rows:
-        cols_split = re.split(r" ([A-Z])", row, len(columns))
-        value = cols_split[0]
-        joined_cols = ["".join([a, b]) for a, b in batched(cols_split[1:], 2)]
-        for idx, v in enumerate(joined_cols):
+        row_match = re.match(r"(\d+) ", row)
+        if not row_match:
+            raise Exception(f"Problem parsing number from row {row}")
+        value = row_match.groups()[0]
+        row = re.sub(r"(\d+) ", "", row, 1)
+        cols_split = re.split(r"\|", row, len(columns))
+        for idx, v in enumerate(cols_split):
             columns[idx].append(f"{value} {v}")
 
     parsed_tables: list[Table] = []
