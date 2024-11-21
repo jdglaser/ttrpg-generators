@@ -15243,6 +15243,217 @@
       }
     },
     "ruin": {
+      "general-places-of-adventure": {
+        "dice": {
+          "numDice": 1,
+          "diceSides": 20
+        },
+        "title": "General Places of Adventure",
+        "rows": [
+          {
+            "number": {
+              "type": "single",
+              "value": 1
+            },
+            "result": {
+              "type": "text",
+              "value": "A lost temple to a dead god"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 2
+            },
+            "result": {
+              "type": "text",
+              "value": "Ruins of an ancient city"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 3
+            },
+            "result": {
+              "type": "text",
+              "value": "Cavernous tunnels and strange geology"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 4
+            },
+            "result": {
+              "type": "text",
+              "value": "Ruined fortress of a former empire"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 5
+            },
+            "result": {
+              "type": "text",
+              "value": "Town ruins swept away by some disaster"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 6
+            },
+            "result": {
+              "type": "text",
+              "value": "Lair of a legendary beast or monster"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 7
+            },
+            "result": {
+              "type": "text",
+              "value": "Wizard's tower or complex"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 8
+            },
+            "result": {
+              "type": "text",
+              "value": "Failed colony or forward outpost"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 9
+            },
+            "result": {
+              "type": "text",
+              "value": "Prison-pit to shackle a dangerous power"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 10
+            },
+            "result": {
+              "type": "text",
+              "value": "Pilgrimage site for a lost religion"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 11
+            },
+            "result": {
+              "type": "text",
+              "value": "Nexus point for otherworldly powers"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 12
+            },
+            "result": {
+              "type": "text",
+              "value": "Mortuary complex for a lost people"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 13
+            },
+            "result": {
+              "type": "text",
+              "value": "Stronghold of exiles, rebels, or invaders"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 14
+            },
+            "result": {
+              "type": "text",
+              "value": "City or settlement of dangerous nonhumans"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 15
+            },
+            "result": {
+              "type": "text",
+              "value": "Subterranean settlement or complex"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 16
+            },
+            "result": {
+              "type": "text",
+              "value": "Abandoned pleasure-palace of a ruler"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 17
+            },
+            "result": {
+              "type": "text",
+              "value": "Lost fortified bridge or crossing-point"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 18
+            },
+            "result": {
+              "type": "text",
+              "value": "Sinister ruined estate of a former lord"
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 19
+            },
+            "result": {
+              "type": "rollAgain",
+              "value": "Roll again; now inhabited by interlopers",
+              "amount": 2
+            }
+          },
+          {
+            "number": {
+              "type": "single",
+              "value": 20
+            },
+            "result": {
+              "type": "rollAgain",
+              "value": "Roll twice; one built on top of the other",
+              "amount": 2
+            }
+          }
+        ]
+      },
       "what-do-the-locals-think-of-it": {
         "dice": {
           "numDice": 1,
@@ -15897,6 +16108,15 @@
           }
         ]
       },
+      "tags": {
+        "amount": 2,
+        "ref": [
+          "tags",
+          "ruin"
+        ]
+      }
+    },
+    "points-of-interest": {
       "general-places-of-adventure": {
         "dice": {
           "numDice": 1,
@@ -16090,8 +16310,9 @@
               "value": 19
             },
             "result": {
-              "type": "text",
-              "value": "Roll again; now inhabited by interlopers"
+              "type": "rollAgain",
+              "value": "Roll again; now inhabited by interlopers",
+              "amount": 1
             }
           },
           {
@@ -16100,17 +16321,11 @@
               "value": 20
             },
             "result": {
-              "type": "text",
-              "value": "Roll twice; one built on top of the other"
+              "type": "rollAgain",
+              "value": "Roll twice; one built on top of the other",
+              "amount": 2
             }
           }
-        ]
-      },
-      "tags": {
-        "amount": 2,
-        "ref": [
-          "tags",
-          "ruin"
         ]
       }
     }
