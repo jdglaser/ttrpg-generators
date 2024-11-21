@@ -1,0 +1,859 @@
+{
+  "dice": {
+    "numDice": 1,
+    "diceSides": 100
+  },
+  "title": "Ruin Tags",
+  "rows": [
+    {
+      "number": {
+        "type": "range",
+        "minValue": 1,
+        "maxValue": 2
+      },
+      "result": {
+        "type": "tag",
+        "name": "Ancient Archives",
+        "longDescription": "The site once housed archives or information that would be very interesting to certain modern powers. The utility or value of this information should be obvious to the players, even if they're initially unaware of its existence. Known archival sites might have sealed their lore behind some fearsome guardian or a \"puzzle\" consisting of access procedures that were self-evident in the age it was constructed in.",
+        "enemies": "Maddened archive keeper, Powerful figure who wants the information kept hidden, Secret-seeker who brooks no rivals",
+        "friends": "Helpful ancient archive attendant, Hired investigator, Seeker of some related lore",
+        "complications": "The information is conveyed in idioms or forms that are no longer clear, The information is very dangerous to know, The information is buried in seas of irrelevant data that need navigating",
+        "things": "Index to the desired information, Key to decoding the data, Cultural work that elucidates the idioms or medium being used",
+        "places": "Library full of not-book data storage items, Scriptorium or other scribal zone, Chamber related to the topic or field of the data involved"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 3,
+        "maxValue": 4
+      },
+      "result": {
+        "type": "tag",
+        "name": "Aspiring Conqueror",
+        "longDescription": "Some power within the ruin has ambitions of conquest, and plans to use the site as a base for dominating the surrounding lands. Such a warlord might be wholly reliant on the ruin's denizens, or they could be recruiting minions from outcasts or renegades and so be willing to parley with adventurers. Not all the lieutenants of such leaders are always supportive of the plan.",
+        "enemies": "Inhuman warlord, Fanatical cult leader, Embittered outlaw-noble",
+        "friends": "Hapless local village headman, Minion who reconsidered their allegiance, Former leader who was pushed aside by the new one",
+        "complications": "Some of the locals honestly think the conqueror would be a better ruler, The conqueror actually has a legitimate claim on the land, The conqueror is being backed by enemies of the local ruler",
+        "things": "Cache of military supplies, Plunder taken from their first victims, Important hostage in their keeping",
+        "places": "Ruin barracks whipped into order, Training field in use, Nearby village they've crushed"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 5,
+        "maxValue": 6
+      },
+      "result": {
+        "type": "tag",
+        "name": "Automaton Servants",
+        "longDescription": "The ruin is still staffed by automaton servants or other immortal minions. Aside from obviously robotic servitors, magical golems, bound spirits, undead thralls, uplifted beasts, or other subject species might be found here. Such minions are usually magically bound to their roles, which may be causing them significant problems if their roles can no longer be carried out. It's possible that some of them have reinterpreted their roles into something they can do, whether or not it's something they should do.",
+        "enemies": "Cruel immortal artificer, Automaton leader gone mad, Outsider seeking to suborn them to their sinister service",
+        "friends": "Helpful automaton minion, Fascinated outside investigator, Local native who fears the minions",
+        "complications": "Scrapped automatons are worth a great deal, The automatons are needed to maintain the ruin's basic physical stability, The automatons have merged with or been altered by some outside power",
+        "things": "Command key for the automatons, Cache of valuable spare parts, Item they desperately need in order to fulfill their function",
+        "places": "Automaton maintenance area, Bank of unmoving figures, Place of endless automaton toil"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 7,
+        "maxValue": 8
+      },
+      "result": {
+        "type": "tag",
+        "name": "Birthing Cyst",
+        "longDescription": "A horrible thing is growing in the ruin and will eventually erupt into some catastrophic peril or awful creature. The ruin may have been originally designed to facilitate this thing's creation, or it could have been infested or perverted by some outside power. Outsiders may not realize the nature of the peril, or even mistake its growth for some positive process. The growth could be the product of ancient science, a magical ritual, or a conflux of geomantic forces.",
+        "enemies": "God-beast to be born for a long-dead faith, Obsessed ancient keeper, Outsider determined to provoke the catastrophe for their own ends",
+        "friends": "Worried local observer, Last surviving keeper of the ruin, Survivor of an early eruption of it",
+        "complications": "The thing's growth provides some profitable byproduct, People are completely mistaken about what's growing down there, People think it's already hatched and was dispatched",
+        "things": "Item needed to harm or kill the thing, Key to halt or abort the process, Precious offerings made to the unborn disaster by fearful observers",
+        "places": "Arcane lab where it's growing, Fortified chambers to guard it, Shrine depicting its eventual glory"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 9,
+        "maxValue": 10
+      },
+      "result": {
+        "type": "tag",
+        "name": "Bitter Remnants",
+        "longDescription": "The ruin is not entirely abandoned, as a remnant of its former creators still occupies the place. These survivors are almost certainly hostile toward the outside world and the intruders who have sought to take the place or loot it for uncounted ages. They may or may not have a full understanding of their ancestors' purpose in the ruin, but they likely use any secrets they do know to best effect against invaders.",
+        "enemies": "Xenophobic remnant chief, Outside ruler determined to exterminate them, Powerful ruin rival that seeks their destruction",
+        "friends": "Open-minded remnant member, Eager scholar seeking their secrets, Escapee from the terrible cruelties of the remnants",
+        "complications": "The remnant society is genuinely and completely horrible, The remnants no longer or never did think like humans do, Certain outcasts have trade ties with the remnants",
+        "things": "Precious ancient relic they preserved, Loot taken from dead invaders, Secret history of the ruin full of useful information",
+        "places": "Ancient but meticulously-kept chamber, Ancestral place of rites unique to them, Maintained monument to past glory"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 11,
+        "maxValue": 12
+      },
+      "result": {
+        "type": "tag",
+        "name": "Civil War",
+        "longDescription": "There are at least two organized factions within the ruin that are at war with each other. They all have motives that make simply leaving the place an unappealing prospect, and some of them might be eager to enlist outside help in ousting their rivals. Given the low population of most ruins, the war is likely a restricted one of raids, ambushes, and murders of convenience, and the traps and snares they set might catch more than their foes.",
+        "enemies": "Faction leader with dreams of conquest, Crazed warlord, Treacherous plotter who betrays their hired help",
+        "friends": "Faction leader with benevolent aims, Innocent local caught in the crossfire, Would-be peacemaker",
+        "complications": "They both want the same thing but in different ways, Both sides will unite swiftly against invaders, Neither side wants anything that outsiders are going to like much",
+        "things": "The macguffin they're fighting over, Weapon to destroy their rivals, Wealth to bribe other helpers",
+        "places": "Site of a vicious ambush, Defaced monument or symbol of a rival faction, Dangerous no-man's land zone within the ruin"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 13,
+        "maxValue": 14
+      },
+      "result": {
+        "type": "tag",
+        "name": "Cyclical Doom",
+        "longDescription": "There's a phenomenon to the ruin that makes it tremendously dangerous at certain intervals. Fluxes of ancient radiation, swarms of quick-breeding dangerous vermin, withering geomantic conjunctions, or cyclically-awakened preserved inhabitants might make the place exceedingly deadly for intruders there at that time. The natives may or may not know about the cycle, and if it's a very long one, they might not have been around to see it happen.",
+        "enemies": "Outsider determined to trigger the cycle, Native leader who wants to weaponize it, Outside researcher with no care for the consequences",
+        "friends": "Native aware of the impending disaster, Researcher trying to stop the cycle, Survivor of the last cycle",
+        "complications": "The cycle leaves behind a valuable byproduct, The cycle only threatens certain occupants, Outsiders have totally misinterpreted the cycle's meaning or events",
+        "things": "Key to trigger or halt the cycle, Device to protect users from the cycle, Object for controlling and directing the cycle",
+        "places": "Place scarred by a past cycle's effects, Control or observation center, Monument obscurely referencing the cycle"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 15,
+        "maxValue": 16
+      },
+      "result": {
+        "type": "tag",
+        "name": "Decrepit Structure",
+        "longDescription": "The ruin is falling apart, and is actively dangerous to its inhabitants. Navigating between areas may require careful progress, extensive rope and piton work, or avoidance of certain obvious-but-hazardous routes. Native inhabitants may have adapted to the hazards or they might be newcomers who are learning the hard way. Some areas in the ruin might provoke a general collapse if they are significantly damaged.",
+        "enemies": "Outside plunderer with no care for the consequences, Outsider actively trying to destroy the place, Berserk native trying to repair things",
+        "friends": "Refugee forced to live there, Native dweller seeking help to fix things, Architectural researcher",
+        "complications": "Valuable materials can be looted by those indifferent to the increasing instability, The collapse would reveal or unleash a terrible thing, Many places in it can only be visited once",
+        "things": "Resources that can repair the damage, Precious loot that will destabilize the place if taken, Treasure revealed by a structural collapse",
+        "places": "Creaking bridge or gantry, Room with numerous holes in the floor, Tower leaning at a drunken angle"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 17,
+        "maxValue": 18
+      },
+      "result": {
+        "type": "tag",
+        "name": "Desperate Hunger",
+        "longDescription": "Natives of the ruin just can't get enough to eat, and their situation or the surrounding area makes it impractical to move somewhere else. Beasts may be extremely aggressive due to hunger, and intelligent natives might fight more for food than gold or glory. Many of the more savage types may have fallen back on cannibalism or hunting other sapients for food.",
+        "enemies": "Obese cannibal chieftain, Native leader who'll do anything to feed their people, Sorcerer who gives dark nourishment to their servitors",
+        "friends": "Starved urchin-native, Anxious group leader wanting to cut a deal, Innovator trying to open up a new food source",
+        "complications": "The overpopulation is being resolved by murder, The food-gathering areas were recently blocked off by something, Foodstuffs become toxic or inedible rapidly in the ruin",
+        "things": "Cache of preserved food, Key to open new hunting areas, Great treasure that's viewed as trifling compared to the worth of food",
+        "places": "Pit of cracked and gnawed bones, Cages of meals-to-be, Viciously desperate feeding area for a group"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 19,
+        "maxValue": 20
+      },
+      "result": {
+        "type": "tag",
+        "name": "Dire Tombs",
+        "longDescription": "The ruin is characterized by a great many tombs or burial sites and a matching profusion of undead. The revenants may be mindless husks animated by dark magic or ambient power, or they could be intentionally created to act as guards or to continue \"living\" according to some long-lost death-god's teachings.",
+        "enemies": "Undead lord jealous of their solitude, Ravening undead hulk-thing, Necromancer eager for the raw materials",
+        "friends": "Descendant of the dead trying to keep them safe, Fascinated historical researcher, Undead-hunter trying to contain them",
+        "complications": "The undead are not all of the same motives, The locals revere and venerate them as ancestors, The undead are just symptoms of something worse entombed there",
+        "things": "Burial goods left behind, Plunder taken from unfortunate adventurers, Once-commonplace good that's now extremely valuable",
+        "places": "Halls of silent coffin-niches or urns, Chapel to a god related to the burial process, Splendid tomb to a dead hero or ruler"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 21,
+        "maxValue": 22
+      },
+      "result": {
+        "type": "tag",
+        "name": "Distant Gate",
+        "longDescription": "The ruin is connected to some interesting distant location, either through a magical gate, a portal of ancient technology, forgotten tube-cars in underground tunnels, or a more mundane hidden passage into an otherwise inaccessible place. The natives may know about and exploit this quality, or the gate may be sealed until some particular procedure or object is used to activate it.",
+        "enemies": "Guardian of the gate, Hostile entity from the other side, Intruder determined to unlock the gate",
+        "friends": "Hapless intruder from the other side, Native gate-guide, Explorer seeking a route to the gate's destination",
+        "complications": "The gate was sealed for a very good reason, The gate is one-way, Activating the gate risks destroying the ruin",
+        "things": "Key to activate the gate, Codes to control its destination, Treasure from the far side of it",
+        "places": "Mysterious transit-chamber with symbolism related to the destination, Room with objects or remains related to the destination, Dangerously energetic gate room"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 23,
+        "maxValue": 24
+      },
+      "result": {
+        "type": "tag",
+        "name": "Dungeon Heart",
+        "longDescription": "The ruin's physical integrity is bound with a particular creature or object within the site, and if it is destroyed or removed the place will collapse. If the destruction is immediate, this danger should be clearly conveyed to the players unless the GM wants to risk a rapid campaign end. This relationship may be derived from an ancient magical curse, a sympathetic unity of magical power, or ancient self-destruct security mechanisms.",
+        "enemies": "Outsider determined to kill or steal the heart, A heart-creature that would be very convenient or satisfying to kill, Native holding the heart hostage to force obedience",
+        "friends": "Guardian of the heart, Native eager to warn outsiders of the truth, Explorer with dire suspicions",
+        "complications": "The \"destruction\" is metaphorical or societal in nature, Only a specific part of the ruin will be destroyed, No one involved realizes that it will cause a somewhat slow-motion destruction",
+        "things": "Device that will undo the link, The precious object that is the heart, Relic to control the linked things",
+        "places": "Chamber where the heart's connection is visible, Place that shifts in sympathy to the heart, Damaged room reflecting damage to the heart"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 25,
+        "maxValue": 26
+      },
+      "result": {
+        "type": "tag",
+        "name": "Experimental Lab",
+        "longDescription": "A sorcerer or ancient artificer once used this place for their experiments, most of which were the sort that would never be tolerated in civilization. They may have been sponsored by some amoral power, or been independent theurges seeking the special resources, environment, or natives of this place to assist in their studies.",
+        "enemies": "Still-surviving researcher, Hideous creation of the arcanist, Outsider bent on seizing all its dark lore",
+        "friends": "Sympathetic creation of the sorcerer, Witchhunter bent on destroying the secrets, Local plagued by the lab's emanations or castoffs",
+        "complications": "The lab is still in use, The lab's patrons don't realize what's really going on there, The lab's creations have gone out of control",
+        "things": "Valuable research byproduct, Treasure once owned by a research victim, Potent magical lore related to the lab's focus",
+        "places": "Testing chamber for the lab's research, Occult and sinister laboratory, Pens for holding research stock"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 27,
+        "maxValue": 28
+      },
+      "result": {
+        "type": "tag",
+        "name": "Failed Intrusion",
+        "longDescription": "The ruin recently experienced a serious incursion of outsiders, whether adventurers, bandits, government forces, angry villagers, or other hostiles. These intruders were repulsed, perhaps with significant loss of native life, and the ruin was considerably disrupted by the fighting. Important native leaders might have been killed or wounded, treasures might have been looted, or slaves and hostages might've been taken.",
+        "enemies": "Desperate intruder leader still in the ruin, Bloodthirsty native leader craving vengeance, Dead leader's heir full of terrible ideas",
+        "friends": "Sympathetic intruder or native survivor, Escaped slave, Vengeful relative of the dead",
+        "complications": "The intruders are too desperate to have entirely given up, The two sides basically ruined each other, Outsiders have entered to take advantage of the chaos",
+        "things": "Useful relic lost by the intruding forces, Stolen treasure of the natives, Tribal treasure now inaccessible due to the chief's death",
+        "places": "Site of a hideous battle, Larder where the dead intruders are being kept, Local beast lair full of dragged corpses"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 29,
+        "maxValue": 30
+      },
+      "result": {
+        "type": "tag",
+        "name": "Fallen Sanctuary",
+        "longDescription": "The ruin was a place of security within recent memory, until some event or invasion turned it into its present state. Some of the surrounding locals might have been associated with the site during its heyday and remember interesting facts about it. Others may still nurse dreams of returning it to its former glory once its current inhabitants are slain or driven away.",
+        "enemies": "Dark warlord who overthrew the place, Traitor who arranged its downfall, Terrible creature unleashed in the site's dying throes",
+        "friends": "Idealistic would-be reconstructor, Native trying to make peace with the locals, Aged keeper of the site's old secrets",
+        "complications": "The site is fallen to the locals but a sanctuary now to a completely different group, The site is still dangerous and hostile to the interlopers, The locals desperately need to retake the site soon for some pressing reason",
+        "things": "Treasures hidden by the former owners, The dark tool used to cast the site down, Token of rightful rule seized by the invaders",
+        "places": "Hidden chamber unknown to invaders, Defaced and ruined room dedicated to the site's original role, Chamber re-purposed for the invaders"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 31,
+        "maxValue": 32
+      },
+      "result": {
+        "type": "tag",
+        "name": "False Front",
+        "longDescription": "The site actually seems to be a completely different type of place than it really is. You might generate a second basic function for the site and bill it as its true purpose, or conceal it as a currently-functioning structure of some kind. Either it was built this way originally or more recent owners have concealed the truth about it for their own benefit. Others may not realize that the ruin they think they know is just a facade over something deeper.",
+        "enemies": "Secret master of the hidden ruin, Cruel schemer who established the false front, Monstrous foe still buried below the facade",
+        "friends": "Clueless entrepreneur who means to exploit the false site, Explorer with curious references to the truth, Victim of something from the truth below",
+        "complications": "The false front is a lure to bait prey, The false front is to deflect interest, The false front is meant to be useful or profitable to the true lord of the place",
+        "things": "Key to reveal the entrance to the real site, Incongruous treasure from below, Valuable goods used to maintain the facade",
+        "places": "Chamber that doesn't fit with the false front, Secret passage to the depths, Place full of costumes and props"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 33,
+        "maxValue": 34
+      },
+      "result": {
+        "type": "tag",
+        "name": "Feral Magic",
+        "longDescription": "Some potent Working or other ancient magic has gone berserk or rotten in the ruin, tainting the occupants and making the place dangerous to inhabitants. Whatever the magic once did, it now does it too much, or in the wrong way, or at a grim cost to those within. The natives either cannot escape, or have no place better to go, or are somehow dependent on the twisted magic.",
+        "enemies": "Magically mutated abomination, Native chieftain full of tainted power, Outside sorcerer making reckless use of the magic",
+        "friends": "Researcher trying to understand or fix things, Sympathetic magic-plagued native, Outside victim of the site's magic",
+        "complications": "Valuable loot awaits those willing to break the magic further, The magic can be fixed if something dangerous is done, The decay is spreading outside the ruin",
+        "things": "Item to ward off the magic, Valuable sorcerous byproduct, Ancient instructions on how to fix things",
+        "places": "Thrumming power center of the magic, Lair of magic-twisted beasts, Native shrine to the power"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 35,
+        "maxValue": 36
+      },
+      "result": {
+        "type": "tag",
+        "name": "Flooded Halls",
+        "longDescription": "The ruin is largely flooded, perhaps with water and perhaps with some worse substance. Exploring it is difficult, and the heroes constantly risk being trapped by rising waters or flow-shifted obstacles. The natives are either creatures adapted to water or desperate enough to live where few others can pursue them.",
+        "enemies": "Fish-thing with dark hungers, Cult priest of a watery evil, Chief of a piscid humanoid species",
+        "friends": "Luckless local boater, Hermit who's tried to live there, Courageous treasure-diver",
+        "complications": "The flooding is cyclical, Water flow can be controlled somehow inside the site, The water is fetid with disease",
+        "things": "Pearls or other water-fashioned valuables, Extremely precious relic that would be ruined by being soaked, Device to grant water-breathing",
+        "places": "Splendid chamber now crusted by slime or coral, Half-filled room with an air bubble, Space full of totally opaque silty water"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 37,
+        "maxValue": 38
+      },
+      "result": {
+        "type": "tag",
+        "name": "Freshly Looted",
+        "longDescription": "The site has been recently plundered, either by adventurers, organized invaders, or a specific faction within the site itself. Many creatures are either dead or driven off, and the rewards for exploration are limited. But as the site is newly-emptied, numerous outside groups or warbands are likely in the process of moving in, cleaning out the remnants of surviving inhabitants and setting up their own bases there.",
+        "enemies": "Conquering Blighted warchief, Ruthless banditadventurer who likes the place, Vengeance-mad chief of a rabble of survivors",
+        "friends": "Sympathetic native driven out of the site, Frustrated adventurer denied a chance to loot, Local official charged with investigating the place",
+        "complications": "The looters missed the most important treasure, A native faction was working with the looters, A group of natives successfully hid from the looters",
+        "things": "Treasure hidden by dead natives, Relic lost by a slain looter, Valuable thing too big and heavy to carry out readily",
+        "places": "Empty treasure vault, Ruler's lair plundered and defaced, Hall choked with the recent dead"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 39,
+        "maxValue": 40
+      },
+      "result": {
+        "type": "tag",
+        "name": "Friendly Foes",
+        "longDescription": "A group dwells here that would normally be very hostile to humans or outsiders, yet is perfectly willing to deal with adventurers. They may be an anomalous group of their kind, or have desperate need for outside help, or have religious reasons to be cooperative. Few outsiders are likely to take their friendliness at face value, but they should be given the chance to be visibly friendly by the GM so as to clue the players in to the likelihood of peaceful dealings.",
+        "enemies": "Bloodthirsty adventurer who doesn't believe them, Group leader with treacherous plans, Monstrous foe that threatens the group and outsiders both",
+        "friends": "Friendly being from the group, Local human with secret ties to them, Earnest outside missionary",
+        "complications": "They're friendly because of a very large misunderstanding they have, They really are totally sincere in their good intent, They've got a problem that only long-term allies can solve",
+        "things": "Group-made product normally never available to humans, Treasure they gathered from foes, Relic they're using as a bargaining tool",
+        "places": "Meeting space also furnished for humans, Separate dwelling area for outsiders, Chamber for obscure group rituals or worship"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 41,
+        "maxValue": 42
+      },
+      "result": {
+        "type": "tag",
+        "name": "Hidden Within",
+        "longDescription": "The ruin is actually underneath a seemingly-ordinary structure or inhabited human settlement. Secret passages or long-forgotten portals lead down into it, and only a short space away from ordinary human life a ruin can seethe with sinister secrets. The ruin may have been built over accidentally, intentionally buried, or perhaps excavated by the current structure's original builders.",
+        "enemies": "Thing that creeps up from below at night, Longburied evil, Reckless adventurer stirring up things beneath",
+        "friends": "Passage-wise urchin, Architect with too much curiosity, Hapless local sewer worker",
+        "complications": "The structure's inhabitants have a secret deal with the ruin dwellers, The ruin dwellers masquerade as the structure's inhabitants, Time-delayed catastrophe will happen after the ruin's opened",
+        "things": "Key to open the hidden passage below, Treasure hidden in the ruin in ages past, Ancient relic the ruin was made to contain",
+        "places": "Passage hidden behind now-crumbling construction, Mundane room above a monstrous evil, Secret passages that have peepholes into the structure above"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 43,
+        "maxValue": 44
+      },
+      "result": {
+        "type": "tag",
+        "name": "Hiveminded Natives",
+        "longDescription": "A multi-bodied intellect exists in the ruin, whether an ancient AI, hiveminded swarm, telepathic gestalt species, unified golem force, or some other manner of creature. Some such hiveminds are inclined to \"recruit\" intruders, willing or otherwise. Conflict with these creatures is apt to be very dangerous, as they're capable of coordination at a level impossible to others, yet their single mind makes them more vulnerable to a single point of failure.",
+        "enemies": "Crazed ancient eidolon, Magically warped insect queen, Fungus-infected colony organism",
+        "friends": "Escapee from the hivemind, Last survivor of a recruited group, Researcher keen to study it",
+        "complications": "The hivemind's doubts are embodied in conflicting factions, It can focus only on so many bodies at once, It requires a connection to issue new orders",
+        "things": "Device to break the hivemind's control, Curative to free a recruit, Intricate treasure fabricated by unified hivemind effort",
+        "places": "Living quarters with no private elements, Swarming chamber full of perfectly-synchronized motion, Fetid organic queen-lair of the ruling intellect"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 45,
+        "maxValue": 46
+      },
+      "result": {
+        "type": "tag",
+        "name": "Hospitable Natives",
+        "longDescription": "While not all denizens of the ruin are friendly, there's at least one faction that's known to be willing to host guests and negotiate for favors. This group may be made up of bandits, exiles, hermits, or other social outcasts who find even the most dubious human visitors preferable to their neighbors, or they might be \"civilized\" humanoids who find it profitable to parley as well as raid.",
+        "enemies": "Sinister chieftain with ulterior motives, Xenophobic rebel who hates outsiders, Outsider adventurer bent on exploiting their hospitality",
+        "friends": "Wide-eyed native urchin, Outsider gone native, Outsider envoy trying to make a pact with them",
+        "complications": "They're hospitable because they desperately need allies, They recently were betrayed by a guest, Their hospitality comes at a high price",
+        "things": "Trade goods gathered from the ruin, Map of the ruin interior, Key to unlock a route normally accessible only to ruin natives",
+        "places": "Alien but friendly meeting-chamber, Makeshift guest lodgings, Ritual room for strange rites"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 47,
+        "maxValue": 48
+      },
+      "result": {
+        "type": "tag",
+        "name": "Hostile Environment",
+        "longDescription": "Ruins are seldom comfortable, but this one is actively dangerous to those who enter it. Noxious fumes, radiation, magical miasmas, contagious diseases, poisonous liquids, or some other environmental hazard makes progress very risky. Natives are either immune to the peril or have means of negating it. The extreme defensibility of the site may be the reason they continue to lair there.",
+        "enemies": "Sorcerer researching how to weaponize the hazard, Monstrous entity that emits the peril, Vile creature born of the toxic conditions",
+        "friends": "Explorer equipped with survival tools, Friendly native guide, Entrepreneur trying to exploit it",
+        "complications": "The hostile environment also produces a valuable resource, Surrounding locals consider it taboo because the hazard is somehow contagious, The hazard is very recent and the natives still don't know exactly how to handle it",
+        "things": "Protective gear against the hazard, Controls to shut off the hazard in some areas, Loot from hazard-slain intruders or natives",
+        "places": "Mundane location caked in the hazard, Lair of a hazard-mutated beast, Perilous path that snakes through the hazard"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 49,
+        "maxValue": 50
+      },
+      "result": {
+        "type": "tag",
+        "name": "Infectious Miasma",
+        "longDescription": "A contagious disease has infected the natives and might plague any intruders as well. The sickness isn't fatal, but it may induce physical or mental changes that make life in the outside world difficult; the ruin itself might be an environment optimized for the afflicted. Conversely, the ruin might be a leprosarium or place of exile for those who catch some virulent plague or socially-despised illness.",
+        "enemies": "Tyrant physician-chief who controls treatment, Ruler maddened by the illness, Plague priest determined to spread the disease",
+        "friends": "Innocent native suffering from the sickness, Outsider medical missionary, Hapless chieftain trying to hold things together",
+        "complications": "The ruin has been sealed off by the outside world, The plague turns the natives into living tools or slave-entities, Cures only temporarily suppress the disease's symptoms",
+        "things": "Research needed for a lasting cure, Treasures left by a dead sufferer, Vital resources needed for the sick to survive",
+        "places": "Gathering-place full of the walking ill, Shrine to a healing god, Pits where disease-warped victims are exiled"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 51,
+        "maxValue": 52
+      },
+      "result": {
+        "type": "tag",
+        "name": "Invincible Delusion",
+        "longDescription": "The natives of this ruin are totally convinced of something that is simply not the case: their ancient empire never fell, their god has commanded them to live a certain troublesome way, they are the only true humans left in the world, or some other delusion that's likely to cause problems. They've developed rationalizations to explain obvious contradictions to their error, many of which involve hostile responses to bearers of iniquitous falsehood. There may be something about the ruin that's enforcing this delusion.",
+        "enemies": "Hypnotically charismatic leader, Crazed ancient lich-ruler, Leader who knows the truth but profits by the error",
+        "friends": "Native with suspicions, Outsider trying to convince them, Outsider whom they've mistakenly incorporated into their error",
+        "complications": "The delusion makes an otherwise unendurable life bearable, The delusion is true in some critical ways, The delusion is somehow infectious",
+        "things": "Proof of the delusion's falsehood, Precious goods piled up for a lost cause, Relic of a golden age",
+        "places": "Ruin chamber made a pathetic mimicry of some greater place, Ritual chamber to celebrate the \"truth\", Archive containing troublesome records"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 53,
+        "maxValue": 54
+      },
+      "result": {
+        "type": "tag",
+        "name": "Lethal Treasure",
+        "longDescription": "The ruin has or produces a very valuable good, but that good is somehow extremely dangerous to acquire or possess. It may be toxic, or cursed, or the acquisition process may be predictably lethal. This danger may be the result of the creatures who create the good, the guardians that watch over it, or the surrounding locals who kill \"smugglers\" or \"profaners\" with zeal.",
+        "enemies": "Monstrous beast that produces the good, Ancient construct guardian, Cruel tyrant who forces victims to make or acquire the good",
+        "friends": "Desperate young adventurer, Native goodmaker trying to avoid disaster, Victim of the good's hazards",
+        "complications": "Extended exposure to the good is harmful, The good is useful but somehow morally dubious in its production or nature, The good needs to be specially processed to make it safe",
+        "things": "Large cache of unrefined good, Object to nullify or cure the good's danger, Loot lost in an unsuccessful attempt to buy the good",
+        "places": "Hellish processing or production area, Tightlyguarded vault of the good, Area made toxic by the good's effects"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 55,
+        "maxValue": 56
+      },
+      "result": {
+        "type": "tag",
+        "name": "Limited Access",
+        "longDescription": "The ruin can only be accessed at certain times or with certain special keys. Any natives are cut off from the outside world for long periods, and must either have no need for sustenance or sources within the ruin. The obstacle may be magical in nature, or the only access route to the ruin may be subject to natural cycles that make it impassable at most times.",
+        "enemies": "Ruin tyrant who views all outsiders as enemies, Ruthless adventurer trying to block rivals, Mad power locked away in the ruin",
+        "friends": "Eager young scholar, Adventurer with the key to the site, Native yearning to escape",
+        "complications": "It's been so long since the last opening that everyone's forgotten about it, The access now opens in a very inconvenient place, The access can be forced by some terrible sacrifice",
+        "things": "Key to open the access, Controls that permanently open the site, Loot from the last expedition to enter the site",
+        "places": "Passage that opens on a time lock, Vast magical seal, Coastal portal revealed only during a particular low tide period"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 57,
+        "maxValue": 58
+      },
+      "result": {
+        "type": "tag",
+        "name": "Lingering Curse",
+        "longDescription": "The ruin is cursed, and everything in it is somehow tainted or troubled by the malediction. There must be a strong reason for the natives to remain, or else the curse itself induces them to stay. The curse may be the result of some ancient crime, a Working gone wrong, a lost war against a magical foe, or a \"blessing\" in one age that is less appreciated in the modern day. The curse usually takes some time to trigger on intruders, but it may be induced by certain actions.",
+        "enemies": "Vile sorcerer feeding on the energies, Embittered chieftain hating all uncursed, Hapless victim made a monster by the curse",
+        "friends": "Native sorcerer trying to lift the curse, Outside researcher investigating it, Sympathetic native struggling with the curse's effects",
+        "complications": "The curse grants a significant advantage as well as a blight, Those cursed need something here to survive, The curse is a mark of native belonging and viewed as proof of loyalty",
+        "things": "Object that can lift the curse, Precious offering to the gods for mercy, Treasure left by a victim of the curse",
+        "places": "Shrine to some protective god, Curse-warped place of twisted mundanity, Chokingly-blighted place where the curse was first invoked"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 59,
+        "maxValue": 60
+      },
+      "result": {
+        "type": "tag",
+        "name": "Living Dungeon",
+        "longDescription": "The ruin is alive, either in a literal or metaphorical sense. It may be animated by an ancient eidolon that looks through countless sensors, or infused with the spirit of some arcane mind, or made up of the tiny bodies of countless construction-organisms like some vast coral. Physical damage to the ruin usually brings some hostile response, however muted by age and disrepair, and the structure itself may be conscious enough to strike bargains with inhabitants.",
+        "enemies": "Demented ruin spirit, Sorcerer trying to bend the site to their will, Native chieftain who worships the ruin's genius as a god",
+        "friends": "Friendly ruin sub-organism, Native ruin-keeper, Explorer avid to learn of the place",
+        "complications": "It's a colony creature with different minds in charge, The ruin is trying to grow at all costs, The ruin went berserk after its ruination and is now acting irrationally",
+        "things": "Poison that can kill the ruin, Precious good created by the ruin's life processes, Indigestible treasures left by prior intruders",
+        "places": "Wetly organic passageway, Chamber with a giant maw for feeding, Room with tethered organic servitor-creatures"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 61,
+        "maxValue": 62
+      },
+      "result": {
+        "type": "tag",
+        "name": "Lost Colony",
+        "longDescription": "The ruin was once a colony site for a now-vanished empire or people. Some of these pioneers might still survive within, albeit doubtless in much-changed form, or else their belongings might include objects or relics that would be very valuable today. The modern heirs to this lost domain might still consider the ruin to be their lawful property, and all within it to be theirs.",
+        "enemies": "Degenerate colony leader, Outside conqueror seeking to seize the site, The hideous thing that destroyed the colony",
+        "friends": "Confused surviving pioneer-heir, New colonist trying to revive the place, Historian looking for relics",
+        "complications": "The colonists claimed to belong to the lost kingdom but were really of a much more sinister group, Local powers quarrel over site access, Something extremely precious was lost here",
+        "things": "Once-commonplace item that is now precious, Ancient wealth of the colonists, Valuable goods they made before they died",
+        "places": "Area decorated in their ancient style, Longabandoned massacre site, Temple to a forgotten god"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 63,
+        "maxValue": 64
+      },
+      "result": {
+        "type": "tag",
+        "name": "Magical Wonder",
+        "longDescription": "An active Working in the site produces some wondrous effect; permanent summer, biological immortality, endless foodstuffs, visions of the future, or some other grand marvel. Unfortunately, it's so decayed and ill-tuned that all of these wonders come with related serious negative effects and problems, ones that the natives must struggle to deal with.",
+        "enemies": "Ancient half-mad keeper of the Working, Sorcerous monster born of the decay, Outsider determined to exploit the Working at any cost",
+        "friends": "Adventurer who seeks the Working's benefits, Researcher who wants its secrets, Sorcerer convinced they can fix the Working",
+        "complications": "The objects and benefits it confers don't exist outside the ruin, It will collapse disastrously if the ruin is seriously damaged, Nearby communities benefit from it and try to keep out intruders",
+        "things": "Device to control the Working's benefits, Ruined Working parts that are valuable still, Research notes that would allow it to be repaired",
+        "places": "Chamber of dangerous magical fluxes, Sorcerous emission point where the blessing flows forth, Abandoned laboratory where it was made"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 65,
+        "maxValue": 66
+      },
+      "result": {
+        "type": "tag",
+        "name": "Monster Forge",
+        "longDescription": "The ruin somehow creates a particular type of monster by its simple existence. It might be an ancient spawning-pit for Blighted, a cloning facility gone berserk, an ancient agricultural complex with feral livestock, an open portal to an Iterum of monsters, a source of very infectious monster-creating plagues, or something in that vein. These monsters probably infest the surrounding area, unless something about their nature requires them to stay close to the ruin.",
+        "enemies": "Alpha monster of the horde, Sorcerous would-be tyrant over the creatures, Terrible anomaly-beast that's even worse than usual",
+        "friends": "Victim of a monstrous rampage, Grim monsterhunter trying to hold back the tide, Local lord overcome by the wave",
+        "complications": "The ruin has only recently started to belch forth the creatures, The monsters capture humans to make more of their kind, The monsters were once slaves or servants but have now broken free",
+        "things": "Implement meant to destroy or control them, Plunder brought back by raiding creatures, Treasures lost by slain adventurers",
+        "places": "Frenetic chamber of ever-blossoming life, Overcrowded living quarters, Re-purposed ancient chamber"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 67,
+        "maxValue": 68
+      },
+      "result": {
+        "type": "tag",
+        "name": "Outsider Domain",
+        "longDescription": "This ruin was originally constructed to serve a race of Outsiders. It is possible that they were not even humanoid, and the atmosphere within the ruin may still be tainted with alien gases or hostile temperatures. The architecture and lighting was designed for alien bodies, and humans might find it difficult to navigate. Surviving inhabitants might be Outsider remnants or the alien flora and fauna that persisted long after their masters had died out.",
+        "enemies": "Still-surviving alien leader, Monstrous alien \"pet\", Cult priest revering the dead Outsiders",
+        "friends": "Surviving heir of human slave-servants, Outsiderhunter seeking prey, Researcher looking for lore",
+        "complications": "The site once produced something very important to the region at a terrible cost in lives, The alien atmosphere becomes unsurvivable in cycles, Humans Blighted by the Outsiders still live here",
+        "things": "Alien artifact of great value, Human treasure collected by dead Outsiders, Alien device that does something very useful to modern humans",
+        "places": "Inscrutably strange chamber, Living quarters re-dimensioned to fit non-humanoid bodies, \"Garden\" full of monstrous flora"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 69,
+        "maxValue": 70
+      },
+      "result": {
+        "type": "tag",
+        "name": "Precious Resource",
+        "longDescription": "The ruin generates a resource or serves a function that is valuable to those around it. This may be a direct and literal generation, such as a Deep that still automatically extracts and refines silver, or it may be metaphorical, such as a ruin full of undead who are privy to ancient secrets sought by wizards. Completely purging the ruin of perils would probably somehow ruin the process, or else some greedy outsider would likely have cleaned it out by now.",
+        "enemies": "Grasping outsider treasure-hunter, Monster attracted by the resource, Resource-maker using it to gain sinister influence and power",
+        "friends": "Earnest prospector, Luckless official charged with gathering the resource, Desperate fortune-hunter",
+        "complications": "The resource is cursed or dangerous, The resource can't be accessed without some kind of agreement with the natives, The resource is sacred to the ruin's dwellers",
+        "things": "Hidden cache of the resource, Device that extracts it, Ultra-rare refined example of the resource",
+        "places": "Place where the resource is extracted, Fortified zone around the extraction, Vault for the gathered resource"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 71,
+        "maxValue": 72
+      },
+      "result": {
+        "type": "tag",
+        "name": "Raider Lair",
+        "longDescription": "Some ruins are dangerous only to intruders, but this one actively sends out raiding parties to plunder the surroundings. Many such lairs prefer to go relatively far afield to obscure their origins and avoid the hostility of their immediate neighbors. Others have specific grudges to nurse, or particular targets that have incurred their wrath. Hostages might be taken back for ransom, labor, or food, depending on the nature of the inhabitants.",
+        "enemies": "Ambitious bandit chieftain, Embittered exiled lord, Monstrous ruler who hungers for outside wealth",
+        "friends": "Relative of a kidnapped victim, Escapee from the raiders, Local reeve trying to cope with the raids",
+        "complications": "The raiders are being backed by an outside power hostile to its neighbors, The raiders exact a brutal tribute for their \"protection\", The raiders had or have a sympathetic cause",
+        "things": "Priceless relic taken by the raiders, Cache of supplies they need badly, Loot hidden by the plunderers",
+        "places": "Raucous and vile raider camp, Re-purposed room turned into the chief's lair, Treasure chamber full of looted goods"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 73,
+        "maxValue": 74
+      },
+      "result": {
+        "type": "tag",
+        "name": "Recruiting Drive",
+        "longDescription": "At least one group of inhabitants in the ruin are actively adding to their numbers. This may involve bribes, kidnapping, proselytization, or just the prospect of a better life than their recruits currently have. This group is likely ideological or circumstantial in their ties, like a cult, a rebel group, or a bandit clan, and so new members can be added as quickly as they prove agreeable or profitable to the whole. Those who refuse to join in tend to meet less comradely fates.",
+        "enemies": "Charismatic and ruthless conqueror, Heartless grandee hiring disposable muscle, Hypnotically persuasive cult leader",
+        "friends": "Unwilling recruit, Rival group's leader, Local ruler worried about the new members",
+        "complications": "The group recruits under false pretenses and then traps the new recruits in some crime, The group really is offering a better deal than most recruits have, Resentment is building between old and new group members",
+        "things": "Proof of some outside power's involvement, Wealth meant to use to entice recruits, Rich gift given by an eager new recruit",
+        "places": "Disordered and confused living quarters, Welltrod training area, Empty home of a nowvanished recruit"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 75,
+        "maxValue": 76
+      },
+      "result": {
+        "type": "tag",
+        "name": "Religious Zealots",
+        "longDescription": "Almost everyone has some degree of deference to the gods, but the natives of this ruin are outright fanatics of a particular religious or philosophical cause. They may have inherited from ages of ancestors, acquired it from the teachings of a charismatic prophet, or been persuaded of it by some profitable or terrifying display of divine will. The natives likely have at least one goal that makes no logical sense, but is related to their god's nature or desires.",
+        "enemies": "Frothingly intense high priest, Holy demon or sending of the god, Monstrous entity placated by the group's worship",
+        "friends": "Member having second thoughts, Missionary of a rival faith, Cynical group member who wants to depose the current leadership in their favor",
+        "complications": "The god's intervention seems real on some level, Their cult is an offshoot of the locally dominant faith, They have backing from a mother temple",
+        "things": "Precious religious relic or regalia, Object blessed with divine powers, Wealth taken from unworthy unbelievers",
+        "places": "Room fitted out as an ornate shrine, Chamber carved with religious symbolism, Place dedicated to some bloody or fearsome ritual"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 77,
+        "maxValue": 78
+      },
+      "result": {
+        "type": "tag",
+        "name": "Rigid Hierarchy",
+        "longDescription": "Most ruins have little organization, with various groups or lone beasts vying with each other as their strength allows. In this one, however, there is a clear and recognized hierarchy of power and authority, and lesser groups and entities are likely to obey the greater even without an immediate threat of violence. Of course, those same groups are also quite likely to conspire with outsiders to remove their vexations.",
+        "enemies": "Iron-fisted monster lord, Ambitious and scheming chieftain, Secret kingmaker working as a humble minion",
+        "friends": "Hapless outsider slave, Minion with ambition, Bitter native seeking systemic revenge",
+        "complications": "The current leader is the only one holding back the ruin's denizens from raiding, The groups are being organized by an outside power, The subordinate groups are extremely bitter and restive over the state of affairs",
+        "things": "Treasure used to pay off underlings, Potent artifact used to cow subordinates, Tribute extracted from unwilling inferiors",
+        "places": "Barbarically luxurious throne room, Disciplined and organized watch post, Labor zone where the inferiors toil"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 79,
+        "maxValue": 80
+      },
+      "result": {
+        "type": "tag",
+        "name": "Royal Refuge",
+        "longDescription": "Some exiled noble, unsuccessful pretender, hunted wizard, or other grandee of note remained here for a time, either willingly or under duress. They and their retinue left their traces behind, and remnants of the group might still be present. The principle figure probably died here, though some kinds of creatures or wizards may have been less susceptible to time.",
+        "enemies": "Undead prince in exile, Royal agent convinced the PCs are allies of the rebel here, New usurper claiming the dead one's mantle or name",
+        "friends": "Well-meaning servant of the royal, Local chief trying to keep his village out of the affair, Sympathetic exile in need of help",
+        "complications": "The royal tried to make a deal with the creatures here, The royal had secret ties or perhaps even was one of the natives here, The royal's foes are in sudden need of proof of their death",
+        "things": "Item proving the royal's legitimacy, National treasure they stole away with them, Book full of blackmail material they recorded",
+        "places": "Tattered but once-ornate chamber they occupied, Cache full of carefully-preserved noble regalia, Pathetic and coarsely-monumented grave site"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 81,
+        "maxValue": 82
+      },
+      "result": {
+        "type": "tag",
+        "name": "Sacrificial Bargain",
+        "longDescription": "The natives of the ruin have made some kind of pact with a dread power or sinister force, receiving support or power in exchange for some sacrifice. This sacrifice might fall directly on the natives themselves or they might plunder their neighbors for wealth, human sacrifices, or such other resources as their patron demands in payment. Failure to hold up their end of the deal may be fatal to the inhabitants.",
+        "enemies": "Malevolent high priest of a dark power, Envoy of a ruthless foe of the local inhabitants, Frantic leader driven to desperate bargains",
+        "friends": "Sacrificial victim who escaped, Foe of the patron power searching for its catspaws, Native from a rival group that's being beaten down",
+        "complications": "The bargain seemed an innocent one at first, They're realizing that they can't hold up the deal, The deal was made without the consent of the group's ordinary members",
+        "things": "Object that symbolizes and empowers the pact, Wealth granted by the patron, Precious object lost by a sacrificial victim",
+        "places": "Terrible chamber of ritual offering, Local homestead ravaged by raiders, Storehouse or living area made abundant by the patron"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 83,
+        "maxValue": 84
+      },
+      "result": {
+        "type": "tag",
+        "name": "Sealed Evil",
+        "longDescription": "The ruin serves as a prison for some terribly dangerous entity or power. It may have been originally designed to serve such a purpose, or retrofitted by later inhabitants due to a sudden need, or possibly even mistaken for some other kind of structure by innocent discoverers of a later era. Something about the evil makes it exceptionally hard to kill or permanently destroy, so imprisoning it \"forever\" seemed wiser.",
+        "enemies": "Undead immortal sorcerer, Monstrous and nighunkillable creature, Arch-Outsider with a biology humans can't be sure is dead",
+        "friends": "Hereditary warden of the prison, Innocently eager explorer, Ancestral hunter of the evil",
+        "complications": "The evil was actually a benign entity or is currently mistaken for one, Those who loose it will gain enormous power, It's being tapped for power in a way that risks freeing it",
+        "things": "Relic of the dark power's evil, Seal on the creature that's an extremely valuable item in itself, Valuable material created or generated by the prison as a byproduct",
+        "places": "Exceedingly well-sealed prison area, Chamber with a temporal stasis cell, Hall full of warning iconography made inscrutable by time"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 85,
+        "maxValue": 86
+      },
+      "result": {
+        "type": "tag",
+        "name": "Secret Alliance",
+        "longDescription": "The natives of the ruin have a secret deal or arrangement with some outside power, doing their bidding or providing some special service in exchange for considerations. It might be a corrupt ruler, a sinister cult, an Outsider lord, a backwater hamlet chief, or some other figure that wouldn't wish the arrangement to become public.",
+        "enemies": "Merchant with vile black market deals, Official who wants the ruin to remain a problem, Society grandee with sinister appetites",
+        "friends": "Suspicious noble investigator, Stern inquisitor from the local temple, Local who knows too much",
+        "complications": "The deal is maintaining a fragile peace, There's an openly-acknowledged deal with them but the real bargain is far more sinister, One side is getting ready to betray the other",
+        "things": "Proof of the alliance, Rich plunder taken from an ally's enemy, Relic the mutual cooperation is meant to obtain",
+        "places": "Secret meeting place in the wilds, Chamber for an envoy of the ally, Treasure chamber with goods from the ally"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 87,
+        "maxValue": 88
+      },
+      "result": {
+        "type": "tag",
+        "name": "Shifting Interior",
+        "longDescription": "The interior of the ruin is not stable, and shifts and alters over time or through some enigmatic cycle. It may be composed of constantly-moving elements of some ancient megastructure, or be spatially distorted by a decaying Working, or infested with inhabitants that are constantly rebuilding or reworking the layout. The natives may have some key knowledge that lets them navigate the changes.",
+        "enemies": "Transdimensional intruder entity, Berserk master of the rebuilders, Sinister exile using the place as a refuge",
+        "friends": "Friendly native guide, Relative of one lost in the labyrinth, Frustrated builder in need of help",
+        "complications": "The shifts encode an important secret, If the shifts are interrupted a catastrophe will ensue, The shifts are under the control of the ruin's master",
+        "things": "Key to control the shifts, Map of the alterations, The treasure within the labyrinth's heart",
+        "places": "Room that's changed from the last time they saw it, Churning death zone of moving perils, Maze of twisty little passages all alike"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 89,
+        "maxValue": 90
+      },
+      "result": {
+        "type": "tag",
+        "name": "Spatial Flux",
+        "longDescription": "Space within the ruin has been folded, altered, or corrupted in some way, either by ancient magics, inauspicious geomancy, the depredations of a dimensional monster, failed Workings, fumbled sorcery, or some other woe. Some creatures may use the curdled space as a refuge from their enemies, while others might use it as a gate to some stranger and more terrible place.",
+        "enemies": "Transdimensional abomination, Mad sorcerer making things worse, Obsessive seeker of some hidden grail within the spatial maze",
+        "friends": "Friendly xenodimensional, Adventurer lost and trapped within the place, Local citizen accidentally caught in a warp",
+        "complications": "The destinations of the warps can be controlled from within the ruin, The place's architecture is only physically possible with spatial distortions, The warps lead to different times as well as places",
+        "things": "Relic that creates or influences warps, Treasure shifted here from an alternate place or world, Wealth physically duplicated by the warps",
+        "places": "Escher-like room, Chamber with physical locations split over vast differences, Featureless hall that really never ends"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 91,
+        "maxValue": 92
+      },
+      "result": {
+        "type": "tag",
+        "name": "Surfacer Hideout",
+        "longDescription": "Some surface power is using the ruin as a hideout or base of operations. While they may simply be bandits or refugees, they're more likely agents of some greater power who need a discreet base, or some cult or criminal organization that needs a safe place to hide from the law. Friendly merchants or other associates might make contact with them there to provide for necessities, or they could be working to survive entirely separate from the hostile world outside.",
+        "enemies": "Foreign spy chief, Cult high priest, Ruthless hunter of an innocent group that's hiding here",
+        "friends": "Elder of a despised ethnic group hiding here, Government investigator of the ruin, Local who lives nearby and has seen suspicious things",
+        "complications": "Rather than displacing the monstrous natives the surfacers have dominated or co-opted them, The surfacers were killed or driven out of the ruin very recently and their effects remain, The surfacers have hidden so well that they no longer understand the situation above",
+        "things": "Treasure brought from afar by the surfacers, Loot gathered up from displaced ruin natives, Some precious good crafted or extracted by surfacers",
+        "places": "Room reminiscent of home, Carefully-hidden entrance to their zone, Remote meeting place"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 93,
+        "maxValue": 94
+      },
+      "result": {
+        "type": "tag",
+        "name": "Taboo Place",
+        "longDescription": "The locals surrounding the ruin consider it taboo, and will kill or punish anyone who enters it without their permission. This may be the product of religious reverence, or it could be a holy place of their ancestors, or it could be disputed territory, or it may be that the last time adventurers went in a catastrophe came out. Objects looted from the place will be very hard to sell discreetly anywhere near it.",
+        "enemies": "Relentless leader of the guardians, The monstrous thing within that must not be disturbed, Ruin raider who will cause chaos with their plundering",
+        "friends": "Earnest young treasure hunter, Native who doesn't believe in the taboo, Local who desperately needs to get inside for some reason",
+        "complications": "The locals are absolutely right that meddling with the place will bring disaster on them, The ruin somehow marks those who profane it, The ruin can be entered lawfully under some special circumstance or by certain people",
+        "things": "Pass to allow lawful entrance, Unsellably distinct treasure from the place, Device to overcome the watchfulness of the guardians",
+        "places": "Exemplary warning-pike with heads attached, Long-sealed entrance portal, Vigilant guardpost"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 95,
+        "maxValue": 96
+      },
+      "result": {
+        "type": "tag",
+        "name": "Things Below",
+        "longDescription": "The ruin delved too deep, or opened too many doors to other realms, and things came boiling out that brought its destruction. Those things may have fallen asleep again, or returned to their realm, or yet remained here waiting for fresh prey. They may come and go based on particular time cycles, or when provoked by certain rituals or activities within the place.",
+        "enemies": "Lovecraftian abomination from below, Alienminded extraplanar conqueror, Cultist leader who reveres these eldritch powers",
+        "friends": "Historian seeking more truth about the things, Relative of a victim of the things, Eager explorer who doesn't believe in the things",
+        "complications": "The things are associated with monstrous tides of dangerous vermin, The treasures to be had from delving are almost worth the risk, The treasures were actually living things that ruined the place",
+        "things": "Precious object brought from below, The treasure that they were delving up, Wealth left behind by the suddenly-slain natives",
+        "places": "Interrupted digging site, Vault laden with the wealth of below, Site of sudden terrible ruin"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 97,
+        "maxValue": 98
+      },
+      "result": {
+        "type": "tag",
+        "name": "Useless Treasure",
+        "longDescription": "The ruin was once a carefully-guarded storehouse of some substance or information that was priceless at the time but is now largely worthless. Obscure materials, Outsider goods of no present use, exotic matter fashioned by sorcery and of forgotten purposes, and critical intelligence on empires long since dust might all be found here.",
+        "enemies": "Tireless immortal guardian, Brutally relentless treasure seeker, Maddened sorcerer trying to unlock the \"real value\" of the treasure",
+        "friends": "Mistakenly optimistic adventurer, Seeker with a lost key to the wards, Native denizen who knows the treasure is worthless",
+        "complications": "The natives may prize the stuff even if the world outside doesn't, The treasure really is valuable to the very few who know how to use it, The useless treasure is cased with then-useless material that is priceless now",
+        "things": "Tremendously well-guarded dross, Text showing how to use the treasure, Key for suppressing the treasure's security system",
+        "places": "Vast vault full of garbage, Guard post manned by undying watchers, Ancient luxury area featuring the material or the wealth it brought them"
+      }
+    },
+    {
+      "number": {
+        "type": "range",
+        "minValue": 99,
+        "maxValue": 100
+      },
+      "result": {
+        "type": "tag",
+        "name": "Wizard's Lair",
+        "longDescription": "Wizards often require an emphatic degree of privacy to ward off importunate help-seekers, witch hunters, rivals in the art, or reckless thieves. This ruin is or once was a lair to one such wizard, who probably isn't inclined to view visitors kindly. Even the dead ones may have left behind half-finished Workings and unaging automaton servitors to guard their venerable lore and precious magical relics.",
+        "enemies": "Immortal and heartless wizard, Monstrous creation of a dead mage, Modern sorcerer exploiting the lair of a dead archmage",
+        "friends": "Well-meaning apprentice, Escapee from one of their experiments, Vengeful mage-hunter",
+        "complications": "They perform some service vital to the locals but at a terrible price, No one's heard from them for so long that it's thought they're dead, It's actually a lair for a school or cabal of wizards",
+        "things": "Precious sorcerous grimoire, Magical item crafted there, Vast wealth given by petitioners",
+        "places": "Chamber with a half-finished and dangerous Working, Pens for alchemical monstrosities, Living quarters that are physically impossible somehow"
+      }
+    }
+  ]
+}
