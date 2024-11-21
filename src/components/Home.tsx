@@ -49,14 +49,8 @@ export default function Home() {
         find it useful as well. The code for the website can be found{" "}
         <a href="https://github.com/jdglaser/ttrpg-generators/tree/main">
           here
-        </a>{" "}
-        and the code is open source under the{" "}
-        <a href="https://github.com/jdglaser/ttrpg-generators/blob/main/LICENSE">
-          MIT License
-        </a>
-        . If you notice any issues feel free to open up an issue on GitHub and I
-        will do my best to take a look (but no promises, I am a full time
-        software engineer and dad 🙂). I also plan to add more tables from the
+        </a>. If you notice any issues feel free to open up an issue on GitHub and I
+        will do my best to take a look. I also plan to add more tables from the
         book and features to the site. If you have ideas, feel free to share by
         opening an issue on GitHub.
       </p>
