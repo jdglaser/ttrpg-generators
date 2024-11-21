@@ -28,7 +28,7 @@ export default function Home() {
         <a href="https://sine-nomine-publishing.myshopify.com/pages/about-us">
           Kevin Crawford
         </a>
-        . While it’s an incredible TTRPG in its own right (and definitely worth
+        . While it's an incredible TTRPG in its own right (and definitely worth
         checking out), its GM-focused content is among the best in the industry.
         A generous free version, containing 90% of the content, is also
         available{" "}
