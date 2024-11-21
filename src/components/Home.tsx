@@ -56,7 +56,9 @@ export default function Home() {
         </a>
         . If you notice any issues feel free to open up an issue on GitHub and I
         will do my best to take a look (but no promises, I am a full time
-        software engineer and dad 🙂).
+        software engineer and dad 🙂). I also plan to add more tables from the
+        book and features to the site. If you have ideas, feel free to share by
+        opening an issue on GitHub.
       </p>
       <h2>Usage Guide</h2>
       <p>
