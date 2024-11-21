@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import TurndownService from "turndown";
 import { useAppState } from "../common/hooks";
 import {
   Optional,
@@ -206,10 +207,18 @@ export default function TablePage() {
   const categoryTitle = dashToTitleCase(category!);
   const selectedTables = tables[category!];
 
+  const turndownService = new TurndownService();
+
   function handleCopy() {
     const tableResultsHtml =
       document.getElementsByClassName("results")[0].innerHTML;
     copyToClipboard(tableResultsHtml);
+  }
+
+  function handleCopyMarkdown() {
+    const tableResultsHtml =
+      document.getElementsByClassName("results")[0].innerHTML;
+    navigator.clipboard.writeText(turndownService.turndown(tableResultsHtml));
   }
 
   function handleRefresh(keys?: string[]) {
@@ -322,7 +331,8 @@ export default function TablePage() {
         <li key={rollOnTableResults.table.title}>
           <b
             style={{ cursor: "pointer" }}
-            onClick={() => handleRefresh([rollOnTableResults.tableKey])}>
+            onClick={() => handleRefresh([rollOnTableResults.tableKey])}
+          >
             {rollOnTableResults.table.title}
           </b>
           <ul>{rollOnTableResultComponents}</ul>
@@ -333,13 +343,32 @@ export default function TablePage() {
 
   return (
     <div>
-      <h1>{categoryTitle}</h1>
+      <h1
+        style={{
+          margin: 0,
+          padding: 0,
+          top: "-15px",
+          lineHeight: "2rem",
+          marginBottom: "1rem",
+        }}
+      >
+        {categoryTitle}
+      </h1>
       <div style={{ display: "flex", gap: "0.5rem" }}>
         <button onClick={() => handleRefresh()}>Refresh</button>
-        <button onClick={handleCopy}>Copy</button>
+        <button onClick={handleCopy}>Copy Rich Text</button>
+        <button onClick={handleCopyMarkdown}>Copy Markdown</button>
       </div>
       <div className="results">
-        <ul style={{ marginLeft: 0, padding: "0.5rem" }}>{resultComponents}</ul>
+        <ul
+          style={{
+            marginLeft: "0.75rem",
+            marginTop: "0.5rem",
+            padding: "0.5rem",
+          }}
+        >
+          {resultComponents}
+        </ul>
       </div>
     </div>
   );
